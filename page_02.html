@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
 <title>급속교정 클래스 | 니잉 - 속눈썹펌 11단계 상세 교정 1:1 실습</title>
-<meta name="description" content="온라인 이론과 오프라인 100% 직접 실습. 11단계 상세 교정 커리큘럼, 실습 모델·재료 제공, 디플로마 발급. 99만원부터.">
+<meta name="description" content="온라인 이론과 오프라인 100% 직접 실습. 11단계 상세 교정, 실습 모델·재료 제공, 디플로마 발급, 수료 후 카카오톡 피드백.">
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
 <script src="https://unpkg.com/lucide@latest"></script>
 <style>
@@ -507,6 +507,131 @@ body{word-break:keep-all}
 .car-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:thin}
 .car-track>*{flex:0 0 calc((100% - 48px)/3);scroll-snap-align:start}
 @media (max-width:768px){.car-track>*{flex-basis:85%}}
+
+/* Hero */
+.sub-hero{position:relative;height:620px;background:var(--bg-dark);overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+.sub-hero .hero-ph{position:absolute;inset:0}
+.sub-hero .inner{position:relative;z-index:2;padding:0 24px}
+.sub-hero .label{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:18px}
+.sub-hero h1{font-size:46px;font-weight:800;color:#FFF;line-height:1.3;letter-spacing:-.03em;margin-bottom:18px}
+.sub-hero .lead{font-size:17px;color:rgba(255,255,255,.7);line-height:1.7}
+.sub-hero .hstats{display:flex;justify-content:center;gap:72px;margin-top:48px}
+.sub-hero .hstats .k{font-size:13px;color:rgba(255,255,255,.55)}
+.sub-hero .hstats .v{font-size:30px;font-weight:800;color:#FFF;margin-top:4px}
+/* How it works */
+.hiw{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.hiw h3{font-size:17px;font-weight:700;color:var(--text-black);margin-bottom:6px}
+.hiw p{font-size:14px;color:var(--text-gray);margin-bottom:18px;min-height:44px}
+.hiw .img-placeholder{aspect-ratio:4/5}
+/* Stories */
+.rv-card{cursor:pointer}
+.rv-card .img-placeholder{aspect-ratio:4/3;margin-bottom:18px;background:var(--bg-dark);color:rgba(255,255,255,.35)}
+.rv-card h4{font-size:16px;font-weight:700;color:var(--text-black);margin-bottom:8px;line-height:1.45}
+.rv-card .ex{font-size:14px;color:var(--text-gray);line-height:1.7;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.rv-card .more{display:inline-block;margin-top:10px;font-size:13px;color:var(--text-dark);text-decoration:underline;text-underline-offset:3px}
+/* Problem */
+.qline{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.qline div{border:1px solid var(--border-light);background:#FFF;border-radius:var(--radius-md);padding:26px}
+.qline b{display:block;font-size:16px;color:var(--text-black);margin-bottom:10px}
+.qline p{font-size:14px;color:var(--text-gray);line-height:1.7}
+/* Empathy */
+.emp-big{font-size:56px;font-weight:300;color:var(--text-black);line-height:1.05;letter-spacing:-.02em;margin-bottom:28px}
+.emp-big span{display:block;padding-left:80px}
+.emp ul{margin:20px 0 28px}
+.emp li{font-size:15px;color:var(--text-gray);padding:6px 0 6px 16px;position:relative}
+.emp li::before{content:"";position:absolute;left:0;top:16px;width:5px;height:5px;border-radius:50%;background:var(--text-muted)}
+/* Cause / Solution line story */
+.ls-row{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;border-top:1px solid var(--border-light)}
+.ls-row:last-child{border-bottom:1px solid var(--border-light)}
+.ls-row .img-placeholder{border-radius:0;min-height:300px}
+.ls-row .txt{padding:56px;display:flex;flex-direction:column;justify-content:center}
+.ls-row.rev .txt{order:-1;text-align:right;align-items:flex-end}
+.ls-row .n{font-size:13px;font-weight:700;color:var(--text-light);margin-bottom:8px}
+.ls-row h3{font-size:22px;font-weight:700;color:var(--text-black);margin-bottom:14px;line-height:1.4}
+.ls-row p{font-size:15px;color:var(--text-gray);line-height:1.8;max-width:460px}
+.answer{margin-top:56px;text-align:center;font-size:20px;color:var(--text-black);line-height:1.8}
+/* Core */
+.core-steps li{display:flex;gap:18px;padding:16px 0;border-bottom:1px solid var(--border-light);font-size:15px}
+.core-steps .s{font-size:12px;font-weight:700;color:var(--text-light);width:64px;flex-shrink:0;padding-top:2px}
+.core-steps b{color:var(--text-black);margin-right:8px}
+/* Difference */
+.cmp{width:100%;max-width:900px;margin:0 auto;border-collapse:collapse;font-size:15px}
+.cmp th,.cmp td{padding:18px 20px;border-bottom:1px solid var(--border-light);text-align:center}
+.cmp thead th{font-size:14px;color:var(--text-gray);font-weight:600}
+.cmp tbody th{color:var(--text-light);font-weight:600;font-size:14px;width:120px}
+.cmp .on{background:var(--bg-dark);color:#FFF;font-weight:700}
+.cmp thead .on{color:#FFF}
+/* Process */
+.proc{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;text-align:center}
+.proc .img-placeholder{aspect-ratio:3/4;border-radius:120px 120px 12px 12px;margin-bottom:16px}
+.proc .n{font-size:12px;font-weight:700;color:var(--text-light)}
+.proc h4{font-size:16px;font-weight:700;color:var(--text-black);margin:4px 0 6px}
+.proc p{font-size:13px;color:var(--text-gray)}
+/* CLASS cards */
+.cls-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cls-card .img-placeholder{aspect-ratio:4/5;margin-bottom:18px}
+.cls-card h3{font-size:19px;font-weight:700;color:var(--text-black);margin-bottom:8px}
+.cls-card p{font-size:14px;color:var(--text-gray);line-height:1.7;margin-bottom:14px;min-height:72px}
+.cls-card .hash{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.cls-card .hash span{font-size:12px;font-weight:600;border:1px solid var(--border-default);padding:6px 10px;color:var(--text-dark)}
+/* letter section */
+.letter{background:var(--bg-dark);padding:110px 0;text-align:center;position:relative}
+.letter .label{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:12px}
+.letter h2{font-size:34px;font-weight:800;color:#FFF;margin-bottom:14px}
+.letter p{font-size:16px;color:rgba(255,255,255,.65);margin-bottom:32px}
+.letter .btn{background:transparent;color:#FFF;border:1px solid rgba(255,255,255,.6)}
+/* fixed CTA */
+.fixcta{position:fixed;left:0;right:0;bottom:0;z-index:95;background:var(--bg-black);transform:translateY(100%);transition:transform .3s}
+.fixcta.is-show{transform:none}
+.fixcta-inner{max-width:1200px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.fixcta .copy b{display:block;font-size:16px;color:#FFF}
+.fixcta .copy span{font-size:13px;color:rgba(255,255,255,.6)}
+.fixcta .btn{background:#FFF;color:var(--text-black);border-color:#FFF;min-width:220px}
+.top-btn{bottom:100px}
+/* modal */
+.md{position:fixed;inset:0;z-index:200;display:none}
+.md.is-open{display:block}
+.md-back{position:absolute;inset:0;background:var(--bg-black);opacity:.6}
+.md-box{position:relative;max-width:1080px;height:min(92dvh,760px);margin:4dvh auto 0;background:#FFF;border-radius:var(--radius-md);overflow:hidden;display:flex}
+.md-close{position:absolute;top:14px;right:14px;z-index:3;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--text-black)}
+.pay-side{width:360px;flex-shrink:0;border-right:1px solid var(--border-light);padding:32px 28px;display:flex;flex-direction:column}
+.pay-side h3{font-size:20px;font-weight:800;color:var(--text-black);margin-bottom:6px}
+.pay-side .lead{font-size:13px;color:var(--text-light);margin-bottom:20px}
+.pay-opt{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;text-align:left;border:1px solid var(--border-light);border-radius:var(--radius-sm);padding:16px;margin-bottom:10px;background:#FFF}
+.pay-opt.is-on{border-color:var(--text-black);box-shadow:inset 0 0 0 1px var(--text-black)}
+.pay-opt .nm{font-size:15px;font-weight:700;color:var(--text-black)}
+.pay-opt .sub{font-size:12px;color:var(--text-light);margin-top:2px}
+.pay-opt .pr{font-size:15px;font-weight:700;color:var(--text-black);white-space:nowrap}
+.pay-foot{margin-top:auto;border-top:1px solid var(--border-light);padding-top:18px}
+.pay-total{display:flex;justify-content:space-between;font-size:15px;margin-bottom:14px}
+.pay-total b{font-size:20px;color:var(--text-black)}
+.pay-btn.is-disabled{opacity:.35;pointer-events:none}
+.pay-detail{flex:1;overflow-y:auto;padding:40px 44px}
+.pay-empty{height:100%;display:flex;align-items:center;justify-content:center;color:var(--text-light);font-size:15px}
+.cls-head h2{font-size:26px;font-weight:800;color:var(--text-black);margin-bottom:6px}
+.cls-head .one{font-size:15px;color:var(--text-gray);margin-bottom:16px}
+.rv-md .md-box{max-width:820px;height:auto;max-height:90dvh}
+.rv-md .rv-split{display:grid;grid-template-columns:1fr 1fr;width:100%}
+.rv-md .rv-split .img-placeholder{border-radius:0;min-height:520px;background:var(--bg-dark);color:rgba(255,255,255,.35)}
+.rv-md .rv-txt{padding:40px 36px;overflow-y:auto;max-height:90dvh}
+.rv-md .rv-txt h3{font-size:20px;font-weight:800;color:var(--text-black);margin-bottom:16px;line-height:1.45}
+.rv-md .rv-txt p{font-size:15px;color:var(--text-dark);line-height:1.85;white-space:pre-line}
+.rv-md .note{margin-top:24px;padding-top:18px;border-top:1px solid var(--border-light);font-size:14px;color:var(--text-gray)}
+.rv-md .note b{display:block;font-size:12px;color:var(--text-light);margin-bottom:6px}
+.clue{font-size:12px;color:var(--text-light);margin-top:10px}
+@media (max-width:900px){
+  .hiw,.proc{grid-template-columns:repeat(2,1fr)}
+  .qline,.cls-grid{grid-template-columns:1fr}
+  .ls-row{grid-template-columns:1fr}.ls-row.rev .txt{order:0;text-align:left;align-items:flex-start}
+  .ls-row .txt{padding:32px 24px}
+  .md-box{flex-direction:column;height:92dvh}.pay-side{width:auto;border-right:none;border-bottom:1px solid var(--border-light)}
+  .rv-md .rv-split{grid-template-columns:1fr}.rv-md .rv-split .img-placeholder{min-height:280px}
+}
+@media (max-width:768px){
+  .sub-hero{height:560px}.sub-hero h1{font-size:30px}.sub-hero .hstats{gap:32px}
+  .emp-big{font-size:38px}.emp-big span{padding-left:40px}
+  .fixcta-inner{flex-direction:column;align-items:stretch;gap:10px}.fixcta .copy{display:none}
+}
 </style>
 </head>
 <body>
@@ -533,279 +658,213 @@ body{word-break:keep-all}
 
 
 <!-- ================= 섹션 1 : Hero ================= -->
-<section class="l-hero">
-  <div class="container">
-    <div class="split">
-      <div>
-        <p class="section-label">Lash Lift Correction Class</p>
-        <h1>눈매가 달라져도<br>흔들리지 않는 판단 기준을 만듭니다</h1>
-        <p class="lead">온라인으로 이론과 데모를 먼저 보고,<br>오프라인에서 100% 내 손으로 완성합니다.</p>
-        <div class="btn-row"><a href="#pricing" class="btn btn-primary">내 상황에 맞는 과정 확인하기</a><a href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" class="btn btn-secondary">카카오톡 문의</a></div>
-      </div>
-      <div class="img-placeholder" style="aspect-ratio:4/5"><i data-lucide="image"></i></div>
-    </div>
-    <div class="strength">
-      <div><i data-lucide="list-ordered"></i>11단계 상세 교정</div>
-      <div><i data-lucide="droplets"></i>유지력 8주 물광 연화법</div>
-      <div><i data-lucide="users"></i>실습 모델·재료 제공</div>
-      <div><i data-lucide="message-circle"></i>수료 후 카톡 피드백</div>
+<section class="sub-hero">
+  <div class="hero-ph"><i data-lucide="image"></i><span>[히어로 배경 · 1920×1080 · 신논현 스튜디오 수업 현장]</span></div>
+  <div class="inner">
+    <p class="label">Lash Lift Correction Class</p>
+    <h1>배운 적은 있지만,<br>매번 결과가 달라 불안하신가요</h1>
+    <p class="lead">기술을 몰라서가 아닙니다. 눈매를 판단할 기준이 없어서입니다.<br>니잉은 그 기준을 만드는 속눈썹펌 급속교정 클래스입니다.</p>
+    <div class="hstats">
+      <div><p class="k">누적 시술</p><p class="v">6,000+</p></div>
+      <div><p class="k">교육으로 만난 원장님</p><p class="v">500+</p></div>
+      <div><p class="k">네이버 리뷰</p><p class="v">1,000+</p></div>
     </div>
   </div>
 </section>
 
-<!-- ================= 섹션 2 : Proof ================= -->
+<!-- ================= 섹션 2 : How It Works (공통 진행 방식) ================= -->
 <section class="section">
   <div class="container">
     <div class="text-center">
-      <p class="section-label">Trust</p>
-      <h2 class="section-title">숫자와 후기로 먼저 확인하세요</h2>
+      <p class="section-label">How It Works</p>
+      <h2 class="section-title">모든 급속교정 클래스는 이렇게 진행돼요</h2>
+      <p class="section-desc">과정은 달라도, 원장님이 샵에 돌아가 혼자서도 판단할 수 있도록 아래 네 가지를 모든 클래스에 똑같이 적용합니다.</p>
     </div>
-    <div class="stats c3">
-      <div><p class="v">6,000+</p><p class="k">누적 시술</p></div>
-      <div><p class="v">500+</p><p class="k">교육으로 만난 원장님</p></div>
-      <div><p class="v">1,000+</p><p class="k">네이버 리뷰</p></div>
+    <div class="hiw">
+      <div><h3>이론은 온라인으로 먼저</h3><p>핵심 이론과 데모 영상을 미리 보고 옵니다</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
+      <div><h3>100% 직접 실습</h3><p>오프라인 시간은 전부 원장님 손으로 완성합니다</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
+      <div><h3>모델·재료 전부 제공</h3><p>실습 모델 섭외와 재료를 니잉이 준비합니다</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
+      <div><h3>수료 후 카톡 피드백</h3><p>샵에서 막히는 순간에도 물어보실 수 있습니다</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
     </div>
-    <p class="src text-center">[클라이언트 확인 필요: 수치 기준일]</p>
   </div>
 </section>
 
-<!-- ================= 섹션 3 : Problem ================= -->
+<!-- ================= 섹션 3 : Stories (후기 · 클릭 시 원문 모달) ================= -->
 <section class="section bg-light">
+  <div class="container">
+    <div class="text-center">
+      <p class="section-label">NEEINK Stories</p>
+      <h2 class="section-title">진작 올걸 그랬다고, 그렇게들 말씀하십니다</h2>
+      <p class="section-desc">수업을 마친 원장님들이 직접 보내주신 메시지입니다.</p>
+    </div>
+    <div class="loop" id="stLoop">
+      <div class="loop-vp"><div class="loop-track"><article class="rv-card" data-rv="0"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>결과 복불복이 사라졌어요</h4><p class="ex">수강 전에는 속눈썹펌을 하면서도 매번 결과가 달라서 스트레스가 심했어요.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="1"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>롯드를 기준도 감도 없이 골랐다는 걸 알았어요</h4><p class="ex">수업 내내 내가 왜 펌을 못했는지 알 수 있었어요. 좋은 의미의 현타? 같은 시간이었어요.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="2"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>‘될까?’ 대신 ‘이렇게 하면 된다’는 확신</h4><p class="ex">예전에는 속눈썹이 잘 안 올라가는 고객님 오시면 ‘이번엔 어떡하지?’ 하는 걱정이 먼저 들었는데.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="3"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>부산에서 KTX 타고 왔어요</h4><p class="ex">오가는 시간이 아깝지 않을 만큼 수업이 알찼어요!</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="4"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>인스타 영상 몇백 개보다 하루</h4><p class="ex">인스타 영상 아무리 많이 봐도 알 수 없는 것들을 하루 만에 배웠어요.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="5"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>네일·왁싱샵에 펌 메뉴를 추가했어요</h4><p class="ex">배워 본 적이 없으니까 어디서부터 시작해야 할지 모르겠더라구요.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="6"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>암기식이 아니라 설명이라 응용이 돼요</h4><p class="ex">다른 곳에서 수강하고 니잉이 재수강이었어요.</p><span class="more">자세히 보기</span></article></div></div>
+      <div class="tcar-nav"><button data-loop="-1"><i data-lucide="chevron-left"></i></button><button data-loop="1"><i data-lucide="chevron-right"></i></button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 섹션 4 : Problem ================= -->
+<section class="section">
   <div class="container">
     <div class="text-center">
       <p class="section-label">Problem</p>
-      <h2 class="section-title">수강 전, 원장님들이 직접 적어주신 고민</h2>
-      <p class="section-desc">실력이 없어서가 아니라, 판단할 기준이 없어서 생기는 일입니다.</p>
+      <h2 class="section-title">이 중에 하나라도 해당되시나요</h2>
+      <p class="section-desc">하나라도 해당되신다면, 지금 막혀 있는 그 지점부터 다시 잡습니다.</p>
     </div>
-    <div class="grid-2">
-      <div class="voice"><p>속눈썹펌을 하면서도 매번 결과가 달라서 스트레스가 심했어요. 고객한테 카톡 올 때마다 일 자체를 그만두고 싶었었거든요.</p><cite>수강 원장님 후기 중</cite></div>
-      <div class="voice"><p>혼자 하다 보니 어느 순간부터 실력이 늘지 않는 느낌이 있었어요. 열심히 하는 거 같은데도 펌 결과는 그대로 같고.</p><cite>수강 원장님 후기 중</cite></div>
-      <div class="voice"><p>예전에는 속눈썹이 잘 안 올라가는 고객님 오시면 ‘이번엔 어떡하지?’ 하는 걱정이 먼저 들었는데.</p><cite>수강 원장님 후기 중</cite></div>
-      <div class="voice"><p>제대로 할 수 있을지 자신이 없었고 오히려 기존 고객님들한테 신뢰감만 떨어뜨리면 어떡하나 걱정도 됐었거든요.</p><cite>네일샵 운영 · 수강 원장님 후기 중</cite></div>
+    <div class="qline">
+      <div><b>“매번 결과가 달라요.”</b><p>잘 될 때도 있고 안 될 때도 있는데, 그게 왜 그런지를 모르겠어요.</p></div>
+      <div><b>“고객 카톡이 올 때마다 겁나요.”</b><p>컴플레인일까 봐, 일 자체를 그만두고 싶을 때가 있어요.</p></div>
+      <div><b>“롯드를 감으로 골라요.”</b><p>눈 모양마다 무엇을 보고 골라야 하는지 기준이 없어요.</p></div>
+      <div><b>“영상은 몇백 개 저장했어요.”</b><p>영상마다 방식이 다 달라서 뭐가 맞는 건지 더 헷갈려요.</p></div>
+      <div><b>“잘 안 올라가는 눈이 제일 무서워요.”</b><p>그런 고객님이 오시면 ‘이번엔 어떡하지?’ 걱정이 먼저 들어요.</p></div>
+      <div><b>“물어볼 사람이 없어요.”</b><p>뭘 고쳐야 할지도 모르겠고, 피드백 받을 곳이 없어요.</p></div>
     </div>
+    <p class="src text-center">수강 원장님 후기 원문에서 옮긴 고민입니다</p>
   </div>
 </section>
 
-<!-- ================= 섹션 4 : Cause ================= -->
-<section class="section">
-  <div class="container">
-    <div class="split">
-      <div class="img-placeholder" style="aspect-ratio:4/3"><i data-lucide="image"></i></div>
-      <div>
-        <p class="section-label">Why it happens</p>
-        <h2 class="section-title">반쪽짜리 실습이<br>언제부터 당연했을까요</h2>
-        <div class="story" style="font-size:16px;margin:0">
-          <p>많은 원장님이 유튜브와 인스타그램에서 배웁니다. 실습 없이 눈으로만 보고, 확신 없이 남의 기준만 따라 하다 보면 심화 케이스에서 막힙니다.</p>
-          <p>숙달은 <strong>정해진 방법의 반복</strong>에서 옵니다. 그래서 급속교정 클래스는 <strong>처음부터 끝까지 100% 원장님 손으로 완성</strong>하는 걸 원칙으로 합니다. 막히는 순간마다 밀착 코칭으로 현장에서 바로 잡습니다.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 섹션 5 : Results ================= -->
+<!-- ================= 섹션 5 : Empathy ================= -->
 <section class="section bg-light">
   <div class="container">
-    <div class="text-center">
-      <p class="section-label">Results</p>
-      <h2 class="section-title">배우고 나면 이런 게 달라집니다</h2>
-      <p class="section-desc">기술이 아니라 결과로 말씀드릴게요.</p>
-    </div>
-    <div class="grid-3">
-      <div class="result-card"><span class="tag">Complaint ↓</span><h3>컴플레인이 줄어듭니다</h3><p>어떤 눈매가 와도 같은 완성도로 마무리하니, 한 번 흔들린 날이 그 고객의 마지막 방문이 되지 않습니다.</p></div>
-      <div class="result-card"><span class="tag">Revisit ↑</span><h3>재방문이 늘어납니다</h3><p>유지력 8주 물광 연화법으로 “여기서 하면 오래간다”는 기준을 만들고, 재방문을 만드는 마무리 멘트까지 갖게 됩니다.</p></div>
-      <div class="result-card"><span class="tag">Revenue</span><h3>매출이 안정됩니다</h3><p>새 고객을 부르는 것보다 재방문 고객이 다시 오는 게 효율적입니다. 리텐션은 그대로 원장님의 이익이 됩니다.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 섹션 6 : 강사 ================= -->
-<section class="section">
-  <div class="container">
     <div class="split">
-      <div>
-        <p class="section-label">Who teaches</p>
-        <h2 class="section-title">가르치는 사람이<br>아직도 매일 시술합니다</h2>
-        <div class="story" style="font-size:16px;margin:0">
-          <p>니잉우디가 문을 연 지 <strong>6년째</strong>입니다. 그동안 <strong>6,000건이 넘는 시술</strong>을 했고, 교육으로 <strong>500분이 넘는 원장님</strong>을 만났습니다.</p>
-          <p>그래서 “원래 이렇게 하는 거예요”라고 말하지 않습니다. 왜 그렇게 하는지, 다른 경우엔 어떻게 달라지는지까지 알려드려요. 원장님이 샵에 돌아가서 혼자 판단하고 확신하실 수 있어야 하니까요.</p>
-        </div>
+      <div class="emp">
+        <p class="emp-big">Your<span>Own Judgment</span></p>
+        <h2 class="section-title">실력이 없어서가 아닙니다</h2>
+        <blockquote style="margin-top:8px">“원래 이렇게 하는 거예요”라고 말하지 않습니다. 왜 그렇게 하는지, 다른 경우엔 어떻게 달라지는지까지 알려드려요.</blockquote>
+        <ul>
+          <li>남의 기준만 따라 하면, 심화 케이스에서 막힙니다.</li>
+          <li>처진 눈, 들린 눈, 컬이 높게 나오는 눈, 컬이 잘 나오지 않는 눈.</li>
+          <li>니잉은 원장님이 샵에 돌아가 혼자 판단하고 확신할 수 있는 기준을 세웁니다.</li>
+        </ul>
+        <a href="#class" class="link-inline">과정 살펴보기 →</a>
       </div>
       <div class="img-placeholder" style="aspect-ratio:4/5"><i data-lucide="user"></i></div>
     </div>
   </div>
 </section>
 
-<!-- ================= 섹션 7 : 진행 방식 ================= -->
-<section class="section bg-light">
-  <div class="container">
-    <div class="text-center">
-      <p class="section-label">How it works</p>
-      <h2 class="section-title">이론은 미리, 실습은 현장에서</h2>
-      <p class="section-desc">오프라인 시간을 전부 손 쓰는 데 씁니다.</p>
-    </div>
-    <div class="stepbar c3">
-      <div><p class="n">STEP 01 · Online</p><h4>이론 &amp; 데모 학습</h4><p>핵심 이론과 데모 영상을 먼저 봅니다. 실제 시술에 쓰이는 것만 설명합니다.</p></div>
-      <div><p class="n">STEP 02 · Offline</p><h4>신논현 스튜디오 실습</h4><p>모델과 재료를 전부 준비해둡니다. 처음부터 끝까지 직접 완성하고, 매 단계 1:1 밀착 코칭을 받습니다.</p></div>
-      <div><p class="n">STEP 03 · After</p><h4>수료 후 피드백</h4><p>디플로마와 함께, 샵에서 막히는 순간 카카오톡으로 물어보실 수 있게 열어둡니다.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 섹션 8 : 수업 현장 ================= -->
+<!-- ================= 섹션 6 : Cause 01~03 ================= -->
 <section class="section">
   <div class="container">
     <div class="text-center">
-      <p class="section-label">In class</p>
-      <h2 class="section-title">보고만 있는 시간은 없습니다</h2>
-      <p class="section-desc">실제 수업 현장입니다. 처음부터 끝까지, 원장님 손이 움직입니다.</p>
+      <p class="section-label">Cause of NEEINK</p>
+      <h2 class="section-title">문제는 손이 아니라, 반복할 기회가 없었다는 것입니다</h2>
+      <p class="section-desc">같은 영상을 봐도 결과가 갈리는 이유는 세 가지로 좁혀집니다.</p>
     </div>
-    <div class="gallery">
-      <div class="img-placeholder"><i data-lucide="image"></i></div><div class="img-placeholder"><i data-lucide="image"></i></div>
-      <div class="img-placeholder"><i data-lucide="image"></i></div><div class="img-placeholder"><i data-lucide="image"></i></div>
-      <div class="img-placeholder"><i data-lucide="image"></i></div>
-    </div>
-    <p class="micro text-center">모든 사진은 동의 하에 게시합니다</p>
   </div>
+  <div class="ls">
+    <div class="ls-row"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">원인 01</p><h3>눈으로만 배웠다</h3><p>유튜브와 인스타그램에서 실습 없이 보기만 했습니다. 숙달은 정해진 방법의 반복에서 오는데, 반복할 기회 자체가 없었습니다.</p></div></div>
+    <div class="ls-row rev"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">원인 02</p><h3>남의 기준을 따라 했다</h3><p>영상마다 방식이 다르니, 확신 없이 남의 기준만 따라 하게 됩니다. 눈매가 바뀌면 그 기준은 맞지 않습니다.</p></div></div>
+    <div class="ls-row"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">원인 03</p><h3>막혔을 때 물어볼 곳이 없었다</h3><p>심화 케이스에서 막혀도 확인해 줄 사람이 없으니, 같은 자리에서 계속 걸립니다.</p></div></div>
+  </div>
+  <div class="container"><p class="answer">그래서 니잉은 <b>처음부터 끝까지 내 손으로 반복</b>하고,<br><b>눈매별 판단 기준</b>을 세우고, <b>수료 후에도 질문 창구</b>를 열어둡니다.</p></div>
 </section>
 
-<!-- ================= 섹션 9 : 커리큘럼 ================= -->
+<!-- ================= 섹션 7 : Solution 01~03 ================= -->
 <section class="section bg-light">
   <div class="container">
     <div class="text-center">
-      <p class="section-label">Curriculum</p>
-      <h2 class="section-title">시술 흐름 그대로, 11단계 상세 교정</h2>
-      <p class="section-desc">상담부터 마무리 멘트까지. 흐름의 어느 지점에서 막히든, 거기서부터 잡습니다.</p>
+      <p class="section-label">Solution of NEEINK</p>
+      <h2 class="section-title">원인마다, 대응이 따로 있습니다</h2>
+      <p class="section-desc">모든 급속교정 클래스에 공통으로 적용되는 니잉의 운영 방식입니다.</p>
     </div>
-    <div class="curr"><div><p class="n">01</p><h4>상담 및 사진 촬영</h4><p>눈매를 빠르게 읽고, 고객의 기대치를 맞추는 설계 상담법을 배웁니다.</p></div><div><p class="n">02</p><h4>클렌징 및 전처리</h4><p>모질을 파악하고, 그에 맞는 전처리를 하는 방법을 익힙니다.</p></div><div><p class="n">03</p><h4>테이핑 및 연화롯드</h4><p>어떤 눈매가 와도 흔들리지 않는 테이핑법을 배웁니다.</p></div><div><p class="n">04</p><h4>물광 레이어링 연화법</h4><p>시간이 아니라 모발 상태로 연화를 판단하는 원리를 배웁니다.</p></div><div><p class="n">05</p><h4>디자인 롯드 교체</h4><p>정확한 롯드 부착 위치와, 교체 시 생기는 결 정리 실수를 막는 법을 배웁니다.</p></div><div><p class="n">06</p><h4>산화</h4><p>컬이 꺾이지 않게 만드는 산화 과정의 원리를 알려드립니다.</p></div><div><p class="n">07</p><h4>중화</h4><p>컬이 꺾이고 모발이 손상되는 원인을 짚고, 중화가 필요한 이유를 배웁니다.</p></div><div><p class="n">08</p><h4>클렌징 및 마무리</h4><p>손님이 거울을 보기 전에 내가 먼저 확인하는 마무리를 만듭니다.</p></div><div><p class="n">09</p><h4>세럼 도포 및 결 정리</h4><p>결 정리를 위한 세럼 활용법을 배웁니다.</p></div><div><p class="n">10</p><h4>사진 촬영</h4><p>결과물을 마케팅 자산으로 만드는 촬영과 보정 방법을 배웁니다.</p></div><div><p class="n">11</p><h4>안내 및 마무리</h4><p>손님이 나가는 순간이 다음 예약의 시작입니다. 재방문을 만드는 마무리 멘트를 배웁니다.</p></div><div style="background:var(--bg-dark);border-color:var(--bg-dark)"><p class="n" style="color:rgba(255,255,255,.5)">ALL</p><h4 style="color:#FFF">어느 단계에서 막히든</h4><p style="color:rgba(255,255,255,.6)">흐름의 그 지점부터 다시 잡습니다.</p></div></div>
+  </div>
+  <div class="ls">
+    <div class="ls-row rev"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">솔루션 01</p><h3>오프라인 시간은 전부 실습에 씁니다</h3><p>이론과 데모는 온라인으로 먼저 봅니다. 현장에서는 모델과 재료가 준비된 상태로, 처음부터 끝까지 원장님 손으로 완성합니다.</p></div></div>
+    <div class="ls-row"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">솔루션 02</p><h3>6,000건에서 나온 판단 기준을 드립니다</h3><p>4초 눈매 분석 방법과 11단계 상세 교정으로, 어떤 눈매가 와도 무엇을 보고 판단하는지 알려드립니다.</p></div></div>
+    <div class="ls-row rev"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">솔루션 03</p><h3>막히는 순간, 현장에서 바로 잡습니다</h3><p>매 단계 1:1 밀착 코칭으로 바로 교정하고, 수료 후 샵에서 막힐 때는 카카오톡으로 물어보실 수 있습니다.</p></div></div>
   </div>
 </section>
 
-<!-- ================= 섹션 10 : 과정 선택 ================= -->
-<section class="section" id="pricing">
+<!-- ================= 섹션 8 : Core — 11단계 상세 교정 ================= -->
+<section class="section">
   <div class="container">
-    <div class="text-center">
-      <p class="section-label">Pricing</p>
-      <h2 class="section-title">실습 인원만 고르시면 됩니다</h2>
-      <p class="section-desc">전 과정 공통 포함입니다. 재료와 실습 모델까지 전부 준비해둘게요.</p>
-    </div>
-    <ul class="inc"><li><i data-lucide="check"></i>사전 문제점 체크 및 상담</li><li><i data-lucide="check"></i>100% 직접 실습</li><li><i data-lucide="check"></i>핵심 포인트 이론</li><li><i data-lucide="check"></i>4초 눈매 분석 방법</li><li><i data-lucide="check"></i>유지력 8주, 물광 연화법</li><li><i data-lucide="check"></i>발색 2배 블랙 틴팅 비법 전수</li><li><i data-lucide="check"></i>디플로마 수료증 발급</li><li><i data-lucide="check"></i>밀착 1:1 코칭</li><li><i data-lucide="check"></i>실습 재료 100% 지원</li><li><i data-lucide="check"></i>실습 모델 섭외 및 지원</li></ul>
-    <div class="grid-2">
-      <div class="price-card">
-        <p class="tier">Basic</p><h3>2명 실습</h3><p class="who">기본적인 교정이 필요한 원장님께</p>
-        <p class="was">정상가 150만원</p><p class="now">99<small>만원</small></p><p class="vat">부가세 별도</p>
-        <a href="#contact" class="btn btn-secondary btn-block">Basic 수강 문의</a>
+    <div class="split" style="align-items:start">
+      <div>
+        <p class="section-label">Core</p>
+        <h2 class="section-title">시술 흐름 그대로, 11단계 상세 교정</h2>
+        <p class="section-desc" style="margin-bottom:16px">상담부터 마무리 멘트까지. 흐름의 어느 지점에서 막히든, 거기서부터 잡습니다. 핵심은 시간이 아니라 모발 상태로 연화를 판단하는 <b>유지력 8주 물광 연화법</b>입니다.</p>
+        <ul class="core-steps"><li><span class="s">STEP 01</span><span><b>상담 및 사진 촬영</b>눈매를 빠르게 읽고, 고객의 기대치를 맞추는 설계 상담법</span></li><li><span class="s">STEP 02</span><span><b>클렌징 및 전처리</b>모질을 파악하고 그에 맞는 전처리</span></li><li><span class="s">STEP 03</span><span><b>테이핑 및 연화롯드</b>어떤 눈매가 와도 흔들리지 않는 테이핑</span></li><li><span class="s">STEP 04</span><span><b>물광 레이어링 연화법</b>시간이 아니라 모발 상태로 연화를 판단</span></li><li><span class="s">STEP 05</span><span><b>디자인 롯드 교체</b>정확한 롯드 부착 위치와 교체 시 결 정리 실수 막기</span></li><li><span class="s">STEP 06</span><span><b>산화</b>컬이 꺾이지 않게 만드는 산화 원리</span></li><li><span class="s">STEP 07</span><span><b>중화</b>컬 꺾임·모발 손상의 원인과 중화가 필요한 이유</span></li><li><span class="s">STEP 08</span><span><b>클렌징 및 마무리</b>손님이 거울을 보기 전 내가 먼저 확인하는 마무리</span></li><li><span class="s">STEP 09</span><span><b>세럼 도포 및 결 정리</b>결 정리를 위한 세럼 활용법</span></li><li><span class="s">STEP 10</span><span><b>사진 촬영</b>결과물을 마케팅 자산으로 만드는 촬영과 보정</span></li><li><span class="s">STEP 11</span><span><b>안내 및 마무리</b>재방문을 만드는 마무리 멘트</span></li></ul>
       </div>
-      <div class="price-card is-reco">
-        <p class="tier">Recommended</p><h3>3명 실습</h3><p class="who">실습량을 늘려 심도 있는 수업을 원하는 원장님께</p>
-        <p class="was">정상가 180만원</p><p class="now">120<small>만원</small></p><p class="vat">부가세 별도</p>
-        <a href="#contact" class="btn btn-primary btn-block">Recommended 수강 문의</a>
-      </div>
+      <div class="img-placeholder" style="aspect-ratio:3/4;position:sticky;top:100px"><i data-lucide="play-circle"></i></div>
     </div>
-    <p class="micro text-center">계좌이체 및 카드결제 가능 · 현금 결제 시 현금영수증 및 지출증빙 발급 · 모든 수업 1:1 진행</p>
   </div>
 </section>
 
-<!-- ================= 섹션 11 : 진행 방식 상세 ================= -->
+<!-- ================= 섹션 9 : Difference ================= -->
 <section class="section bg-light">
   <div class="container">
-    <div class="text-center"><p class="section-label">Format</p><h2 class="section-title">진행 방식 상세</h2></div>
-    <div class="tbl-scroll" style="max-width:860px;margin:0 auto">
-      <table class="tbl"><tbody>
-        <tr><th>진행</th><td>온라인 사전 학습 + 오프라인 실습</td></tr>
-        <tr><th>장소</th><td>서울 강남구 강남대로106길 18, 2층 (역삼동 812-1) · 신논현</td></tr>
-        <tr><th>수업 시간</th><td>약 7시간</td></tr>
-        <tr><th>인원</th><td>1:1 진행</td></tr>
-        <tr><th>실습</th><td>모델 2명(Basic) 또는 3명(Recommended)</td></tr>
-        <tr><th>준비물</th><td>없음 — 재료와 모델 모두 제공</td></tr>
-        <tr><th>일정</th><td>문의 후 개별 조율</td></tr>
-        <tr><th>수료 후 피드백</th><td>카카오톡 · [클라이언트 확인 필요: 피드백 기간]</td></tr>
-      </tbody></table>
+    <div class="text-center">
+      <p class="section-label">Difference</p>
+      <h2 class="section-title">같은 시간을 써도, 남는 것이 다릅니다</h2>
     </div>
+    <table class="cmp">
+      <thead><tr><th></th><th>영상으로 독학</th><th class="on">니잉 급속교정 클래스</th></tr></thead>
+      <tbody>
+        <tr><th>실습</th><td>눈으로만 보고 따라 함</td><td class="on">처음부터 끝까지 내 손으로</td></tr>
+        <tr><th>기준</th><td>영상마다 방식이 다름</td><td class="on">눈매별 판단 기준 · 11단계 교정</td></tr>
+        <tr><th>모델·재료</th><td>직접 구하고 직접 삼</td><td class="on">니잉이 전부 준비</td></tr>
+        <tr><th>막힐 때</th><td>물어볼 곳이 없음</td><td class="on">현장 1:1 코칭 + 수료 후 카톡 피드백</td></tr>
+      </tbody>
+    </table>
+    <p class="answer" style="font-size:17px;margin-top:40px">급속교정 클래스를 듣고 나면 컴플레인이 줄고, 재방문이 늘고,<br>시술할 때 망설이지 않게 됩니다.</p>
   </div>
 </section>
 
-<!-- ================= 섹션 12 : 후기 ================= -->
+<!-- ================= 섹션 10 : Process ================= -->
 <section class="section">
   <div class="container">
     <div class="text-center">
-      <p class="section-label">Reviews</p>
-      <h2 class="section-title">실제 수강 원장님들의 후기</h2>
-      <p class="section-desc">과장 없이, 수강생분들이 직접 남겨주신 후기를 그대로 담았습니다.</p>
+      <p class="section-label">Process of NEEINK</p>
+      <h2 class="section-title">신청하시면 이렇게 진행됩니다</h2>
+      <p class="section-desc">어떤 클래스가 맞을지는 상담 단계에서 함께 정합니다.</p>
     </div>
-    <div data-car>
-      <div class="car-track">
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">눈 모양마다 롯드 선택이 달라야 한다는 것도, 부착 타이밍이 결과에 얼마나 영향을 미치는지도 <strong>처음 제대로 이해</strong>했어요.</p><p class="m">결과 복불복이 사라졌다는 후기</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">속눈썹펌 매출도 예전보다 두 배 이상 늘었고, 단골 고객님들도 많이 생겼어요. 무엇보다 <strong>‘될까?’라는 불안감 대신 ‘이렇게 하면 된다’는 확신</strong>이 생기더라구요.</p><p class="m">재방문과 매출이 늘었다는 후기</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">다른 곳에서 수강하고 니잉이 재수강 … 단순히 이렇게 하세요 이렇게 해야해요 암기식이 아니라 설명을 해주시니까 <strong>응용이 되고 스스로 자신있게 판단</strong>할 수 있게 되더라구요.</p><p class="m">다른 곳에서 배우고 재수강한 후기</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">어떤 곳에서 수강생들을 위해 직접 모델을 구해주나요 … <strong>모델 구할 걱정 없이</strong> 다 준비해주시는데.</p><p class="m">입문자로 시작한 후기</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">인스타 영상 아무리 많이 봐도 알 수 없는 것들을 <strong>하루 만에 배웠어요</strong>. 독학으로 쌓은 시간이 아깝다기보다 이제 그게 다 제대로 정리된 느낌이에요.</p><p class="m">독학하다 하루 만에 정리됐다는 후기</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">수업 듣고 하라는 대로 딱 하고 기존 손님한테 모델 부탁드렸어요 … 다음 예약으로도 연결돼서 <strong>바로 네이버에 메뉴 추가</strong>했어요.</p><p class="m">네일샵에 속눈썹펌 메뉴를 추가한 후기</p></article>
-      </div>
-      <div class="tcar-nav"><button data-dir="-1"><i data-lucide="chevron-left"></i></button><button data-dir="1"><i data-lucide="chevron-right"></i></button></div>
+    <div class="proc">
+      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">01</p><h4>상담 신청</h4><p>지금 어느 단계에서 막히는지 남겨주세요</p></div>
+      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">02</p><h4>사전 문제점 체크</h4><p>상담으로 막힌 지점과 클래스를 정합니다</p></div>
+      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">03</p><h4>일정 조율 · 등록</h4><p>문의 후 개별로 일정을 맞춥니다</p></div>
+      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">04</p><h4>온라인 이론 · 데모</h4><p>핵심 이론과 데모 영상을 먼저 봅니다</p></div>
+      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">05</p><h4>오프라인 실습 · 수료</h4><p>신논현 스튜디오 실습 → 디플로마 → 카톡 피드백</p></div>
     </div>
+    <p class="micro text-center">TIP — 상담 단계에서 ‘이런 것까지 물어봐도 되나’ 싶은 것도 편하게 물어보세요.</p>
   </div>
 </section>
 
-<!-- ================= 섹션 13 : FAQ ================= -->
-<section class="section bg-light">
+<!-- ================= 섹션 11 : CLASS (세부 클래스 3) ================= -->
+<section class="section bg-light" id="class">
   <div class="container">
-    <div class="text-center"><p class="section-label">FAQ</p><h2 class="section-title">신청 전에 많이 물어보세요</h2></div>
-    <div class="acc" style="max-width:860px;margin:0 auto">
-      <div class="acc-item is-open"><button class="acc-q">실습 모델은 제가 구해 가야 하나요? <span class="mk">+</span></button><div class="acc-a">아니요. 실습 모델 섭외와 재료를 니잉이 모두 지원합니다. 몸만 오시면 됩니다.</div></div>
-      <div class="acc-item"><button class="acc-q">준비물이 있나요? <span class="mk">+</span></button><div class="acc-a">없습니다. 재료와 모델 모두 제공합니다.</div></div>
-      <div class="acc-item"><button class="acc-q">수업은 몇 명이 같이 듣나요? <span class="mk">+</span></button><div class="acc-a">모든 수업은 1:1로 진행합니다. 수업 시간은 약 7시간입니다.</div></div>
-      <div class="acc-item"><button class="acc-q">일정은 어떻게 정하나요? <span class="mk">+</span></button><div class="acc-a">문의 후 개별로 조율합니다.</div></div>
-      <div class="acc-item"><button class="acc-q">결제 수단과 증빙은요? <span class="mk">+</span></button><div class="acc-a">계좌이체와 카드결제 모두 가능합니다. 현금 결제 시 현금영수증과 지출증빙을 발급해드립니다.</div></div>
-      <div class="acc-item"><button class="acc-q">수료하고 나서 막히면요? <span class="mk">+</span></button><div class="acc-a">디플로마 수료증을 발급하고, 수료 후에도 카카오톡으로 질문하실 수 있습니다. [클라이언트 확인 필요: 피드백 기간]</div></div>
-    </div>
+    <p class="section-label">Class</p>
+    <h2 class="section-title">나에게 필요한 클래스를 더 자세히 알아보세요</h2>
+    <p class="section-desc">급속교정 클래스는 세 가지 과정으로 나뉩니다.</p>
+    <div class="cls-grid"><article class="cls-card"><div class="img-placeholder"><i data-lucide="image"></i></div><h3>[세부 클래스 1]</h3><p>[한 줄 소개 — 클라이언트 확인 필요]</p><div class="hash"><span>[기간]</span><span>[수강료]</span></div><button class="btn btn-secondary btn-sm btn-block" data-open-pay="0">자세히 보기</button></article><article class="cls-card"><div class="img-placeholder"><i data-lucide="image"></i></div><h3>[세부 클래스 2]</h3><p>[한 줄 소개 — 클라이언트 확인 필요]</p><div class="hash"><span>[기간]</span><span>[수강료]</span></div><button class="btn btn-secondary btn-sm btn-block" data-open-pay="1">자세히 보기</button></article><article class="cls-card"><div class="img-placeholder"><i data-lucide="image"></i></div><h3>[세부 클래스 3]</h3><p>[한 줄 소개 — 클라이언트 확인 필요]</p><div class="hash"><span>[기간]</span><span>[수강료]</span></div><button class="btn btn-secondary btn-sm btn-block" data-open-pay="2">자세히 보기</button></article></div>
+    <p class="micro text-center">[클라이언트 확인 필요: 세부 클래스 3개의 이름 · 소개 · 기간 · 실습 인원 · 수강료 · 커리큘럼]</p>
+    <p class="clue text-center">참고 — 기존 후기 원문에 “원데이 수업”, “3데이(쓰리데이)” 언급이 있습니다.</p>
   </div>
 </section>
 
-<!-- ================= 섹션 14 : 수강 취소·환불 규정 (법정 필수) ================= -->
+<!-- ================= 섹션 12 : Notice — 수강 안내 및 환불 규정 (법정 필수) ================= -->
 <section class="section">
-  <div class="container">
-    <div class="notice-box" style="max-width:860px;margin:0 auto">
-      <h3><i data-lucide="file-text"></i>수강 취소 및 환불 규정</h3>
-      <ul>
-        <li>[클라이언트 확인 필요: 수업 전 취소 시 환불 기준]</li>
-        <li>[클라이언트 확인 필요: 일정 변경 가능 기한]</li>
-        <li>[클라이언트 확인 필요: 온라인 사전 학습 열람 후 환불 기준]</li>
-      </ul>
+  <div class="container" style="max-width:960px">
+    <div class="text-center"><p class="section-label">Notice</p><h2 class="section-title">수강 안내 및 환불 규정</h2></div>
+    <div class="acc">
+      <div class="acc-item"><button class="acc-q">강의 정보 <span class="mk">+</span></button><div class="acc-a">과정명 · 총 교육 시간 · 진행 방식(온라인 사전 학습 + 오프라인 실습) · 교육 장소 서울 강남구 강남대로106길 18, 2층 (역삼동 812-1) · 제공 재료(실습 재료 100%, 실습 모델) · 클래스별 세부 정보 <span class="tbd">[클라이언트 확인 필요]</span></div></div>
+      <div class="acc-item"><button class="acc-q">수강 대상 <span class="mk">+</span></button><div class="acc-a">클래스별 권장 대상 <span class="tbd">[클라이언트 확인 필요]</span></div></div>
+      <div class="acc-item"><button class="acc-q">결제 및 수강 기간 <span class="mk">+</span></button><div class="acc-a">계좌이체 및 카드결제 가능 · 현금 결제 시 현금영수증 및 지출증빙 발급 · 일정은 문의 후 개별 조율 · 수강 유효 기간 <span class="tbd">[클라이언트 확인 필요]</span></div></div>
+      <div class="acc-item"><button class="acc-q">환불 및 취소 규정 <span class="mk">+</span></button><div class="acc-a">수업 전 취소 · 일정 변경 기한 · 온라인 사전 학습 열람 후 환불 기준 · 환불 신청 방법 및 처리 기간 <span class="tbd">[클라이언트 확인 필요]</span></div></div>
+      <div class="acc-item"><button class="acc-q">판매자 정보 <span class="mk">+</span></button><div class="acc-a">상호 니잉우디 속눈썹펌&amp;눈썹왁싱 신사압구정점 · 대표 함수민 · 사업자등록번호 662-13-01355 · 통신판매업신고번호 <span class="tbd">[클라이언트 확인 필요]</span> · 주소 서울특별시 강남구 논현로175길 68, 206호(신사동) · 연락처 <span class="tbd">[클라이언트 확인 필요]</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- ================= 섹션 15 : 연계 과정 ================= -->
-<section class="section bg-light" style="padding:64px 0">
-  <div class="container">
-    <a href="page_03.html" class="cross">
-      <div><p class="t">얼굴 노출 없이 매출까지 올리고 싶다면</p><h3>AI 마케팅 클래스</h3></div>
-      <i data-lucide="arrow-right"></i>
-    </a>
-  </div>
-</section>
-
-<!-- ================= 최하단 : Contact Us ================= -->
-<section class="section bg-dark" id="contact">
-  <div class="container text-center">
-    <p class="section-label" style="color:rgba(255,255,255,.45)">Contact</p>
-    <h2 class="section-title">확신 없이 감으로 하는 시술, 오늘로 끝내시겠습니까</h2>
-    <p class="section-desc">지금 어느 단계에서 막히시는지 말씀해주시면, 거기서부터 잡아드릴게요.</p>
-    <div class="ct-form"><form class="form-block" onsubmit="return false">
-  <h3>급속교정 클래스 상담 신청</h3>
-  <p class="note">이름과 연락처만 적어주셔도 됩니다. 나머지는 선택입니다.</p>
-  <div class="grid-2" style="gap:16px">
-    <div class="field"><label>이름 <span class="req">*</span></label><input type="text" placeholder="이름"></div>
-    <div class="field"><label>연락처 <span class="req">*</span></label><input type="tel" placeholder="010-0000-0000"></div>
-  </div>
-  <div class="field"><label>관심 과정</label><div class="radio-row"><label><input type="radio" name="c"> Basic · 2명 실습</label><label><input type="radio" name="c"> Recommended · 3명 실습</label><label><input type="radio" name="c"> 아직 모르겠어요</label></div></div>
-  <div class="field"><label>지금 가장 막히는 부분 (선택)</label><textarea placeholder="예) 펌 결과가 매번 달라요 / 시술 사진을 올리기 어려워요"></textarea></div>
-  <div class="agree"><label><input type="checkbox"> [필수] 개인정보 수집·이용에 동의합니다 (수집 항목: 이름, 연락처 / 이용 목적: 상담 안내)</label></div>
-  <button class="btn btn-primary btn-block">급속교정 과정 상담 신청</button>
-  <p class="micro" style="text-align:center">신청 후 카카오톡 또는 전화로 연락드립니다 · 평일 10:30 ~ 19:00</p>
-  <div style="text-align:center;margin-top:16px"><a href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" class="link-inline">폼 대신 카카오톡으로 먼저 물어보기</a></div>
-</form></div>
+<!-- ================= 최하단 : AI 마케팅 클래스 안내 ================= -->
+<section class="letter">
+  <div class="hero-ph"><i data-lucide="image"></i></div>
+  <div class="container" style="position:relative;z-index:2">
+    <p class="label">Next Class</p>
+    <h2>얼굴 노출 없이 매출까지 올리고 싶다면</h2>
+    <p>고객 얼굴은 AI로 바꾸고, 원장님의 작업 결과는 그대로. 게시 가능한 콘텐츠 5개 이상을 만들어 갑니다.</p>
+    <a href="page_03.html" class="btn">AI 마케팅 클래스 더 알아보기 →</a>
   </div>
 </section>
 
@@ -846,6 +905,102 @@ body{word-break:keep-all}
 <!-- TOP -->
 <button class="top-btn" id="topBtn"><i data-lucide="arrow-up"></i></button>
 
+
+<!-- ================= 하단 고정 CTA 배너 ================= -->
+<div class="fixcta" id="fixcta"><div class="fixcta-inner">
+  <div class="copy"><b>확신 없이 감으로 하는 시술, 오늘로 끝내시겠습니까</b><span>지금 막혀 있는 지점부터 다시 잡습니다</span></div>
+  <button class="btn btn-primary" data-open-pay="-1">급속교정 클래스 신청하기</button>
+</div></div>
+
+<!-- ================= 클래스 선택 · 상세 · 결제 모달 ================= -->
+<div class="md" id="payMd"><div class="md-back" data-close></div><div class="md-box">
+  <button class="md-close" data-close><i data-lucide="x"></i></button>
+  <div class="pay-side">
+    <h3>어떤 과정을 신청하실까요</h3>
+    <p class="lead">과정을 선택하시면 상세 내용과 결제 금액이 표시됩니다.</p>
+    <button class="pay-opt" data-i="0"><span><span class="nm">[세부 클래스 1]</span><span class="sub" style="display:block">[기간]</span></span><span class="pr">[수강료]</span></button><button class="pay-opt" data-i="1"><span><span class="nm">[세부 클래스 2]</span><span class="sub" style="display:block">[기간]</span></span><span class="pr">[수강료]</span></button><button class="pay-opt" data-i="2"><span><span class="nm">[세부 클래스 3]</span><span class="sub" style="display:block">[기간]</span></span><span class="pr">[수강료]</span></button>
+    <div class="pay-foot">
+      <div class="pay-total"><span>결제 금액</span><b id="payTotal">과정을 선택해주세요</b></div>
+      <a href="#" class="btn btn-primary btn-block pay-btn is-disabled" id="payBtn">결제하기</a>
+      <a href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" class="link-inline" style="display:block;text-align:center">결제 전에 카카오톡으로 먼저 상담하기</a>
+    </div>
+  </div>
+  <div class="pay-detail" id="payDetail"><div class="pay-empty">왼쪽에서 과정을 선택하시면 상세 내용이 표시됩니다.</div></div>
+</div></div>
+<template id="cls0">
+  <div class="cls-head"><h2>[세부 클래스 1]</h2><p class="one">[한 줄 소개 — 클라이언트 확인 필요]</p>
+    <div class="chips"><span class="chip">100% 직접 실습</span><span class="chip">실습 모델·재료 제공</span><span class="chip">1:1 밀착 코칭</span><span class="chip">디플로마</span><span class="chip">수료 후 카톡 피드백</span></div>
+  </div>
+  <div class="tbl-scroll" style="margin:20px 0 24px"><table class="tbl"><tbody>
+    <tr><th>대상</th><td><span class="tbd">[클라이언트 확인 필요]</span></td></tr><tr><th>기간 · 시간</th><td><span class="tbd">[클라이언트 확인 필요]</span></td></tr>
+    <tr><th>진행 방식</th><td>온라인 사전 학습(이론·데모) + 신논현 스튜디오 오프라인 실습 · <span class="tbd">[클라이언트 확인 필요]</span></td></tr>
+    <tr><th>실습 인원</th><td><span class="tbd">[클라이언트 확인 필요]</span></td></tr><tr><th>수강료</th><td><span class="tbd">[클라이언트 확인 필요]</span></td></tr>
+    <tr><th>피드백</th><td>수료 후 카카오톡 피드백 · 기간 <span class="tbd">[클라이언트 확인 필요]</span></td></tr>
+  </tbody></table></div>
+  <div class="acc">
+    <div class="acc-item is-open"><button class="acc-q"><span>1단계 · <span class="tbd">[클라이언트 확인 필요]</span></span><span class="mk">+</span></button><div class="acc-a"><span class="tbd">[클라이언트 확인 필요]</span></div></div>
+    <div class="acc-item"><button class="acc-q"><span>2단계 · <span class="tbd">[클라이언트 확인 필요]</span></span><span class="mk">+</span></button><div class="acc-a"><span class="tbd">[클라이언트 확인 필요]</span></div></div>
+    <div class="acc-item"><button class="acc-q">수업 후 도달점 <span class="mk">+</span></button><div class="acc-a"><span class="tbd">[클라이언트 확인 필요]</span></div></div>
+  </div>
+</template><template id="cls1">
+  <div class="cls-head"><h2>[세부 클래스 2]</h2><p class="one">[한 줄 소개 — 클라이언트 확인 필요]</p>
+    <div class="chips"><span class="chip">100% 직접 실습</span><span class="chip">실습 모델·재료 제공</span><span class="chip">1:1 밀착 코칭</span><span class="chip">디플로마</span><span class="chip">수료 후 카톡 피드백</span></div>
+  </div>
+  <div class="tbl-scroll" style="margin:20px 0 24px"><table class="tbl"><tbody>
+    <tr><th>대상</th><td><span class="tbd">[클라이언트 확인 필요]</span></td></tr><tr><th>기간 · 시간</th><td><span class="tbd">[클라이언트 확인 필요]</span></td></tr>
+    <tr><th>진행 방식</th><td>온라인 사전 학습(이론·데모) + 신논현 스튜디오 오프라인 실습 · <span class="tbd">[클라이언트 확인 필요]</span></td></tr>
+    <tr><th>실습 인원</th><td><span class="tbd">[클라이언트 확인 필요]</span></td></tr><tr><th>수강료</th><td><span class="tbd">[클라이언트 확인 필요]</span></td></tr>
+    <tr><th>피드백</th><td>수료 후 카카오톡 피드백 · 기간 <span class="tbd">[클라이언트 확인 필요]</span></td></tr>
+  </tbody></table></div>
+  <div class="acc">
+    <div class="acc-item is-open"><button class="acc-q"><span>1단계 · <span class="tbd">[클라이언트 확인 필요]</span></span><span class="mk">+</span></button><div class="acc-a"><span class="tbd">[클라이언트 확인 필요]</span></div></div>
+    <div class="acc-item"><button class="acc-q"><span>2단계 · <span class="tbd">[클라이언트 확인 필요]</span></span><span class="mk">+</span></button><div class="acc-a"><span class="tbd">[클라이언트 확인 필요]</span></div></div>
+    <div class="acc-item"><button class="acc-q">수업 후 도달점 <span class="mk">+</span></button><div class="acc-a"><span class="tbd">[클라이언트 확인 필요]</span></div></div>
+  </div>
+</template><template id="cls2">
+  <div class="cls-head"><h2>[세부 클래스 3]</h2><p class="one">[한 줄 소개 — 클라이언트 확인 필요]</p>
+    <div class="chips"><span class="chip">100% 직접 실습</span><span class="chip">실습 모델·재료 제공</span><span class="chip">1:1 밀착 코칭</span><span class="chip">디플로마</span><span class="chip">수료 후 카톡 피드백</span></div>
+  </div>
+  <div class="tbl-scroll" style="margin:20px 0 24px"><table class="tbl"><tbody>
+    <tr><th>대상</th><td><span class="tbd">[클라이언트 확인 필요]</span></td></tr><tr><th>기간 · 시간</th><td><span class="tbd">[클라이언트 확인 필요]</span></td></tr>
+    <tr><th>진행 방식</th><td>온라인 사전 학습(이론·데모) + 신논현 스튜디오 오프라인 실습 · <span class="tbd">[클라이언트 확인 필요]</span></td></tr>
+    <tr><th>실습 인원</th><td><span class="tbd">[클라이언트 확인 필요]</span></td></tr><tr><th>수강료</th><td><span class="tbd">[클라이언트 확인 필요]</span></td></tr>
+    <tr><th>피드백</th><td>수료 후 카카오톡 피드백 · 기간 <span class="tbd">[클라이언트 확인 필요]</span></td></tr>
+  </tbody></table></div>
+  <div class="acc">
+    <div class="acc-item is-open"><button class="acc-q"><span>1단계 · <span class="tbd">[클라이언트 확인 필요]</span></span><span class="mk">+</span></button><div class="acc-a"><span class="tbd">[클라이언트 확인 필요]</span></div></div>
+    <div class="acc-item"><button class="acc-q"><span>2단계 · <span class="tbd">[클라이언트 확인 필요]</span></span><span class="mk">+</span></button><div class="acc-a"><span class="tbd">[클라이언트 확인 필요]</span></div></div>
+    <div class="acc-item"><button class="acc-q">수업 후 도달점 <span class="mk">+</span></button><div class="acc-a"><span class="tbd">[클라이언트 확인 필요]</span></div></div>
+  </div>
+</template>
+
+<!-- ================= 후기 모달 ================= -->
+<div class="md rv-md" id="rvMd"><div class="md-back" data-close></div><div class="md-box">
+  <button class="md-close" data-close><i data-lucide="x"></i></button>
+  <div class="rv-split"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><div class="rv-txt" id="rvTxt"></div></div>
+</div></div>
+<template id="rv0"><h3>결과 복불복이 사라졌어요</h3><p>원장님 이제 집에 도착해서 후기 남깁니다!!
+수강 전에는 속눈썹펌을 하면서도 매번 결과가 달라서 스트레스가 심했어요. 잘 될 때도 있고 안 될 때도 있는데, 그게 왜 그런지를 몰랐던 게 제일 문제였던 것 같아요. 고객한테 카톡 올때마다 일 자체를 그만 두고 싶었었거든요…
+나름 유튜브도 찾아보고 인스타 영상도 따라 해봤는데, 그게 내 손에서는 왜 다르게 나오는지 이유를 모르니까 계속 제자리였다가 큰맘먹고 니잉원장님 수업을 들었어요.
+수업 듣고 나니까 이유를 알게 됐더라구요….! 눈 모양마다 롯드 선택이 달라야 한다는 것도, 부착 타이밍이 결과에 얼마나 영향을 미치는지도 처음 제대로 이해했어요.
+지금은 거의 복불복 없이 일정하게 결과가 나와요. 고객 컴플레인도 확 줄었고, 모발 끝 지글 거림이나 as 요청도 거의 없어졌어요.
+시술을 할 때 망설이지 않을 수 있게 된게 제일 큰 변화인 것 같아요. 감사합니다 원장님</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template><template id="rv1"><h3>롯드를 기준도 감도 없이 골랐다는 걸 알았어요</h3><p>후기 정말 잘 안쓰는 사람인데ㅋㅋㅋ 진짜 도움이 됐다 싶어서 써야겠다 싶어서여
+속눈썹펌 배운 지는 좀 됐는데 혼자하다보니까 어느순간부터 실력이 늘지 않는 느낌이 있었어욬ㅋ 열심히 하는 거 같은데도 펌 결과는 그대로 같고ㅠ 뭘 고쳐야 할지도 모르겠고 물어보거나 피드백 받을 사람도 없어서
+수업 내내 내가 왜 펌을 못했는지 알 수 있었어요 좋은 의미의 현타? 같은 시간이었어요 그리고 제가 롯드를 완전히 기준도 감도 없이 골랐다는 걸 알았습니닼ㅋㅋ
+눈매 딱 보라고 했던 것만 보니까 어떤 눈이 와도 어렵지 않아요 그냥 할만해요 이제! 진작 올걸 싶었죠 뭐 ㅋㅋㅋㅋ</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template><template id="rv2"><h3>‘될까?’ 대신 ‘이렇게 하면 된다’는 확신</h3><p>진짜 수업 듣기 전이랑 지금이랑 속눈썹펌할 때 자신감 자체가 달라졌어요. 예전에는 속눈썹이 잘 안 올라가는 고객님 오시면 ‘이번엔 어떡하지?’ 하는 걱정이 먼저 들었는데, 수업에서 눈매 체크하는 방법이랑 고객님 눈에 맞게 접근하는 방법을 배우고 나서는 그런 고민이 거의 없어졌어요.
+예전에는 가끔 AS나 아쉬운 피드백이 있었는데, 수강 이후로는 그런 일이 거의 없어졌고 재방문해주시는 분들도 많이 늘었어요. 속눈썹펌 매출도 예전보다 두 배 이상 늘었고, 단골 고객님들도 많이 생겼어요.
+무엇보다 시술하면서 ‘될까?’라는 불안감 대신 ‘이렇게 하면 된다’는 확신이 생기더라구요</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template><template id="rv3"><h3>부산에서 KTX 타고 왔어요</h3><p>저 부산에서 KTX 타고 왔어요 ㅋㅋㅋ 솔직히 부산에도 잘하시는 원장님 많은데 좀 더 제대로 배우고 싶었어요 어차피 배울 거면 제대로 배우자 주의거든요
+오가는 시간이 아깝지 않을 만큼 수업이 알찼어용!!!! 특히 재료 선택하는 기준이랑 고객 유형별로 어떻게 다르게 접근해야 하는지 배운 게 진짜 실전에서 바로 써먹히더라고요
+그동안 재료를 그냥 많이 쓰이는 걸로 골라왔는데, 이제는 고객 눈에 맞게 제가 직접 판단해서 고를 수 있게 됐어요</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template><template id="rv4"><h3>인스타 영상 몇백 개보다 하루</h3><p>저 인스타에서 속눈썹펌 영상 저장한 게 몇백개는 될 거예요 ㅋㅋ 그만큼 열심히 독학했는데 어느 순간부터 시술하는데 깜깜하더구요 ㅠㅠㅠㅠ
+영상마다 방식이 다 달라서 뭐가 맞는 건지도 모르겠고 오히려 더 헷갈리기만 하고 그러다 보니 자신감도 점점 떨어지고 고객한테 시술하면서도 불안한 마음이 있었거든요
+수업 들으면서 그 불안감이 싹 사라졌어요 기준이 생기니까 어떤 고객이 와도 흔들리지 않게 됐어요 인스타 영상 아무리 많이 봐도 알 수 없는 것들을 하루 만에 배웠어요</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template><template id="rv5"><h3>네일·왁싱샵에 펌 메뉴를 추가했어요</h3><p>저 원래 네일이랑 왁싱 샵 운영하고 있는데 속눈썹펌 메뉴 추가 고민한지 거의 6개월 됐어요
+배우러 가야지 가야지 하면서 계속 미뤘던게 배워 본적이 없으니까 어디서부터 시작해야할지 모르겠더라구요 ㅠㅠ
+수업 듣고 하라는 대로 딱 하고 기존 손님한테 모델 부탁드렸어요 2주 기존 왁싱, 네일 고객님들 대상으로 모델 해봤더니 생각보다 훨씬 좋다 하셨고, 다음 예약으로도 연결되서 바로 네이버에 메뉴 추가했어요
+벌써 재방문이 눈에 보이니까 6개월 미룬 거 진짜 후회돼요 ㅋㅋㅋ 진작 들을걸 그랬어요!</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template><template id="rv6"><h3>암기식이 아니라 설명이라 응용이 돼요</h3><p>제가 다른 곳에서 수강하고 니잉이 재수강이라고 말씀드렸잖아요 거기서도 분명 나름 열심히 들었는데 혼자하려고 하면 자꾸 잘 안되는거예요 …
+오늘 여러가지 제 문제점을 발견했습니다
+단순히 이렇게 하세요 이렇게 해야해요 암기식이 아니라 설명을 해주시니까 응용이되고 스스로 자신있게 판단 할 수 있게 되더라구요
+지금이라도 제대로 배운게 정말 다행이에요</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template>
+
 <script>
 
 lucide.createIcons();
@@ -867,6 +1022,37 @@ document.querySelectorAll('[data-car]').forEach(function(c){
   c.querySelectorAll('[data-dir]').forEach(function(b){b.onclick=function(){t.scrollBy({left:(+b.dataset.dir)*(t.clientWidth*0.9),behavior:'smooth'})}});
 });
 
+
+/* 후기 무한 루프 */
+(function(){
+  var root=document.getElementById('stLoop'),tr=root.querySelector('.loop-track'),orig=[].slice.call(tr.children),n=orig.length,i=0,busy=false,t;
+  orig.forEach(function(c){tr.appendChild(c.cloneNode(true))});
+  function step(){return tr.children[1].getBoundingClientRect().left-tr.children[0].getBoundingClientRect().left}
+  function set(a){tr.style.transition=a?'transform .6s ease':'none';tr.style.transform='translateX('+(-i*step())+'px)'}
+  function move(d){if(busy)return;busy=true;if(d<0&&i===0){i=n;set(false);tr.offsetHeight}i+=d;set(true)}
+  tr.addEventListener('transitionend',function(){if(i>=n){i-=n;set(false)}busy=false});
+  function play(){clearInterval(t);t=setInterval(function(){move(1)},3500)}function stop(){clearInterval(t)}
+  root.querySelectorAll('[data-loop]').forEach(function(b){b.onclick=function(){move(+b.dataset.loop);play()}});
+  root.addEventListener('mouseenter',stop);root.addEventListener('mouseleave',play);window.addEventListener('resize',function(){set(false)});play();
+})();
+/* 모달 공통 */
+function openMd(id){document.getElementById(id).classList.add('is-open');document.body.style.overflow='hidden'}
+document.querySelectorAll('.md [data-close]').forEach(function(b){b.onclick=function(){b.closest('.md').classList.remove('is-open');document.body.style.overflow=''}});
+/* 후기 모달 */
+document.addEventListener('click',function(e){var c=e.target.closest('.rv-card');if(!c)return;
+  document.getElementById('rvTxt').innerHTML=document.getElementById('rv'+c.dataset.rv).innerHTML;openMd('rvMd')});
+/* 결제 모달 */
+var opts=document.querySelectorAll('.pay-opt');
+function pick(i){opts.forEach(function(o){o.classList.toggle('is-on',+o.dataset.i===i)});
+  var o=opts[i];document.getElementById('payTotal').textContent=o.querySelector('.pr').textContent;
+  document.getElementById('payBtn').classList.remove('is-disabled');
+  var d=document.getElementById('payDetail');d.innerHTML=document.getElementById('cls'+i).innerHTML;lucide.createIcons();
+  d.querySelectorAll('.acc-q').forEach(function(q){q.onclick=function(){q.parentElement.classList.toggle('is-open')}})}
+opts.forEach(function(o){o.onclick=function(){pick(+o.dataset.i)}});
+document.querySelectorAll('[data-open-pay]').forEach(function(b){b.onclick=function(){var i=+b.dataset.openPay;openMd('payMd');if(i>=0)pick(i)}});
+/* 고정 배너: 히어로 지나면 노출 */
+var fx=document.getElementById('fixcta'),hero=document.querySelector('.sub-hero');
+window.addEventListener('scroll',function(){fx.classList.toggle('is-show',window.scrollY>hero.offsetHeight-80)});
 
 </script>
 </body>

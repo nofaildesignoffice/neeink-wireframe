@@ -425,6 +425,17 @@ blockquote cite{display:block;margin-top:10px;font-size:13px;color:var(--text-li
 .seg{display:inline-flex;border:1px solid var(--border-default);border-radius:99px;padding:4px;background:#FFF}
 .seg button{font-size:13px;font-weight:700;padding:9px 18px;border-radius:99px;color:var(--text-gray)}
 .seg button.is-active{background:var(--text-black);color:#FFF}
+.loop-vp{overflow:hidden}
+.loop-track{display:flex;gap:24px;will-change:transform}
+.loop-track>*{flex:0 0 calc((100% - 48px)/3)}
+.rv-card .img-placeholder{aspect-ratio:1/1;margin-bottom:20px}
+.rv-card .q{font-size:15px;color:var(--text-dark);line-height:1.8}
+.rv-card .q strong{color:var(--text-black)}
+.rv-card .m{font-size:13px;color:var(--text-light);margin-top:12px}
+.class-fee{font-size:15px;color:var(--text-gray);margin:20px 0 24px;padding-top:20px;border-top:1px solid var(--border-light)}
+.class-fee b{color:var(--text-black);font-size:17px}
+.class-fee small{display:block;font-size:13px;color:var(--text-light);margin-top:4px}
+@media (max-width:768px){.loop-track>*{flex-basis:100%}}
 .brand{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--text-light);margin-bottom:4px}
 .who-tag{display:inline-block;align-self:flex-start;font-size:12px;font-weight:700;color:var(--text-dark);background:var(--bg-light);border-radius:99px;padding:4px 10px;margin-bottom:10px}
 .prod-card .price .for-biz{display:none}
@@ -560,7 +571,7 @@ body{word-break:keep-all}
   </div>
 </section>
 
-<!-- ================= 섹션 3 : 후기 ================= -->
+<!-- ================= 섹션 3 : 후기 (10개 자동 전환 · 무한 반복) ================= -->
 <section class="section bg-light">
   <div class="container">
     <div class="text-center">
@@ -568,65 +579,63 @@ body{word-break:keep-all}
       <h2 class="section-title">수업이 끝난 날, 원장님들이 보내주신 카톡</h2>
       <p class="section-desc">과장 없이, 직접 남겨주신 후기 그대로 담았습니다.</p>
     </div>
-    <div data-car>
-      <div class="car-track">
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">지금은 거의 <strong>복불복 없이 일정하게 결과</strong>가 나와요. 고객 컴플레인도 확 줄었고, 모발 끝 지글거림이나 AS 요청도 거의 없어졌어요.</p><p class="m">급속교정 클래스 · 후기 원본 캡처</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">제가 <strong>롯드를 완전히 기준도 감도 없이 골랐다</strong>는 걸 알았습니다. 눈매 딱 보라고 했던 것만 보니까 어떤 눈이 와도 어렵지 않아요.</p><p class="m">급속교정 클래스 · 후기 원본 캡처</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">원래 네일이랑 왁싱 샵 운영하고 있는데 … 다음 예약으로도 연결돼서 <strong>바로 네이버에 메뉴 추가</strong>했어요.</p><p class="m">급속교정 클래스 · 후기 원본 캡처</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">그동안 프롬프트 판매하는 거 이것저것 사보면서 돈은 돈대로 썼는데, 만족스러운 결과물은 10장 중에 1장 나올까 말까 … <strong>이건 진짜 대면으로 하루라도 빨리 들어야 하는 수업</strong>이에요.</p><p class="m">AI 마케팅 클래스 · 후기 원본 캡처</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">솔직히 컴퓨터 진짜 약한 편이라 수업 가기 전날까지도 걱정했어요 … <strong>저도 제가 가진 사진으로 이렇게 만들어볼 수 있구나</strong> 싶어서 진짜 신기했어요.</p><p class="m">AI 마케팅 클래스 · 후기 원본 캡처</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">저 부산에서 KTX 타고 왔어요 … 특히 <strong>재료 선택하는 기준이랑 고객 유형별로 어떻게 다르게 접근</strong>해야 하는지 배운 게 진짜 실전에서 바로 써먹히더라고요.</p><p class="m">급속교정 클래스 · 후기 원본 캡처</p></article>
-      </div>
-      <div class="tcar-nav"><button data-dir="-1"><i data-lucide="chevron-left"></i></button><button data-dir="1"><i data-lucide="chevron-right"></i></button></div>
+    <div class="loop" id="rvLoop">
+      <div class="loop-vp"><div class="loop-track">
+        <article class="rv-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">지금은 거의 <strong>복불복 없이 일정하게 결과</strong>가 나와요. 고객 컴플레인도 확 줄었고, 모발 끝 지글거림이나 AS 요청도 거의 없어졌어요.</p><p class="m">급속교정 클래스 · 후기 원본 캡처</p></article>
+        <article class="rv-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">그동안 프롬프트 판매하는 거 이것저것 사보면서 돈은 돈대로 썼는데, 만족스러운 결과물은 10장 중에 1장 나올까 말까 … <strong>이건 진짜 대면으로 하루라도 빨리 들어야 하는 수업</strong>이에요.</p><p class="m">AI 마케팅 클래스 · 후기 원본 캡처</p></article>
+        <article class="rv-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">제가 <strong>롯드를 완전히 기준도 감도 없이 골랐다</strong>는 걸 알았습니다. 눈매 딱 보라고 했던 것만 보니까 어떤 눈이 와도 어렵지 않아요.</p><p class="m">급속교정 클래스 · 후기 원본 캡처</p></article>
+        <article class="rv-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">솔직히 컴퓨터 진짜 약한 편이라 수업 가기 전날까지도 걱정했어요 … <strong>저도 제가 가진 사진으로 이렇게 만들어볼 수 있구나</strong> 싶어서 진짜 신기했어요.</p><p class="m">AI 마케팅 클래스 · 후기 원본 캡처</p></article>
+        <article class="rv-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">원래 네일이랑 왁싱 샵 운영하고 있는데 … 다음 예약으로도 연결돼서 <strong>바로 네이버에 메뉴 추가</strong>했어요.</p><p class="m">급속교정 클래스 · 후기 원본 캡처</p></article>
+        <article class="rv-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">사진 10장을 돌려도 한 장 건질까 말까 해서 결국 포기하고 쌓아둔 사진만 가득했는데 <strong>이제 제 사진 창고 개방합니다</strong>!!!</p><p class="m">AI 마케팅 클래스 · 후기 원본 캡처</p></article>
+        <article class="rv-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">속눈썹펌 매출도 예전보다 두 배 이상 늘었고, 단골 고객님들도 많이 생겼어요. 무엇보다 <strong>‘될까?’라는 불안감 대신 ‘이렇게 하면 된다’는 확신</strong>이 생기더라구요.</p><p class="m">급속교정 클래스 · 후기 원본 캡처</p></article>
+        <article class="rv-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">제일 좋았던 건 그냥 예쁘게 보정하는 법이 아니라 <strong>시술 결과 자체는 절대 바뀌지 않으면서</strong> 디테일을 살리는 방법을 알려주신다는 점이었어요.</p><p class="m">AI 마케팅 클래스 · 후기 원본 캡처</p></article>
+        <article class="rv-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">저 부산에서 KTX 타고 왔어요 … 특히 <strong>재료 선택하는 기준이랑 고객 유형별로 어떻게 다르게 접근</strong>해야 하는지 배운 게 진짜 실전에서 바로 써먹히더라고요.</p><p class="m">급속교정 클래스 · 후기 원본 캡처</p></article>
+        <article class="rv-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">인스타 영상 아무리 많이 봐도 알 수 없는 것들을 <strong>하루 만에 배웠어요</strong>. 독학으로 쌓은 시간이 아깝다기보다 이제 그게 다 제대로 정리된 느낌이에요.</p><p class="m">급속교정 클래스 · 후기 원본 캡처</p></article>
+      </div></div>
+      <div class="tcar-nav"><button data-loop="-1"><i data-lucide="chevron-left"></i></button><button data-loop="1"><i data-lucide="chevron-right"></i></button></div>
     </div>
   </div>
 </section>
 
-<!-- ================= 섹션 4 : 교육 2가지 ================= -->
+<!-- ================= 섹션 4 : 급속교정 클래스 ================= -->
 <section class="section" id="edu">
   <div class="container">
-    <div class="text-center">
-      <p class="section-label">Education</p>
-      <h2 class="section-title">하나는 손끝을, 하나는 노출을 다룹니다</h2>
-      <p class="section-desc">지금 막힌 쪽에서 시작하세요.</p>
-    </div>
-    <div class="grid-2">
-      <article class="class-card">
-        <div class="img-placeholder"><i data-lucide="image"></i></div>
-        <div class="class-card-body">
-          <span class="badge">1:1 · 약 7시간 · 99만원부터</span>
-          <h3>급속교정 클래스</h3>
-          <p class="class-target">시술마다 결과가 흔들리는 속눈썹펌 원장님</p>
-          <ul class="class-points">
-            <li>상담부터 마무리 멘트까지 11단계 상세 교정</li>
-            <li>유지력 8주 물광 연화법</li>
-            <li>실습 모델 2~3명과 재료 전부 제공</li>
-            <li>디플로마 발급 · 수료 후 카카오톡 피드백</li>
-          </ul>
-          <a href="page_02.html" class="btn btn-secondary btn-sm btn-block">자세히 보기</a>
-        </div>
-      </article>
-      <article class="class-card">
-        <div class="img-placeholder"><i data-lucide="image"></i></div>
-        <div class="class-card-body">
-          <span class="badge">3:1 그룹 50만원 · 1:1 100만원</span>
-          <h3>AI 마케팅 클래스</h3>
-          <p class="class-target">고객 얼굴 때문에 시술 사진을 못 올리는 원장님</p>
-          <ul class="class-points">
-            <li>속눈썹 작업 결과는 그대로, 얼굴만 AI로 변환</li>
-            <li>내 고객 사진으로 게시 가능한 콘텐츠 5개 이상 완성</li>
-            <li>프롬프트 작성법 · 동영상 만드는 방법</li>
-            <li>카카오톡 피드백 1개월(그룹) · 1년(1:1)</li>
-          </ul>
-          <a href="page_03.html" class="btn btn-secondary btn-sm btn-block">자세히 보기</a>
-        </div>
-      </article>
+    <div class="split">
+      <div class="img-placeholder" style="aspect-ratio:4/5"><i data-lucide="image"></i></div>
+      <div>
+        <p class="section-label">Class 01 · Lash Lift Correction</p>
+        <h2 class="section-title">급속교정 클래스</h2>
+        <p class="section-desc" style="margin-bottom:8px">눈매가 달라져도 흔들리지 않는 판단 기준을 만듭니다. 온라인으로 이론과 데모를 먼저 보고, 오프라인에서 100% 내 손으로 완성합니다.</p>
+        <ul class="checks"><li><i data-lucide="check-circle-2"></i><div><h4>11단계 상세 교정</h4><p>상담부터 마무리 멘트까지, 시술 흐름 그대로</p></div></li><li><i data-lucide="check-circle-2"></i><div><h4>유지력 8주 물광 연화법</h4><p>시간이 아니라 모발 상태로 연화를 판단합니다</p></div></li><li><i data-lucide="check-circle-2"></i><div><h4>실습 모델·재료 전부 제공</h4><p>몸만 오시면 됩니다 · 1:1 밀착 코칭</p></div></li><li><i data-lucide="check-circle-2"></i><div><h4>디플로마 · 수료 후 카톡 피드백</h4><p>샵에서 막히는 순간에도 물어보실 수 있습니다</p></div></li></ul>
+        <p class="class-fee">Basic 2명 실습 <b>99만원</b> · Recommended 3명 실습 <b>120만원</b><small>부가세 별도 · 1:1 · 약 7시간</small></p>
+        <a href="page_02.html" class="btn btn-primary">급속교정 클래스 자세히 보기</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= 섹션 5 : 차별점 3축 ================= -->
+<!-- ================= 섹션 5 : AI 마케팅 클래스 ================= -->
 <section class="section bg-light">
+  <div class="container">
+    <div class="split">
+      <div>
+        <p class="section-label">Class 02 · AI Marketing</p>
+        <h2 class="section-title">AI 마케팅 클래스</h2>
+        <p class="section-desc" style="margin-bottom:8px">공개하기 어려웠던 시술 사진을, 게시할 수 있는 콘텐츠로. AI로 고객 얼굴은 바꾸고, 원장님의 작업 결과는 그대로 보여주세요.</p>
+        <ul class="checks"><li><i data-lucide="check-circle-2"></i><div><h4>얼굴만 AI로 변환</h4><p>속눈썹 작업 결과는 그대로 둡니다</p></div></li><li><i data-lucide="check-circle-2"></i><div><h4>콘텐츠 5개 이상 완성</h4><p>내 고객 사진으로 수업 시간 안에 만들어 갑니다</p></div></li><li><i data-lucide="check-circle-2"></i><div><h4>프롬프트 · 동영상 제작법</h4><p>검증된 방법만 골라 바로 씁니다</p></div></li><li><i data-lucide="check-circle-2"></i><div><h4>카톡 피드백 1개월 · 1년</h4><p>그룹 1개월, 1:1 1년</p></div></li></ul>
+        <p class="class-fee">Group 3:1 <b>50만원</b> · Private 1:1 <b>100만원</b><small>부가세 별도 · 노트북 또는 태블릿 지참</small></p>
+        <a href="page_03.html" class="btn btn-primary">AI 마케팅 클래스 자세히 보기</a>
+      </div>
+      <div class="ba-pair" style="gap:12px">
+        <div class="img-placeholder" style="aspect-ratio:3/4;position:relative"><span class="ba-tag">Before · 가린 사진</span><i data-lucide="image"></i></div>
+        <div class="img-placeholder" style="aspect-ratio:3/4;position:relative"><span class="ba-tag">After · AI 얼굴 변환</span><i data-lucide="image"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 섹션 6 : 차별점 3축 ================= -->
+<section class="section">
   <div class="container">
     <div class="text-center">
       <p class="section-label">Why NEEINK</p>
@@ -653,36 +662,40 @@ body{word-break:keep-all}
   </div>
 </section>
 
-<!-- ================= 섹션 6 : 제품과 크루 ================= -->
-<section class="section">
+<!-- ================= 섹션 7 : 니잉 스토어 ================= -->
+<section class="section bg-light">
   <div class="container">
     <div class="text-center">
-      <p class="section-label">Product &amp; Crew</p>
-      <h2 class="section-title">같은 고객에게, 한 줄 더 얹는 매출</h2>
-      <p class="section-desc">제품 도입부터 판매 교육까지 니잉이 함께합니다.</p>
+      <p class="section-label">NEEINK Store</p>
+      <h2 class="section-title">니잉 스토어</h2>
+      <p class="section-desc">매일 시술하는 니잉이 직접 쓰는 래쉬애딕트마스터 3종입니다.</p>
     </div>
-    <div class="grid-2">
-      <article class="store-card">
-        <div class="img-placeholder"><i data-lucide="image"></i></div>
-        <div class="store-card-body">
-          <h3>래쉬애딕트마스터 3종</h3>
-          <p>속눈썹 세럼 LashAddict, 눈썹 세럼 BrowAddict, 모발 밀도 세럼 HairAddict. 일반 회원은 소비자가로, 사업자 회원은 공급가로 구매합니다.</p>
-          <a href="page_04.html" class="btn btn-secondary">제품 보기</a>
-        </div>
-      </article>
-      <article class="store-card">
-        <div class="img-placeholder"><i data-lucide="image"></i></div>
-        <div class="store-card-body">
-          <h3>니잉 마스터크루</h3>
-          <p>200여 명의 원장님이 함께하는 크루입니다. 단톡방에서 바로 질문하고, 영양제 세미나와 세일즈 특강을 받습니다.</p>
-          <a href="page_05.html" class="btn btn-secondary">크루 보기</a>
-        </div>
-      </article>
+    <div class="grid-3">
+      <article class="prod-card"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="prod-body"><span class="who-tag">Lash</span><p class="brand">래쉬애딕트마스터</p><h3>LashAddict</h3><p class="sum">속눈썹 세럼. 시술 후 고객 관리 루틴으로 이어서 권하기 좋습니다.</p><p class="price">29,000원</p></div></article>
+      <article class="prod-card"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="prod-body"><span class="who-tag">Brow</span><p class="brand">래쉬애딕트마스터</p><h3>BrowAddict</h3><p class="sum">눈썹 세럼. 속눈썹 시술 고객에게 함께 제안하기 좋은 제품입니다.</p><p class="price">25,000원</p></div></article>
+      <article class="prod-card"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="prod-body"><span class="who-tag">Hair</span><p class="brand">래쉬애딕트마스터</p><h3>HairAddict</h3><p class="sum">모발 밀도 세럼. 새로운 판매 라인을 넓히고 싶은 원장님께 권합니다.</p><p class="price">39,000원</p></div></article>
+    </div>
+    <div style="text-align:center;margin-top:40px"><a href="page_04.html" class="btn btn-secondary">니잉 스토어 전체 보기</a></div>
+  </div>
+</section>
+
+<!-- ================= 섹션 8 : 마스터크루 ================= -->
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div class="img-placeholder" style="aspect-ratio:4/5"><i data-lucide="image"></i></div>
+      <div>
+        <p class="section-label">Master Crew</p>
+        <h2 class="section-title">니잉 마스터크루</h2>
+        <p class="section-desc" style="margin-bottom:8px">시술 매출에 제품 판매 매출을 더하는 길이 있습니다. 이미 200여 명의 원장님이 마스터크루에서 함께하고 있어요.</p>
+        <ul class="checks"><li><i data-lucide="check-circle-2"></i><div><h4>단톡방 즉시 Q&amp;A</h4><p>궁금한 순간 바로 질문하면, 대부분 1분 안에 답이 옵니다</p></div></li><li><i data-lucide="check-circle-2"></i><div><h4>영양제 세미나 · 세일즈 특강</h4><p>제품 지식부터 상담 화법까지</p></div></li><li><i data-lucide="check-circle-2"></i><div><h4>직접 제작한 상담 가이드</h4><p>외우지 않고 그대로 따라 하면 됩니다</p></div></li><li><i data-lucide="check-circle-2"></i><div><h4>케이스 스터디</h4><p>다른 원장님들의 성공 사례와 시행착오를 공유받습니다</p></div></li></ul>
+        <a href="page_05.html" class="btn btn-primary" style="margin-top:20px">마스터크루 자세히 보기</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= 섹션 7 : 일반 고객 — 매장 찾기 ================= -->
+<!-- ================= 섹션 9 : 일반 고객 — 매장 찾기 ================= -->
 <section class="section bg-light">
   <div class="container">
     <div class="banner">
@@ -759,6 +772,24 @@ function go(n){hi=(n+slides.length)%slides.length;slides.forEach(function(s,i){s
 function play(){timer=setInterval(function(){go(hi+1)},4500)}function reset(){clearInterval(timer);play()}
 dots.forEach(function(d,i){d.onclick=function(){go(i);reset()}});
 document.getElementById('hPrev').onclick=function(){go(hi-1);reset()};document.getElementById('hNext').onclick=function(){go(hi+1);reset()};play();
+/* 후기 무한 루프 캐러셀 — 3.5초 자동 전환, 마우스 올리면 정지 */
+(function(){
+  var root=document.getElementById('rvLoop'),tr=root.querySelector('.loop-track'),orig=[].slice.call(tr.children),n=orig.length,i=0,busy=false,t;
+  orig.forEach(function(c){tr.appendChild(c.cloneNode(true))});
+  function step(){return tr.children[1].getBoundingClientRect().left-tr.children[0].getBoundingClientRect().left}
+  function set(anim){tr.style.transition=anim?'transform .6s ease':'none';tr.style.transform='translateX('+(-i*step())+'px)'}
+  function move(d){
+    if(busy)return;busy=true;
+    if(d<0&&i===0){i=n;set(false);tr.offsetHeight;}
+    i+=d;set(true);
+  }
+  tr.addEventListener('transitionend',function(){if(i>=n){i-=n;set(false)}busy=false});
+  function play(){clearInterval(t);t=setInterval(function(){move(1)},3500)}function stop(){clearInterval(t)}
+  root.querySelectorAll('[data-loop]').forEach(function(b){b.onclick=function(){move(+b.dataset.loop);play()}});
+  root.addEventListener('mouseenter',stop);root.addEventListener('mouseleave',play);
+  window.addEventListener('resize',function(){set(false)});
+  play();
+})();
 
 </script>
 </body>

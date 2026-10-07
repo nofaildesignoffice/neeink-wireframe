@@ -425,6 +425,17 @@ blockquote cite{display:block;margin-top:10px;font-size:13px;color:var(--text-li
 .seg{display:inline-flex;border:1px solid var(--border-default);border-radius:99px;padding:4px;background:#FFF}
 .seg button{font-size:13px;font-weight:700;padding:9px 18px;border-radius:99px;color:var(--text-gray)}
 .seg button.is-active{background:var(--text-black);color:#FFF}
+.loop-vp{overflow:hidden}
+.loop-track{display:flex;gap:24px;will-change:transform}
+.loop-track>*{flex:0 0 calc((100% - 48px)/3)}
+.rv-card .img-placeholder{aspect-ratio:1/1;margin-bottom:20px}
+.rv-card .q{font-size:15px;color:var(--text-dark);line-height:1.8}
+.rv-card .q strong{color:var(--text-black)}
+.rv-card .m{font-size:13px;color:var(--text-light);margin-top:12px}
+.class-fee{font-size:15px;color:var(--text-gray);margin:20px 0 24px;padding-top:20px;border-top:1px solid var(--border-light)}
+.class-fee b{color:var(--text-black);font-size:17px}
+.class-fee small{display:block;font-size:13px;color:var(--text-light);margin-top:4px}
+@media (max-width:768px){.loop-track>*{flex-basis:100%}}
 .brand{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--text-light);margin-bottom:4px}
 .who-tag{display:inline-block;align-self:flex-start;font-size:12px;font-weight:700;color:var(--text-dark);background:var(--bg-light);border-radius:99px;padding:4px 10px;margin-bottom:10px}
 .prod-card .price .for-biz{display:none}

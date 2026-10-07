@@ -7,7 +7,7 @@
 | `index.html` | P01 메인 |
 | `page_02.html` | P02 급속교정 클래스 |
 | `page_03.html` | P03 AI 마케팅 클래스 |
-| `page_04.html` | P04 래쉬애딕트 상품 리스트 |
+| `page_04.html` | P04 니잉 스토어 (상품 리스트) |
 | `page_05.html` | P05 마스터크루 모집 |
 | `page_06.html` | P06 매장 찾기 |
 | `page_07.html` | P07 공지사항 |

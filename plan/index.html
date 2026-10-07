@@ -82,8 +82,8 @@ code{font-size:13px;background:var(--bg);padding:1px 6px;border-radius:4px}
     <tr><td>P01</td><td>—</td><td>메인</td><td><a href="../index.html">index.html</a></td><td>P-MAIN</td><td>기존 홈 리뉴얼</td></tr>
     <tr><td>P02</td><td rowspan="2">클래스</td><td>급속교정 클래스</td><td><a href="../page_02.html">page_02.html</a></td><td>P-LANDING</td><td>기존 /lash 리뉴얼</td></tr>
     <tr><td>P03</td><td>AI 마케팅 클래스</td><td><a href="../page_03.html">page_03.html</a></td><td>P-LANDING</td><td>기존 /ai 리뉴얼</td></tr>
-    <tr><td>P04</td><td rowspan="3">래쉬애딕트</td><td>상품 리스트</td><td><a href="../page_04.html">page_04.html</a></td><td>P-DETAIL(쇼핑)</td><td><span class="tag">신규</span></td></tr>
-    <tr><td>P05</td><td>마스터크루 모집</td><td><a href="../page_05.html">page_05.html</a></td><td>P-LANDING</td><td>기존 /crew 리뉴얼</td></tr>
+    <tr><td>P04</td><td>니잉 스토어</td><td>니잉 스토어(상품 리스트)</td><td><a href="../page_04.html">page_04.html</a></td><td>P-DETAIL(쇼핑)</td><td><span class="tag">신규</span></td></tr>
+    <tr><td>P05</td><td rowspan="2">래쉬애딕트</td><td>마스터크루 모집</td><td><a href="../page_05.html">page_05.html</a></td><td>P-LANDING</td><td>기존 /crew 리뉴얼</td></tr>
     <tr><td>P06</td><td>매장 찾기</td><td><a href="../page_06.html">page_06.html</a></td><td>P-SUPPORT</td><td><span class="tag">신규</span></td></tr>
     <tr><td>P07</td><td rowspan="3">고객센터</td><td>공지사항</td><td><a href="../page_07.html">page_07.html</a></td><td>P-NEWS</td><td><span class="tag">신규</span></td></tr>
     <tr><td>P08</td><td>자주 묻는 질문</td><td><a href="../page_08.html">page_08.html</a></td><td>P-FAQ</td><td><span class="tag">신규</span></td></tr>
@@ -131,7 +131,7 @@ code{font-size:13px;background:var(--bg);padding:1px 6px;border-radius:4px}
 
 <h2><small>04</small>파일 00 — 헤더 · 푸터 (전 페이지 공통)</h2>
 <table><tbody>
-  <tr><th>PC 헤더</th><td>로고(좌) · GNB 클래스▾(급속교정·AI 마케팅) / 래쉬애딕트▾(상품 리스트·마스터크루 모집·매장 찾기) / 고객센터▾(공지사항·FAQ·1:1 문의) · 유틸 로그인 · 회원가입 · 장바구니. 전화번호·CTA 버튼은 GNB에 넣지 않음</td></tr>
+  <tr><th>PC 헤더</th><td>로고(좌) · GNB 클래스▾(급속교정·AI 마케팅) / 래쉬애딕트▾(마스터크루 모집·매장 찾기) / 니잉 스토어 / 고객센터▾(공지사항·FAQ·1:1 문의) · 유틸 로그인 · 회원가입 · 장바구니. 전화번호·CTA 버튼은 GNB에 넣지 않음</td></tr>
   <tr><th>모바일 헤더</th><td>로고(좌) · 햄버거(우) → 아코디언 메뉴 + 로그인/회원가입. 하단 고정바 없음</td></tr>
   <tr><th>스크롤</th><td>PC 축소 고정(76 → 60px)</td></tr>
   <tr><th>플로팅</th><td>TOP 버튼만. 퀵메뉴·브레드크럼 없음(지아 검수 규칙 그대로)</td></tr>
@@ -161,8 +161,8 @@ code{font-size:13px;background:var(--bg);padding:1px 6px;border-radius:4px}
 <p class="q">Hero → Before/After 3쌍(“AI 얼굴 변환” 라벨) + 숫자 → Problem 4 → Cause(원문 4) → Solution(맨땅에 헤딩) → Results 5 → 3:1/1:1 비교·가격 → 진행 방식 표 → <b>게시 전 확인 사항 <span class="tag">신규</span></b> → 후기 5 → FAQ 5 <span class="tag">신규</span> → 환불 규정 → 급속교정 연계 → 상담 폼</p>
 <p class="q">기존 문구 “단 1%의 변형 없이, 완벽하게 작업 결과물을 유지”는 절대 표현이라 “작업 결과물은 그대로, 얼굴만 바뀝니다”만 남겼습니다. “게시 전 확인 사항”은 AI 기본법 표시 의무와 초상권 판례를 근거로 넣은 섹션입니다. 수업에서 실제로 다루는지 확인한 뒤 문구를 확정해야 합니다.</p>
 
-<h3>P04 상품 리스트</h3>
-<p class="q">페이지 헤드 → 회원 등급 토글(일반 회원 ↔ 사업자 회원, 와이어프레임에서 실제 전환 동작) + 3종 카드(이미지·제품명·한 줄 설명·가격) → 마스터크루 연계 → Contact. 카드 가격은 <b>임시 금액</b>입니다(일반 29,000 / 25,000 / 39,000원, 사업자 19,000 / 16,000 / 26,000원). 실제 금액과 소비자가 공개 여부는 확인이 필요합니다.</p>
+<h3>P04 니잉 스토어 (상품 리스트)</h3>
+<p class="q">페이지 헤드 → 회원 등급 토글(일반 회원 ↔ 사업자 회원, 와이어프레임에서 실제 전환 동작) + 3종 카드(이미지·브랜드명·제품명·한 줄 설명·가격) → 마스터크루 연계 → Contact. 카드 가격은 <b>임시 금액</b>입니다(일반 29,000 / 25,000 / 39,000원, 사업자 19,000 / 16,000 / 26,000원). 실제 금액과 소비자가 공개 여부는 확인이 필요합니다.</p>
 <p class="q">상품정보제공고시와 배송·교환·반품 안내는 리스트 페이지에서 뺐습니다. 통신판매 시 법정 필수 표기이므로 개별 상품 상세페이지(아임웹 상품 상세)에서 채워야 합니다.</p>
 
 <h3>P05 마스터크루 모집</h3>

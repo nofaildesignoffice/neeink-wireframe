@@ -1,12 +1,12 @@
-<!-- PAGE: AI 마케팅 클래스 | 니잉 - 고객 얼굴 노출 없는 시술 사진 콘텐츠 -->
+<!-- PAGE: AI 마케팅 클래스 | 니잉 - 얼굴은 지키고 실력은 보여주는 AI 포트폴리오 -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
-<title>AI 마케팅 클래스 | 니잉 - 고객 얼굴 노출 없는 시술 사진 콘텐츠</title>
-<meta name="description" content="고객 얼굴은 AI로 바꾸고 속눈썹 작업 결과는 그대로. 수업에서 내 고객 사진으로 게시 가능한 콘텐츠 5개 이상을 완성합니다. 그룹 50만원, 1:1 100만원.">
+<title>AI 마케팅 클래스 | 니잉 - 얼굴은 지키고 실력은 보여주는 AI 포트폴리오</title>
+<meta name="description" content="시술 사진 속 고객 얼굴은 AI로 바꾸고, 속눈썹 결과는 원본 그대로. 게시할 수 있는 포트폴리오를 만드는 니잉 AI 클래스. VOD 24만 9천원.">
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
 <script src="https://unpkg.com/lucide@latest"></script>
 <style>
@@ -507,6 +507,148 @@ body{word-break:keep-all}
 .car-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:thin}
 .car-track>*{flex:0 0 calc((100% - 48px)/3);scroll-snap-align:start}
 @media (max-width:768px){.car-track>*{flex-basis:85%}}
+
+/* Hero */
+.sub-hero{position:relative;height:620px;background:var(--bg-dark);overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+.sub-hero .hero-ph{position:absolute;inset:0}
+.sub-hero .inner{position:relative;z-index:2;padding:0 24px}
+.sub-hero .label{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:18px}
+.sub-hero h1{font-size:46px;font-weight:800;color:#FFF;line-height:1.3;letter-spacing:-.03em;margin-bottom:18px}
+.sub-hero .lead{font-size:17px;color:rgba(255,255,255,.7);line-height:1.7}
+.sub-hero .hstats{display:flex;justify-content:center;gap:72px;margin-top:48px}
+.sub-hero .hstats .k{font-size:13px;color:rgba(255,255,255,.55)}
+.sub-hero .hstats .v{font-size:30px;font-weight:800;color:#FFF;margin-top:4px}
+/* How it works */
+.hiw{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.hiw h3{font-size:17px;font-weight:700;color:var(--text-black);margin-bottom:6px}
+.hiw p{font-size:14px;color:var(--text-gray);margin-bottom:18px;min-height:44px}
+.hiw .img-placeholder{aspect-ratio:4/5}
+/* Stories */
+.rv-card{cursor:pointer}
+.rv-card .img-placeholder{aspect-ratio:4/3;margin-bottom:18px;background:var(--bg-dark);color:rgba(255,255,255,.35)}
+.rv-card h4{font-size:16px;font-weight:700;color:var(--text-black);margin-bottom:8px;line-height:1.45}
+.rv-card .ex{font-size:14px;color:var(--text-gray);line-height:1.7;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.rv-card .more{display:inline-block;margin-top:10px;font-size:13px;color:var(--text-dark);text-decoration:underline;text-underline-offset:3px}
+/* Problem */
+.qline{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.qline div{border:1px solid var(--border-light);background:#FFF;border-radius:var(--radius-md);padding:26px}
+.qline b{display:block;font-size:16px;color:var(--text-black);margin-bottom:10px}
+.qline p{font-size:14px;color:var(--text-gray);line-height:1.7}
+/* Empathy */
+.emp-big{font-size:56px;font-weight:300;color:var(--text-black);line-height:1.05;letter-spacing:-.02em;margin-bottom:28px}
+.emp-big span{display:block;padding-left:80px}
+.emp ul{margin:20px 0 28px}
+.emp li{font-size:15px;color:var(--text-gray);padding:6px 0 6px 16px;position:relative}
+.emp li::before{content:"";position:absolute;left:0;top:16px;width:5px;height:5px;border-radius:50%;background:var(--text-muted)}
+/* Cause / Solution line story */
+.ls-row{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;border-top:1px solid var(--border-light)}
+.ls-row:last-child{border-bottom:1px solid var(--border-light)}
+.ls-row .img-placeholder{border-radius:0;min-height:300px}
+.ls-row .txt{padding:56px;display:flex;flex-direction:column;justify-content:center}
+.ls-row.rev .txt{order:-1;text-align:right;align-items:flex-end}
+.ls-row .n{font-size:13px;font-weight:700;color:var(--text-light);margin-bottom:8px}
+.ls-row h3{font-size:22px;font-weight:700;color:var(--text-black);margin-bottom:14px;line-height:1.4}
+.ls-row p{font-size:15px;color:var(--text-gray);line-height:1.8;max-width:460px}
+.answer{margin-top:56px;text-align:center;font-size:20px;color:var(--text-black);line-height:1.8}
+/* Core */
+.core-steps li{display:flex;gap:18px;padding:16px 0;border-bottom:1px solid var(--border-light);font-size:15px}
+.core-steps .s{font-size:12px;font-weight:700;color:var(--text-light);width:64px;flex-shrink:0;padding-top:2px}
+.core-steps b{color:var(--text-black);margin-right:8px}
+/* Difference */
+.cmp{width:100%;max-width:900px;margin:0 auto;border-collapse:collapse;font-size:15px}
+.cmp th,.cmp td{padding:18px 20px;border-bottom:1px solid var(--border-light);text-align:center}
+.cmp thead th{font-size:14px;color:var(--text-gray);font-weight:600}
+.cmp tbody th{color:var(--text-light);font-weight:600;font-size:14px;width:120px}
+.cmp .on{background:var(--bg-dark);color:#FFF;font-weight:700}
+.cmp thead .on{color:#FFF}
+/* Process */
+.proc{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;text-align:center}
+.proc .img-placeholder{aspect-ratio:3/4;border-radius:120px 120px 12px 12px;margin-bottom:16px}
+.proc .n{font-size:12px;font-weight:700;color:var(--text-light)}
+.proc h4{font-size:16px;font-weight:700;color:var(--text-black);margin:4px 0 6px}
+.proc p{font-size:13px;color:var(--text-gray)}
+/* CLASS cards */
+.cls-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cls-card .img-placeholder{aspect-ratio:4/5;margin-bottom:18px}
+.cls-card h3{font-size:19px;font-weight:700;color:var(--text-black);margin-bottom:8px}
+.cls-card p{font-size:14px;color:var(--text-gray);line-height:1.7;margin-bottom:14px;min-height:72px}
+.cls-card .hash{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.cls-card .hash span{font-size:12px;font-weight:600;border:1px solid var(--border-default);padding:6px 10px;color:var(--text-dark)}
+/* letter section */
+.letter{background:var(--bg-dark);padding:110px 0;text-align:center;position:relative}
+.letter .label{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:12px}
+.letter h2{font-size:34px;font-weight:800;color:#FFF;margin-bottom:14px}
+.letter p{font-size:16px;color:rgba(255,255,255,.65);margin-bottom:32px}
+.letter .btn{background:transparent;color:#FFF;border:1px solid rgba(255,255,255,.6)}
+/* fixed CTA */
+.fixcta{position:fixed;left:0;right:0;bottom:0;z-index:95;background:var(--bg-black);transform:translateY(100%);transition:transform .3s}
+.fixcta.is-show{transform:none}
+.fixcta-inner{max-width:1200px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.fixcta .copy b{display:block;font-size:16px;color:#FFF}
+.fixcta .copy span{font-size:13px;color:rgba(255,255,255,.6)}
+.fixcta .btn{background:#FFF;color:var(--text-black);border-color:#FFF;min-width:220px}
+.top-btn{bottom:100px}
+/* modal */
+.md{position:fixed;inset:0;z-index:200;display:none}
+.md.is-open{display:block}
+.md-back{position:absolute;inset:0;background:var(--bg-black);opacity:.6}
+.md-box{position:relative;max-width:1080px;height:min(92dvh,760px);margin:4dvh auto 0;background:#FFF;border-radius:var(--radius-md);overflow:hidden;display:flex}
+.md-close{position:absolute;top:14px;right:14px;z-index:3;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--text-black)}
+.pay-side{width:360px;flex-shrink:0;border-right:1px solid var(--border-light);padding:32px 28px;display:flex;flex-direction:column}
+.pay-side h3{font-size:20px;font-weight:800;color:var(--text-black);margin-bottom:6px}
+.pay-side .lead{font-size:13px;color:var(--text-light);margin-bottom:20px}
+.pay-opt{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;text-align:left;border:1px solid var(--border-light);border-radius:var(--radius-sm);padding:16px;margin-bottom:10px;background:#FFF}
+.pay-opt.is-on{border-color:var(--text-black);box-shadow:inset 0 0 0 1px var(--text-black)}
+.pay-opt .nm{font-size:15px;font-weight:700;color:var(--text-black)}
+.pay-opt .sub{font-size:12px;color:var(--text-light);margin-top:2px}
+.pay-opt .pr{font-size:15px;font-weight:700;color:var(--text-black);white-space:nowrap}
+.pay-foot{margin-top:auto;border-top:1px solid var(--border-light);padding-top:18px}
+.pay-total{display:flex;justify-content:space-between;font-size:15px;margin-bottom:14px}
+.pay-total b{font-size:20px;color:var(--text-black)}
+.pay-btn.is-disabled{opacity:.35;pointer-events:none}
+.pay-detail{flex:1;overflow-y:auto;padding:40px 44px}
+.pay-empty{height:100%;display:flex;align-items:center;justify-content:center;color:var(--text-light);font-size:15px}
+.cls-head h2{font-size:26px;font-weight:800;color:var(--text-black);margin-bottom:6px}
+.cls-head .one{font-size:15px;color:var(--text-gray);margin-bottom:16px}
+.rv-md .md-box{max-width:820px;height:auto;max-height:90dvh}
+.rv-md .rv-split{display:grid;grid-template-columns:1fr 1fr;width:100%}
+.rv-md .rv-split .img-placeholder{border-radius:0;min-height:520px;background:var(--bg-dark);color:rgba(255,255,255,.35)}
+.rv-md .rv-txt{padding:40px 36px;overflow-y:auto;max-height:90dvh}
+.rv-md .rv-txt h3{font-size:20px;font-weight:800;color:var(--text-black);margin-bottom:16px;line-height:1.45}
+.rv-md .rv-txt p{font-size:15px;color:var(--text-dark);line-height:1.85;white-space:pre-line}
+.rv-md .note{margin-top:24px;padding-top:18px;border-top:1px solid var(--border-light);font-size:14px;color:var(--text-gray)}
+.rv-md .note b{display:block;font-size:12px;color:var(--text-light);margin-bottom:6px}
+
+.dt{font-size:14px;font-weight:700;color:var(--text-black);margin:24px 0 10px}
+.opts{border:1px solid var(--border-light);border-radius:var(--radius-sm)}
+.opt-row{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--border-light);font-size:15px;color:var(--text-dark);cursor:pointer}
+.opt-row:last-child{border-bottom:none}
+.opt-row span{flex:1}.opt-row b{color:var(--text-black)}
+.opt-row small{display:block;font-size:12px;color:var(--text-light)}
+.stepper{flex:0 0 auto!important;display:inline-flex;align-items:center;border:1px solid var(--border-default);border-radius:var(--radius-sm)}
+.stepper button{width:34px;height:32px;font-size:16px;color:var(--text-black)}
+.stepper em{font-style:normal;min-width:28px;text-align:center;font-weight:700}
+.who-list li{font-size:14px;color:var(--text-gray);padding:5px 0 5px 16px;position:relative}
+.who-list li::before{content:"";position:absolute;left:0;top:14px;width:5px;height:5px;border-radius:50%;background:var(--text-muted)}
+.cls-card .who-tag{margin-bottom:8px}
+.clue{font-size:12px;color:var(--text-light);margin-top:10px}
+@media (max-width:900px){
+  .hiw,.proc{grid-template-columns:repeat(2,1fr)}
+  .qline,.cls-grid{grid-template-columns:1fr}
+  .ls-row{grid-template-columns:1fr}.ls-row.rev .txt{order:0;text-align:left;align-items:flex-start}
+  .ls-row .txt{padding:32px 24px}
+  .md-box{flex-direction:column;height:92dvh}.pay-side{width:auto;border-right:none;border-bottom:1px solid var(--border-light)}
+  .rv-md .rv-split{grid-template-columns:1fr}.rv-md .rv-split .img-placeholder{min-height:280px}
+}
+@media (max-width:768px){
+  .sub-hero{height:560px}.sub-hero h1{font-size:30px}.sub-hero .hstats{gap:32px}
+  .emp-big{font-size:38px}.emp-big span{padding-left:40px}
+  .fixcta-inner{flex-direction:column;align-items:stretch;gap:10px}.fixcta .copy{display:none}
+}
+
+.cmp3 th,.cmp3 td{width:auto}
+.cmp3 thead th{font-size:13px}
+.legal li{font-size:14px;color:var(--text-gray);padding:5px 0}
 </style>
 </head>
 <body>
@@ -533,274 +675,216 @@ body{word-break:keep-all}
 
 
 <!-- ================= 섹션 1 : Hero ================= -->
-<section class="l-hero">
-  <div class="container">
-    <div class="split">
-      <div>
-        <p class="section-label">AI Marketing Class</p>
-        <h1>공개하기 어려웠던 시술 사진을,<br>게시할 수 있는 콘텐츠로</h1>
-        <p class="lead">AI로 고객 얼굴은 바꾸고, 원장님의 작업 결과는 그대로 보여주세요.</p>
-        <div class="btn-row"><a href="#pricing" class="btn btn-primary">내 사진으로 만드는 수업 과정 확인하기</a><a href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" class="btn btn-secondary">카카오톡 문의</a></div>
-      </div>
-      <div class="img-placeholder" style="aspect-ratio:4/5"><i data-lucide="image"></i></div>
-    </div>
-    <div class="strength">
-      <div><i data-lucide="user-round-x"></i>고객 얼굴 노출 없이</div>
-      <div><i data-lucide="images"></i>콘텐츠 5개+ 완성</div>
-      <div><i data-lucide="laptop"></i>노트북 하나로</div>
-      <div><i data-lucide="message-circle"></i>카톡 피드백 최대 1년</div>
+<section class="sub-hero">
+  <div class="hero-ph"><i data-lucide="image"></i><span>[히어로 배경 · 1920×1080 · Before(가린 사진) / After(AI 얼굴 변환) 비교 컷]</span></div>
+  <div class="inner">
+    <p class="label">AI Portfolio Class</p>
+    <h1>실력은 있는데,<br>올릴 사진이 없으신가요</h1>
+    <p class="lead">고객 얼굴은 지키고, 원장님의 시술 결과는 그대로 보여주세요.<br>니잉은 게시할 수 있는 포트폴리오를 만드는 AI 클래스입니다.</p>
+    <div class="hstats">
+      <div><p class="k">누적 시술</p><p class="v">6,000+</p></div>
+      <div><p class="k">교육으로 만난 원장님</p><p class="v">500+</p></div>
+      <div><p class="k">VOD 수강 + 피드백</p><p class="v">1달 + 1달</p></div>
     </div>
   </div>
 </section>
 
-<!-- ================= 섹션 2 : Proof — Before & After ================= -->
+<!-- ================= 섹션 2 : How It Works ================= -->
 <section class="section">
   <div class="container">
     <div class="text-center">
-      <p class="section-label">Before &amp; After</p>
-      <h2 class="section-title">작업 결과물은 그대로, 얼굴만 바뀝니다</h2>
-      <p class="section-desc">모든 사진은 고객 동의 하에, 얼굴을 AI로 변환하여 사용합니다.</p>
+      <p class="section-label">How It Works</p>
+      <h2 class="section-title">모든 AI 클래스는 이 원칙으로 만듭니다</h2>
+      <p class="section-desc">예쁘게 꾸미는 법이 아니라, 고객과 원장님 모두를 지키며 보여주는 법을 배웁니다.</p>
     </div>
-    <div class="ba-row">
-      <div class="ba"><div class="ba-pair">
-  <div class="img-placeholder"><span class="ba-tag">Before · 가린 사진</span><i data-lucide="image"></i></div>
-  <div class="img-placeholder"><span class="ba-tag">After · AI 얼굴 변환</span><i data-lucide="image"></i></div>
-</div><p>마스크로 가린 사진 → AI 얼굴 변환</p></div>
-      <div class="ba"><div class="ba-pair">
-  <div class="img-placeholder"><span class="ba-tag">Before · 가린 사진</span><i data-lucide="image"></i></div>
-  <div class="img-placeholder"><span class="ba-tag">After · AI 얼굴 변환</span><i data-lucide="image"></i></div>
-</div><p>스티커로 가린 사진 → AI 얼굴 변환</p></div>
-      <div class="ba"><div class="ba-pair">
-  <div class="img-placeholder"><span class="ba-tag">Before · 가린 사진</span><i data-lucide="image"></i></div>
-  <div class="img-placeholder"><span class="ba-tag">After · AI 얼굴 변환</span><i data-lucide="image"></i></div>
-</div><p>이모지로 가린 사진 → AI 얼굴 변환</p></div>
-    </div>
-    <div class="stats c3" style="margin-top:48px">
-      <div><p class="v">6,000+</p><p class="k">누적 시술</p></div>
-      <div><p class="v">500+</p><p class="k">교육으로 만난 원장님</p></div>
-      <div><p class="v">5+</p><p class="k">수업에서 완성해 가는 콘텐츠</p></div>
+    <div class="hiw">
+      <div><h3>시술 결과는 손대지 않기</h3><p>바꾸는 건 얼굴뿐, 속눈썹 결과는 원본 그대로</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
+      <div><h3>진정성 원칙 · 검수 기준</h3><p>올리기 전에 무엇을 확인할지 기준부터 세웁니다</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
+      <div><h3>내 사진으로 바로 실습</h3><p>쌓아둔 내 고객 사진으로 직접 만들어 봅니다</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
+      <div><h3>프롬프트 제공 · 피드백</h3><p>필요한 프롬프트를 드리고, 막히면 물어보세요</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
     </div>
   </div>
 </section>
 
-<!-- ================= 섹션 3 : Problem ================= -->
+<!-- ================= 섹션 3 : Stories ================= -->
 <section class="section bg-light">
   <div class="container">
     <div class="text-center">
-      <p class="section-label">The problem</p>
-      <h2 class="section-title">실력이 있어도, 보여주지 못하면 고객은 모릅니다</h2>
-      <p class="section-desc">올릴 게 없는 게 문제가 아닙니다. 올라간 사진만 고객의 기억에 남는 게 문제죠.</p>
+      <p class="section-label">NEEINK Stories</p>
+      <h2 class="section-title">돈과 시간을 먼저 써 본 원장님들이 말합니다</h2>
+      <p class="section-desc">수업 직후 보내주신 카톡을 그대로 담았습니다.</p>
     </div>
-    <div class="grid-2">
-      <div class="pain-card"><div class="icon-box"><i data-lucide="eye"></i></div><p>고객은 얼굴 전체를 보며 완성된 내 모습을 상상합니다.</p></div>
-      <div class="pain-card"><div class="icon-box"><i data-lucide="eye-off"></i></div><p>하지만 고객은 얼굴이 공개되는 걸 싫어하죠. 그래서 사진 사용이 조심스러워져요.</p></div>
-      <div class="pain-card"><div class="icon-box"><i data-lucide="ban"></i></div><p>동의를 받지 못하면, 그날 작업 사진은 한 장도 쓸 수 없게 됩니다.</p></div>
-      <div class="pain-card"><div class="icon-box"><i data-lucide="scan-face"></i></div><p>마스크 쓴 사진과 모자이크 사진은, 원장님의 실력을 담지 못해요.</p></div>
+    <div class="loop" id="stLoop">
+      <div class="loop-vp"><div class="loop-track"><article class="rv-card" data-rv="0"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>프롬프트 사는 데 쓴 돈이 아까워요</h4><p class="ex">그동안 프롬프트 판매하는 거 이것저것 사보면서 돈은 돈대로 썼는데, 만족스러운 결과물은 10장 중에 1장 나올까 말까였거든요.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="1"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>시술 결과는 절대 바뀌지 않게</h4><p class="ex">그냥 예쁘게 보정하는 법이 아니라 시술 결과 자체는 절대 바뀌지 않으면서 디테일을 살리는 방법을 알려주신다는 점이었어요.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="2"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>이제 제 사진 창고 개방합니다</h4><p class="ex">사진 10장을 돌려도 한 장 건질까 말까 해서 결국 포기하고 쌓아둔 사진만 가득했는데.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="3"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>컴맹·기계치도 따라갔어요</h4><p class="ex">저 컴맹에 진짜 기계치라 노트북 필요하다고 하셨을 때부터 덜컥 겁났는데.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="4"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>편집하는 데 며칠씩 걸리던 고민이 한 번에</h4><p class="ex">시술을 하다 보면 사진은 정말 마음에 드는데 고객님의 초상권 때문에 올리지 못하는 경우도 많고.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="5"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>올릴 게 없다던 사진이 다시 보여요</h4><p class="ex">그동안 사진은 엄청 쌓아두기만 하고, 올릴 만한 게 없다고 맨날 고민했는데.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="6"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>수업이 끝나도 계속 도와주세요</h4><p class="ex">보통은 수업이 끝나면 끝인 경우가 많은데, 이후에도 필요한 자료가 있으면 아낌없이 공유해 주시고.</p><span class="more">자세히 보기</span></article></div></div>
+      <div class="tcar-nav"><button data-loop="-1"><i data-lucide="chevron-left"></i></button><button data-loop="1"><i data-lucide="chevron-right"></i></button></div>
     </div>
-    <p class="text-center" style="margin-top:40px;font-size:24px;font-weight:800;color:var(--text-black)">가리지 말고, 바꾸면 됩니다.</p>
   </div>
 </section>
 
-<!-- ================= 섹션 4 : Cause ================= -->
+<!-- ================= 섹션 4 : Problem ================= -->
 <section class="section">
   <div class="container">
     <div class="text-center">
-      <p class="section-label">Why it's hard</p>
-      <h2 class="section-title">혼자 찾아서 해보려 해도 막힙니다</h2>
-      <p class="section-desc">수강 전 원장님들이 남겨주신 이야기입니다.</p>
+      <p class="section-label">Problem</p>
+      <h2 class="section-title">이 중에 하나라도 해당되시나요</h2>
+      <p class="section-desc">하나라도 해당되신다면, 실력이 아니라 보여주는 방법의 문제입니다.</p>
     </div>
-    <div class="grid-2">
-      <div class="voice"><p>그동안 프롬프트 판매하는 거 이것저것 사보면서 돈은 돈대로 썼는데, 만족스러운 결과물은 10장 중에 1장 나올까 말까 했거든요.</p><cite>AI 마케팅 클래스 수강 원장님</cite></div>
-      <div class="voice"><p>여러 AI, 편집앱과 몇 시간 동안 싸우고 하는 방법 유튜브, 인스타 다 찾아보고 프롬프트 찾아내서 넣어도 묘하게 바뀌고 이상하고.</p><cite>AI 마케팅 클래스 수강 원장님</cite></div>
-      <div class="voice"><p>올리고 싶어도 편집하는 데 며칠씩 걸리면서 어떻게 해야 피드가 더 깔끔하고 눈에 띄게 전달이 될까.</p><cite>AI 마케팅 클래스 수강 원장님</cite></div>
-      <div class="voice"><p>AI라고 하면 뭔가 어려운 사람들만 하는 거고, 영어로 길게 써야 하고, 잘못 건드리면 더 이상해지는 거 아닌가 싶었어요.</p><cite>AI 마케팅 클래스 수강 원장님</cite></div>
+    <div class="qline">
+      <div><b>“사진은 마음에 드는데 못 올려요.”</b><p>고객님 초상권 때문에, 그날 작업 사진을 한 장도 못 쓰는 날이 있어요.</p></div>
+      <div><b>“가리면 실력이 안 보여요.”</b><p>마스크, 모자이크, 스티커로 가리면 고객이 결과를 상상하지 못해요.</p></div>
+      <div><b>“프롬프트를 사도 안 나와요.”</b><p>10장을 돌려도 1장 건질까 말까. 결제한 비용만 쌓였어요.</p></div>
+      <div><b>“AI가 시술 결과까지 바꿔요.”</b><p>얼굴만 바꾸고 싶은데 속눈썹·눈썹까지 뭉개지고 달라져요.</p></div>
+      <div><b>“한 장 만드는 데 며칠 걸려요.”</b><p>편집이 오래 걸리니 매일 올리는 건 엄두가 안 나요.</p></div>
+      <div><b>“영어 프롬프트가 막막해요.”</b><p>AI는 어려운 사람들만 하는 거 같고, 컴퓨터도 약해요.</p></div>
     </div>
+    <p class="src text-center">AI 마케팅 클래스 수강 원장님 후기 원문과 니잉 수강 대상 정리에서 옮긴 고민입니다</p>
   </div>
 </section>
 
-<!-- ================= 섹션 5 : Solution ================= -->
-<section class="section bg-dark">
+<!-- ================= 섹션 5 : Empathy ================= -->
+<section class="section bg-light">
   <div class="container">
-    <div class="story" style="color:rgba(255,255,255,.8);text-align:center">
-      <p class="section-label" style="color:rgba(255,255,255,.45)">How we fix it</p>
-      <p style="font-size:26px;font-weight:800;color:#FFF;line-height:1.5">프롬프트와 싸우고, GPT랑 싸우고, 제미나이랑 싸우고.<br>그 맨땅에 헤딩은 제가 다 해봤어요.</p>
-      <p>이것저것 결제하고, 화나고, 시간 버리는 대신 직접 다 써보고 찾은 방법만 공유해드릴게요. 원장님은 오셔서 진짜 <strong style="color:#FFF">‘딸깍’</strong>만 배워가세요.</p>
+    <div class="split">
+      <div class="emp">
+        <p class="emp-big">Show,<span>Don’t Hide</span></p>
+        <h2 class="section-title">실력이 없어서가 아닙니다</h2>
+        <blockquote style="margin-top:8px">조금이라도 결과가 달라지면 고객 입장에서는 기만처럼 느껴질 수 있으니까요.<cite>— 수강 원장님이 전한 니잉 원장의 원칙</cite></blockquote>
+        <ul>
+          <li>미용 시술 소비자의 87%가 전후 사진을 중요하게 봅니다. <span class="src">(Aesthetic Surgery Journal, 2023)</span></li>
+          <li>고객은 얼굴 전체를 보며, 시술 후 내 모습을 상상합니다.</li>
+          <li>그래서 가린 사진은 실력을 담지 못합니다.</li>
+          <li>니잉은 얼굴만 바꾸고 시술 결과는 그대로 두는 방법을 가르칩니다.</li>
+        </ul>
+        <a href="#class" class="link-inline">과정 살펴보기 →</a>
+      </div>
+      <div class="ba-pair" style="gap:12px">
+        <div class="img-placeholder" style="aspect-ratio:3/4;position:relative"><span class="ba-tag">Before · 가린 사진</span><i data-lucide="image"></i></div>
+        <div class="img-placeholder" style="aspect-ratio:3/4;position:relative"><span class="ba-tag">After · AI 얼굴 변환</span><i data-lucide="image"></i></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= 섹션 6 : Results ================= -->
+<!-- ================= 섹션 6 : Cause 01~03 ================= -->
+<section class="section">
+  <div class="container">
+    <div class="text-center">
+      <p class="section-label">Cause of NEEINK</p>
+      <h2 class="section-title">올릴 사진이 없는 데는 이유가 있습니다</h2>
+      <p class="section-desc">사진이 부족한 게 아니라, 쓸 수 있는 사진이 계속 줄어드는 구조입니다.</p>
+    </div>
+  </div>
+  <div class="ls">
+    <div class="ls-row"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">원인 01</p><h3>찍는 동의와 올리는 동의는 다릅니다</h3><p>대법원은 촬영 동의와 공표 동의를 따로 봅니다. 게시가 동의 범위 안이었다는 증명도 올린 쪽이 해야 합니다. “사진 찍어도 되죠?” 한마디로는 인스타그램·블로그·플레이스 게시까지 허락받았다고 보기 어렵습니다.</p><p class="src" style="text-align:inherit">대법원 2021다219116 판결</p></div></div>
+    <div class="ls-row rev"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">원인 02</p><h3>보고 싶은 사람은 많고, 보여줄 사람은 적습니다</h3><p>미용 시술 소비자 87%가 전후 사진을 중요하게 본다고 답했지만, 내 사진을 인스타그램에 올려도 된다는 응답은 35.1%였습니다. 포트폴리오 수요는 큰데, 공개할 수 있는 원본은 늘 부족합니다.</p><p class="src" style="text-align:inherit">Aesthetic Surgery Journal(2023) · PubMed 33848328 — 미국 미용시술 조사로, 국내 수치와 같다고 볼 수는 없습니다</p></div></div>
+    <div class="ls-row"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">원인 03</p><h3>범용 AI는 ‘얼굴만’ 고치는 편집기가 아닙니다</h3><p>프롬프트 한 단어를 바꾸면 다른 요소까지 함께 바뀌고, 다시 써도 절반 넘게는 나아지지 않는다는 연구가 있습니다. 얼굴을 바꾸다 속눈썹·눈썹까지 달라지면, 그 사진은 고객에게 다른 결과를 약속하게 됩니다.</p><p class="src" style="text-align:inherit">Prompting AI Art, International Journal of Human–Computer Interaction(2024)</p></div></div>
+  </div>
+  <div class="container"><p class="answer">그래서 니잉은 <b>동의 범위부터 정리</b>하고,<br><b>얼굴만 바꾸는 절차</b>와 <b>시술 결과가 바뀌지 않았는지 확인하는 검수 기준</b>을 함께 가르칩니다.</p></div>
+</section>
+
+<!-- ================= 섹션 7 : Solution 01~03 ================= -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="text-center">
+      <p class="section-label">Solution of NEEINK</p>
+      <h2 class="section-title">원인마다, 대응이 따로 있습니다</h2>
+      <p class="section-desc">모든 AI 클래스에 공통으로 적용되는 니잉의 방식입니다.</p>
+    </div>
+  </div>
+  <div class="ls">
+    <div class="ls-row rev"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">솔루션 01</p><h3>얼굴 공개가 부담스러운 고객의 사진도 포트폴리오로</h3><p>AI 초상권 보호법(얼굴 체인지)으로 고객을 알아볼 수 없게 바꾸고, 서랍 속 작업 사진을 꺼냅니다. 원본은 고객이 동의한 범위 안에서만 다룹니다.</p></div></div>
+    <div class="ls-row"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">솔루션 02</p><h3>가리지 않고, 얼굴 전체를 보여줍니다</h3><p>얼굴 전체가 보이는 결과물로 고객이 시술 후 모습을 바로 상상하게 만듭니다. 한 장의 사진으로 여러 포트폴리오, 동영상까지 만듭니다.</p></div></div>
+    <div class="ls-row rev"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">솔루션 03</p><h3>올리기 전, 검수 기준으로 확인합니다</h3><p>AI를 진정성 있게 쓰는 원칙과 검수 기준으로 속눈썹·눈썹이 원본과 달라지지 않았는지 확인하고, 얼굴을 바꾼 사실을 밝혀 게시합니다.</p></div></div>
+  </div>
+</section>
+
+<!-- ================= 섹션 8 : Core — 커리큘럼 ================= -->
 <section class="section">
   <div class="container">
     <div class="split" style="align-items:start">
       <div>
-        <p class="section-label">Results</p>
-        <h2 class="section-title">수업이 끝나면, 내 고객 사진으로 만든 콘텐츠 5개 이상을 가져갑니다</h2>
-        <p class="section-desc">사진 한 장이 아니라, 마케팅에 쓰는 시간 전체가 달라집니다.</p>
-        <div class="img-placeholder" style="aspect-ratio:4/3"><i data-lucide="image"></i></div>
+        <p class="section-label">Core</p>
+        <h2 class="section-title">보여주는 법부터, 동영상까지 3 PART</h2>
+        <p class="section-desc" style="margin-bottom:16px">시작 전에 “나는 얼마나 잘 보여주고 있는가”부터 점검하고, 얼굴 체인지·화질·가상 인플루언서·동영상까지 이어집니다.</p>
+        <ul class="core-steps"><li><span class="s">PART 1</span><span><b>AI 초상권 보호를 시작하기 전</b>나는 얼마나 잘 보여주고 있는가? · AI를 진정성 있게 사용하는 원칙과 검수기준</span></li><li><span class="s">PART 2</span><span><b>내 작업 결과물로 포트폴리오를 만드는 법</b>비밀 AI 소개 — 구독과 요금제 설명 · 퀄리티 높은 작업을 위한 기초세팅법 · AI 초상권 보호법 (얼굴 체인지) · 작업물의 화질을 높이는 꿀팁 · GPT를 활용하는 법</span></li><li><span class="s">PART 3</span><span><b>AI 활용법</b>가상 인플루언서 만드는 법 · 가상 인플루언서와 내 작업물 합치는 법 · 우리샵 배경을 배경으로 만드는 법 · 한 장의 사진으로 여러 포트폴리오 만드는 법 · 이미지를 동영상으로 만드는 법</span></li></ul>
       </div>
-      <ul class="checks">
-        <li><i data-lucide="check-circle-2"></i><div><h4>후기 사진의 제약이 사라집니다</h4><p>잠자고 있던 사진을 쓸 수 있게 됩니다.</p></div></li>
-        <li><i data-lucide="check-circle-2"></i><div><h4>고객이 시술 후 모습을 쉽게 상상합니다</h4><p>얼굴 전체가 보이면 “나도 저렇게 되겠구나”가 그려지죠.</p></div></li>
-        <li><i data-lucide="check-circle-2"></i><div><h4>AI 도구를 헤매는 시간과 비용이 줄어듭니다</h4><p>이것저것 결제해보고 버리는 대신, 검증된 것만 골라 바로 씁니다.</p></div></li>
-        <li><i data-lucide="check-circle-2"></i><div><h4>반복 업무가 줄어듭니다</h4><p>콘텐츠 만들기와 운영에서 매번 하던 일을 덜어냅니다.</p></div></li>
-        <li><i data-lucide="check-circle-2"></i><div><h4>원장님이 직접 만들 수 있게 됩니다</h4><p>외주에 맡기고 기다리지 않고, 필요할 때 바로 만듭니다.</p></div></li>
-      </ul>
+      <div class="img-placeholder" style="aspect-ratio:3/4;position:sticky;top:100px"><i data-lucide="play-circle"></i></div>
     </div>
   </div>
 </section>
 
-<!-- ================= 섹션 7 : 과정 선택 ================= -->
-<section class="section bg-light" id="pricing">
-  <div class="container">
-    <div class="text-center">
-      <p class="section-label">Pricing</p>
-      <h2 class="section-title">3:1과 1:1은 인원이 아니라, 지원과 완성 결과가 다릅니다</h2>
-    </div>
-    <div class="grid-2">
-      <div class="price-card">
-        <p class="tier">Group · 3:1</p><h3>기본기를 확실히</h3><p class="who">3명 함께 · 3시간 · 1회 완성 · 가장 기본이 되는 커리큘럼</p>
-        <p class="now">50<small>만원</small></p><p class="vat">부가세 별도</p>
-        <ul>
-          <li>사전셋팅<b>베이직</b></li><li>얼굴 체인지 방법<b>베이직</b></li>
-          <li>애프터 · 비포앤애프터 · 고화질 작업법<b>포함</b></li><li>보정 어플 사용법<b>포함</b></li>
-          <li>동영상 만드는 방법<b>베이직</b></li><li>프롬프트 작성법<b>포함</b></li>
-          <li>프롬프트 제공<b>기본</b></li><li>카톡 피드백<b>1개월</b></li>
-        </ul>
-        <a href="#contact" class="btn btn-secondary btn-block">그룹 신청 문의</a>
-      </div>
-      <div class="price-card is-reco">
-        <p class="tier">Private · 1:1</p><h3>완성도를 끝까지</h3><p class="who">단독 진행 · 5시간 · 1회 완성 · 현존하는 모든 방법 공개</p>
-        <p class="now">100<small>만원</small></p><p class="vat">부가세 별도</p>
-        <ul>
-          <li>사전셋팅<b>프리미엄</b></li><li>얼굴 체인지 방법<b>베이직</b></li>
-          <li>애프터 · 비포앤애프터 · 고화질 작업법<b>포함</b></li><li>활용 방법 · 연출샷 · 화보샷 제작<b>프리미엄</b></li>
-          <li>보정 어플 사용법<b>포함</b></li><li>동영상 만드는 방법<b>베이직 + 프리미엄</b></li>
-          <li>프롬프트 작성법<b>포함</b></li><li>프롬프트 제공<b>맞춤</b></li><li>카톡 피드백<b>1년</b></li>
-        </ul>
-        <a href="#contact" class="btn btn-primary btn-block">1:1 신청 문의</a>
-      </div>
-    </div>
-    <p class="micro text-center">온라인 클래스는 현재 준비 중입니다. 오프라인 참여가 어려우시면 카카오톡으로 문의를 남겨주세요. 열리는 대로 가장 먼저 안내드릴게요.</p>
-  </div>
-</section>
-
-<!-- ================= 섹션 8 : 진행 방식 상세 ================= -->
-<section class="section">
-  <div class="container">
-    <div class="text-center"><p class="section-label">Format</p><h2 class="section-title">진행 방식 상세</h2></div>
-    <div class="tbl-scroll" style="max-width:860px;margin:0 auto">
-      <table class="tbl"><tbody>
-        <tr><th>진행</th><td>오프라인</td></tr>
-        <tr><th>장소</th><td>서울 강남구 강남대로106길 18, 2층 (역삼동 812-1) · 신논현</td></tr>
-        <tr><th>인원</th><td>3:1 그룹 또는 1:1</td></tr>
-        <tr><th>수업 시간</th><td>그룹 3시간 · 1:1 5시간</td></tr>
-        <tr><th>회차</th><td>1회 완성</td></tr>
-        <tr><th>사용 도구</th><td>수업에서 안내</td></tr>
-        <tr><th>준비물</th><td>노트북 또는 태블릿</td></tr>
-        <tr><th>일정</th><td>문의 후 개별 조율</td></tr>
-        <tr><th>수료 후 피드백</th><td>카카오톡 (그룹 1개월 · 1:1 1년)</td></tr>
-      </tbody></table>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 섹션 9 : 게시 전 확인 사항 ================= -->
+<!-- ================= 섹션 9 : Difference ================= -->
 <section class="section bg-light">
   <div class="container">
     <div class="text-center">
-      <p class="section-label">Before you post</p>
-      <h2 class="section-title">AI로 바꾼 사진도, 올리기 전에 확인할 것이 있습니다</h2>
-      <p class="section-desc">원장님과 고객님 모두를 지키는 게시 원칙입니다.</p>
+      <p class="section-label">Difference</p>
+      <h2 class="section-title">같은 사진이라도, 남는 것이 다릅니다</h2>
     </div>
-    <div class="grid-3">
-      <div class="card"><div class="icon-circle"><i data-lucide="file-signature"></i></div><h3>촬영 동의와 게시 동의는 따로</h3><p>촬영에 동의하셨더라도 SNS·광고 게시는 별도로 동의를 받습니다. 게시 채널, 사용 기간, AI 변환 여부를 함께 안내합니다.</p></div>
-      <div class="card"><div class="icon-circle"><i data-lucide="badge-info"></i></div><h3>AI 변환 이미지 표시</h3><p>AI로 얼굴을 바꾼 사진은 “AI 얼굴 변환” 등으로 표시해 게시합니다.</p></div>
-      <div class="card"><div class="icon-circle"><i data-lucide="eye"></i></div><h3>시술 결과는 손대지 않기</h3><p>바꾸는 건 얼굴뿐입니다. 속눈썹 작업 결과를 보정하면 고객에게 다른 결과를 약속하는 셈이 됩니다.</p></div>
-    </div>
-    <p class="src text-center">[클라이언트 확인 필요: 수업 커리큘럼에 동의서 양식·표시 방법 안내 포함 여부]</p>
+    <table class="cmp cmp3">
+      <thead><tr><th></th><th>가리기 (모자이크·스티커)</th><th>프롬프트 따라 하기</th><th class="on">니잉 AI 포트폴리오</th></tr></thead>
+      <tbody>
+        <tr><th>시술 결과</th><td>가려서 안 보임</td><td>함께 바뀌거나 뭉개짐</td><td class="on">원본 그대로</td></tr>
+        <tr><th>고객 얼굴</th><td>가림</td><td>바뀌지만 매번 다른 사람이 됨</td><td class="on">얼굴만 바꿈 · 검수 기준</td></tr>
+        <tr><th>고객의 상상</th><td>어려움</td><td>결과를 믿기 어려움</td><td class="on">얼굴 전체로 바로 상상</td></tr>
+        <tr><th>제작</th><td>빠르지만 효과 낮음</td><td>원하는 결과까지 반복 · 시간·비용 소모</td><td class="on">제공 프롬프트 · 한 장으로 여러 컷</td></tr>
+      </tbody>
+    </table>
+    <p class="answer" style="font-size:17px;margin-top:40px">수업이 끝나면 쌓아둔 사진이 다시 보이고,<br>매일 올릴 콘텐츠가 생깁니다.</p>
   </div>
 </section>
 
-<!-- ================= 섹션 10 : 후기 ================= -->
+<!-- ================= 섹션 10 : Process ================= -->
 <section class="section">
   <div class="container">
     <div class="text-center">
-      <p class="section-label">Reviews</p>
-      <h2 class="section-title">먼저 들으신 원장님들의 후기</h2>
-      <p class="section-desc">과장 없이, 수업 직후 보내주신 카톡을 그대로 담았습니다.</p>
+      <p class="section-label">Process of NEEINK</p>
+      <h2 class="section-title">신청하시면 이렇게 진행됩니다</h2>
+      <p class="section-desc">VOD는 결제 즉시 시작하고, 오프라인 클래스는 일정을 맞춰 진행합니다.</p>
     </div>
-    <div data-car>
-      <div class="car-track">
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">저 컴맹에 진짜 기계치라 노트북 필요하다고 하셨을 때부터 덜컥 겁났는데 … <strong>너무 기초적인 것부터 쉽게</strong> 알려주셔서 나중에는 그냥 신나서 따라하고 있더라구요.</p><p class="m">컴퓨터가 낯선 원장님도 쉽게 따라했다는 후기</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">제일 좋았던 건 그냥 예쁘게 보정하는 법이 아니라 <strong>시술 결과 자체는 절대 바뀌지 않으면서</strong> 디테일을 살리는 방법을 알려주신다는 점이었어요.</p><p class="m">1:1로 만족스러웠다는 후기</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">사진 10장을 돌려도 한 장 건질까 말까 해서 결국 포기하고 쌓아둔 사진만 가득했는데 <strong>이제 제 사진 창고 개방합니다</strong>!!!</p><p class="m">AI 마케팅 클래스 수강 후기</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">보통은 수업이 끝나면 끝인 경우가 많은데, 니잉 원장님은 <strong>이후에도 필요한 자료가 있으면 아낌없이 공유</strong>해 주시고, 궁금한 점이 생기면 계속 도와주십니다.</p><p class="m">AI 마케팅 클래스 수강 후기</p></article>
-        <article class="quote-card"><div class="img-placeholder"><i data-lucide="image"></i></div><p class="q">엄청난 동기부여가 되는 수업이었어요! <strong>단순히 얼굴 바꾸기를 넘어서</strong> 재밌게 일하는 방법을 배웠습니다.</p><p class="m">동기부여가 됐다는 후기</p></article>
-      </div>
-      <div class="tcar-nav"><button data-dir="-1"><i data-lucide="chevron-left"></i></button><button data-dir="1"><i data-lucide="chevron-right"></i></button></div>
+    <div class="proc">
+      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">01</p><h4>클래스 선택 · 결제</h4><p>VOD · 그룹 · 1:1 중 고릅니다</p></div>
+      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">02</p><h4>기초 세팅</h4><p>AI 구독·요금제와 기초세팅을 먼저 맞춥니다</p></div>
+      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">03</p><h4>내 사진으로 실습</h4><p>쌓아둔 시술 사진으로 직접 만듭니다</p></div>
+      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">04</p><h4>검수 후 게시</h4><p>결과가 바뀌지 않았는지 확인하고 올립니다</p></div>
+      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">05</p><h4>피드백</h4><p>VOD 1달 · 그룹 1개월 · 1:1 1년</p></div>
     </div>
+    <p class="micro text-center">TIP — 수강 전 “내 계정에 맞을까?” 싶은 것도 카카오톡으로 편하게 물어보세요.</p>
   </div>
 </section>
 
-<!-- ================= 섹션 11 : FAQ ================= -->
-<section class="section bg-light">
+<!-- ================= 섹션 11 : CLASS ================= -->
+<section class="section bg-light" id="class">
   <div class="container">
-    <div class="text-center"><p class="section-label">FAQ</p><h2 class="section-title">신청 전에 많이 물어보세요</h2></div>
-    <div class="acc" style="max-width:860px;margin:0 auto">
-      <div class="acc-item is-open"><button class="acc-q">컴퓨터를 잘 못 다뤄도 들을 수 있나요? <span class="mk">+</span></button><div class="acc-a">[클라이언트 확인 필요: 답변 문구] · 참고 — 수강 후기 중 “컴맹에 기계치”라고 밝힌 원장님들도 기초부터 따라왔다는 후기가 있습니다.</div></div>
-      <div class="acc-item"><button class="acc-q">무엇을 준비해 가야 하나요? <span class="mk">+</span></button><div class="acc-a">노트북 또는 태블릿을 준비해주세요. 사용 도구는 수업에서 안내합니다.</div></div>
-      <div class="acc-item"><button class="acc-q">그룹과 1:1은 무엇이 다른가요? <span class="mk">+</span></button><div class="acc-a">그룹(3:1)은 3시간, 베이직 사전셋팅과 기본 프롬프트를 제공하고 카톡 피드백은 1개월입니다. 1:1은 5시간, 프리미엄 사전셋팅과 연출샷·화보샷 활용법, 맞춤 프롬프트를 제공하고 카톡 피드백은 1년입니다.</div></div>
-      <div class="acc-item"><button class="acc-q">온라인으로도 들을 수 있나요? <span class="mk">+</span></button><div class="acc-a">온라인 클래스는 현재 준비 중입니다. 카카오톡으로 문의를 남겨주시면 열리는 대로 먼저 안내드립니다.</div></div>
-      <div class="acc-item"><button class="acc-q">일정은 어떻게 정하나요? <span class="mk">+</span></button><div class="acc-a">문의 후 개별로 조율합니다.</div></div>
-    </div>
+    <p class="section-label">Class</p>
+    <h2 class="section-title">나에게 맞는 AI 클래스를 고르세요</h2>
+    <p class="section-desc">혼자 속도에 맞춰 듣는 VOD, 현장에서 함께하는 그룹, 내 계정에 맞춘 1:1.</p>
+    <div class="cls-grid"><article class="cls-card"><div class="img-placeholder"><i data-lucide="image"></i></div><span class="who-tag">온라인 VOD</span><h3>AI 포트폴리오 제작법 (VOD)</h3><p>얼굴은 지키고, 실력은 보여주는 AI 포트폴리오 제작법</p><div class="hash"><span>수강 1달 + 피드백 1달</span><span>24만 9천원</span></div><button class="btn btn-secondary btn-sm btn-block" data-open-pay="0">자세히 보기</button></article><article class="cls-card"><div class="img-placeholder"><i data-lucide="image"></i></div><span class="who-tag">오프라인 그룹</span><h3>AI 마케팅 그룹 클래스 (3:1)</h3><p>3명이 함께, 3시간 안에 기본기를 확실히</p><div class="hash"><span>3시간 · 1회</span><span>50만원</span></div><button class="btn btn-secondary btn-sm btn-block" data-open-pay="1">자세히 보기</button></article><article class="cls-card"><div class="img-placeholder"><i data-lucide="image"></i></div><span class="who-tag">오프라인 1:1</span><h3>AI 마케팅 프라이빗 클래스 (1:1)</h3><p>내 사진·내 상황에 맞춰, 완성도를 끝까지</p><div class="hash"><span>5시간 · 1회</span><span>100만원</span></div><button class="btn btn-secondary btn-sm btn-block" data-open-pay="2">자세히 보기</button></article></div>
+    <p class="micro text-center">AI 오프라인 세미나 참여 시 VOD 수강자 50% 할인권 제공 · 제휴 아카데미 원장님 할인 [클라이언트 확인 필요: 그룹·1:1 현재 운영 여부]</p>
   </div>
 </section>
 
-<!-- ================= 섹션 12 : 수강 취소·환불 규정 (법정 필수) ================= -->
+<!-- ================= 섹션 12 : Notice ================= -->
 <section class="section">
-  <div class="container">
-    <div class="notice-box" style="max-width:860px;margin:0 auto">
-      <h3><i data-lucide="file-text"></i>수강 취소 및 환불 규정</h3>
-      <ul>
-        <li>[클라이언트 확인 필요: 수업 전 취소 시 환불 기준]</li>
-        <li>[클라이언트 확인 필요: 일정 변경 가능 기한]</li>
-        <li>[클라이언트 확인 필요: 제공 프롬프트·자료 수령 후 환불 기준]</li>
-      </ul>
+  <div class="container" style="max-width:960px">
+    <div class="text-center"><p class="section-label">Notice</p><h2 class="section-title">수강 안내 및 환불 규정</h2></div>
+    <div class="acc">
+      <div class="acc-item"><button class="acc-q">강의 정보 <span class="mk">+</span></button><div class="acc-a">AI 포트폴리오 제작법(VOD) — 수강 1달 + 피드백 1달 · AI 마케팅 그룹 클래스 — 오프라인 3:1, 3시간 · 프라이빗 클래스 — 오프라인 1:1, 5시간 · 오프라인 장소 서울 강남구 강남대로106길 18, 2층 (역삼동 812-1)</div></div>
+      <div class="acc-item"><button class="acc-q">준비물 · 비용 <span class="mk">+</span></button><div class="acc-a">노트북 또는 태블릿 · AI 서비스 구독료는 수강료와 별도이며 수업에서 요금제를 안내합니다 <span class="tbd">[클라이언트 확인 필요]</span></div></div>
+      <div class="acc-item"><button class="acc-q">AI 포트폴리오 게시 원칙 <span class="mk">+</span></button><div class="acc-a"><ul class="legal"><li>촬영 동의와 게시 동의를 나눠 받습니다 — 게시 채널, 목적, 기간, AI 얼굴 변경 여부, 철회·삭제 방법</li><li>얼굴을 바꾼 이미지는 그 사실을 밝혀 게시합니다 — 예: “고객 프라이버시를 위해 얼굴만 AI로 변경했습니다. 속눈썹은 실제 작업 사진입니다.”</li><li>검수에서 속눈썹·눈 모양이 달라졌다면 그 사진은 쓰지 않습니다</li><li>AI 가상 모델은 실제 고객처럼 표현하지 않고, 후기·체험담을 붙이지 않습니다</li><li>고객 원본을 해외 AI 서비스에 올리기 전, 학습 활용·보관 기간·국외 이전 여부를 확인합니다 (개인정보 보호법 제28조의8)</li><li>인스타그램의 AI 라벨은 지우거나 우회하지 않습니다</li></ul></div></div>
+      <div class="acc-item"><button class="acc-q">결제 및 환불 <span class="mk">+</span></button><div class="acc-a">VOD는 VAT 포함, 오프라인은 VAT 별도 · VOD 열람 후 환불 기준 · 오프라인 수업 전 취소·일정 변경 기한 · 환불 신청 방법 및 처리 기간 <span class="tbd">[클라이언트 확인 필요]</span></div></div>
+      <div class="acc-item"><button class="acc-q">판매자 정보 <span class="mk">+</span></button><div class="acc-a">상호 니잉우디 속눈썹펌&amp;눈썹왁싱 신사압구정점 · 대표 함수민 · 사업자등록번호 662-13-01355 · 통신판매업신고번호 <span class="tbd">[클라이언트 확인 필요]</span> · 주소 서울특별시 강남구 논현로175길 68, 206호(신사동) · 연락처 <span class="tbd">[클라이언트 확인 필요]</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- ================= 섹션 13 : 연계 과정 ================= -->
-<section class="section bg-light" style="padding:64px 0">
-  <div class="container">
-    <a href="page_02.html" class="cross">
-      <div><p class="t">시술 실력 자체를 다지고 싶다면</p><h3>급속교정 클래스</h3></div>
-      <i data-lucide="arrow-right"></i>
-    </a>
-  </div>
-</section>
-
-<!-- ================= 최하단 : Contact Us ================= -->
-<section class="section bg-dark" id="contact">
-  <div class="container text-center">
-    <p class="section-label" style="color:rgba(255,255,255,.45)">Contact</p>
-    <h2 class="section-title">더 이상 숨기지 마세요. 보여줘야 팔립니다</h2>
-    <p class="section-desc">지금 계정 상황을 말씀해주시면, 어디부터 손볼지 알려드릴게요.</p>
-    <div class="ct-form"><form class="form-block" onsubmit="return false">
-  <h3>AI 마케팅 클래스 상담 신청</h3>
-  <p class="note">이름과 연락처만 적어주셔도 됩니다. 나머지는 선택입니다.</p>
-  <div class="grid-2" style="gap:16px">
-    <div class="field"><label>이름 <span class="req">*</span></label><input type="text" placeholder="이름"></div>
-    <div class="field"><label>연락처 <span class="req">*</span></label><input type="tel" placeholder="010-0000-0000"></div>
-  </div>
-  <div class="field"><label>관심 과정</label><div class="radio-row"><label><input type="radio" name="c"> Group · 3:1</label><label><input type="radio" name="c"> Private · 1:1</label><label><input type="radio" name="c"> 아직 모르겠어요</label></div></div>
-  <div class="field"><label>지금 가장 막히는 부분 (선택)</label><textarea placeholder="예) 펌 결과가 매번 달라요 / 시술 사진을 올리기 어려워요"></textarea></div>
-  <div class="agree"><label><input type="checkbox"> [필수] 개인정보 수집·이용에 동의합니다 (수집 항목: 이름, 연락처 / 이용 목적: 상담 안내)</label></div>
-  <button class="btn btn-primary btn-block">AI 마케팅 과정 상담 신청</button>
-  <p class="micro" style="text-align:center">신청 후 카카오톡 또는 전화로 연락드립니다 · 평일 10:30 ~ 19:00</p>
-  <div style="text-align:center;margin-top:16px"><a href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" class="link-inline">폼 대신 카카오톡으로 먼저 물어보기</a></div>
-</form></div>
+<!-- ================= 최하단 : 급속교정 클래스 안내 ================= -->
+<section class="letter">
+  <div class="hero-ph"><i data-lucide="image"></i></div>
+  <div class="container" style="position:relative;z-index:2">
+    <p class="label">Next Class</p>
+    <h2>보여줄 결과부터 단단하게 만들고 싶다면</h2>
+    <p>롯드 기초부터 이론, 100% 실습까지. 어떤 눈매가 와도 흔들리지 않는 기준을 만듭니다.</p>
+    <a href="page_02.html" class="btn">급속교정 클래스 더 알아보기 →</a>
   </div>
 </section>
 
@@ -842,6 +926,75 @@ body{word-break:keep-all}
 <button class="top-btn" id="topBtn"><i data-lucide="arrow-up"></i></button>
 
 
+<!-- ================= 하단 고정 CTA 배너 ================= -->
+<div class="fixcta" id="fixcta"><div class="fixcta-inner">
+  <div class="copy"><b>더 이상 숨기지 마세요. 보여줘야 팔립니다</b><span>얼굴은 지키고, 실력은 그대로 보여주세요</span></div>
+  <button class="btn btn-primary" data-open-pay="-1">AI 클래스 신청하기</button>
+</div></div>
+
+<!-- ================= 클래스 선택 · 상세 · 결제 모달 ================= -->
+<div class="md" id="payMd"><div class="md-back" data-close></div><div class="md-box">
+  <button class="md-close" data-close><i data-lucide="x"></i></button>
+  <div class="pay-side">
+    <h3>어떤 과정을 신청하실까요</h3>
+    <p class="lead">과정을 선택하시면 상세 내용과 결제 금액이 표시됩니다.</p>
+    <button class="pay-opt" data-i="0"><span><span class="nm">AI 포트폴리오 제작법 (VOD)</span><span class="sub" style="display:block">수강 1달 + 피드백 1달 · 온라인 VOD</span></span><span class="pr">24만 9천원</span></button><button class="pay-opt" data-i="1"><span><span class="nm">AI 마케팅 그룹 클래스 (3:1)</span><span class="sub" style="display:block">3시간 · 1회 · 오프라인 그룹</span></span><span class="pr">50만원</span></button><button class="pay-opt" data-i="2"><span><span class="nm">AI 마케팅 프라이빗 클래스 (1:1)</span><span class="sub" style="display:block">5시간 · 1회 · 오프라인 1:1</span></span><span class="pr">100만원</span></button>
+    <div class="pay-foot">
+      <div class="pay-total"><span>결제 금액</span><b id="payTotal">과정을 선택해주세요</b></div><p class="micro" id="payVat" style="margin:-8px 0 12px;text-align:right"></p>
+      <a href="#" class="btn btn-primary btn-block pay-btn is-disabled" id="payBtn">결제하기</a>
+      <a href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" class="link-inline" style="display:block;text-align:center">결제 전에 카카오톡으로 먼저 상담하기</a>
+    </div>
+  </div>
+  <div class="pay-detail" id="payDetail"><div class="pay-empty">왼쪽에서 과정을 선택하시면 상세 내용이 표시됩니다.</div></div>
+</div></div>
+<template id="cls0">
+  <div class="cls-head"><span class="who-tag">온라인 VOD</span><h2>AI 포트폴리오 제작법 (VOD)</h2><p class="one">얼굴은 지키고, 실력은 보여주는 AI 포트폴리오 제작법</p></div>
+  <h4 class="dt">옵션 선택</h4>
+  <div class="opts" data-cls="0"><label class="opt-row"><input type="radio" name="o0" value="249000" checked><span>온라인 VOD (정상가 349,000원)</span><b>249,000원</b></label></div><p class="micro">VAT 포함</p>
+  <h4 class="dt">이런 원장님께 추천해요</h4><ul class="who-list"><li>실력은 자신있는데, 게시할 사진이 부족한 분들</li><li>시술 사진은 많은데 초상권 때문에 게시할 사진이 없는 분들</li><li>모자이크나 스티커를 사용한 사진 외에 효과적인 포트폴리오를 찾는 분들</li><li>AI로 얼굴을 바꾸는 방법을 찾아봤지만, 어렵고 결과가 맘에 들지 않은 분들</li><li>프롬프트를 따라해봐도 원하는 사진이 나오지 않는 분들</li><li>사진 한 장 만드는데 너무 오래 걸려 꾸준히 업로드가 어려운 분들</li><li>실제 작업 사진 외에도 가상 인플루언서와 내 작업물을 합쳐보고 싶으신 분들</li><li>이미지를 동영상으로 만들어 마케팅에 활용하는 방법이 궁금하신 분들</li></ul>
+  <h4 class="dt">수업 정보</h4>
+  <div class="tbl-scroll" style="margin-bottom:24px"><table class="tbl"><tbody><tr><th>형태</th><td>VOD 수업</td></tr><tr><th>수강 기간</th><td>수강 1달 + 피드백 1달</td></tr><tr><th>수강료</th><td>정상가 349,000원 → 혜택가 249,000원 (VAT 포함)</td></tr><tr><th>혜택</th><td>진행에 필요한 프롬프트 제공 · 제휴 아카데미 원장님 할인 · AI 오프라인 세미나 참여 시 50% 할인권 (동일 세미나 오프라인에 한함)</td></tr></tbody></table></div>
+  <h4 class="dt">커리큘럼</h4><div class="acc"><div class="acc-item is-open"><button class="acc-q"><span>PART 1 — AI 초상권 보호를 시작하기 전</span><span class="mk">+</span></button><div class="acc-a">나는 얼마나 잘 보여주고 있는가? · AI를 진정성 있게 사용하는 원칙과 검수기준</div></div><div class="acc-item"><button class="acc-q"><span>PART 2 — 내 작업 결과물로 포트폴리오를 만드는 법</span><span class="mk">+</span></button><div class="acc-a">비밀 AI 소개 — 구독과 요금제 설명 · 퀄리티 높은 작업을 위한 기초세팅법 · AI 초상권 보호법(얼굴 체인지) · 작업물의 화질을 높이는 꿀팁 · GPT를 활용하는 법</div></div><div class="acc-item"><button class="acc-q"><span>PART 3 — AI 활용법</span><span class="mk">+</span></button><div class="acc-a">가상 인플루언서 만드는 법 · 가상 인플루언서와 내 작업물 합치는 법 · 우리샵 배경을 배경으로 만드는 법 · 한 장의 사진으로 여러 포트폴리오 만드는 법 · 이미지를 동영상으로 만드는 법</div></div></div>
+</template><template id="cls1">
+  <div class="cls-head"><span class="who-tag">오프라인 그룹</span><h2>AI 마케팅 그룹 클래스 (3:1)</h2><p class="one">3명이 함께, 3시간 안에 기본기를 확실히</p></div>
+  <h4 class="dt">옵션 선택</h4>
+  <div class="opts" data-cls="1"><label class="opt-row"><input type="radio" name="o1" value="500000" checked><span>3:1 그룹 · 3시간 1회 완성</span><b>500,000원</b></label></div><p class="micro">VAT 별도</p>
+  <h4 class="dt">이런 원장님께 추천해요</h4><ul class="who-list"><li>AI 포트폴리오의 기본 흐름을 현장에서 한 번에 익히고 싶은 원장님</li><li>혼자서는 시작이 막막한 원장님</li></ul>
+  <h4 class="dt">수업 정보</h4>
+  <div class="tbl-scroll" style="margin-bottom:24px"><table class="tbl"><tbody><tr><th>형태</th><td>오프라인 · 3:1 그룹</td></tr><tr><th>장소</th><td>서울 강남구 강남대로106길 18, 2층 (신논현)</td></tr><tr><th>구성</th><td>베이직 사전셋팅 · 얼굴 체인지 방법 · 비포앤애프터·고화질 작업법 · 보정 어플 · 동영상 만드는 방법 · 프롬프트 작성법 · 기본 프롬프트 제공</td></tr><tr><th>피드백</th><td>카카오톡 1개월</td></tr><tr><th>준비물</th><td>노트북 또는 태블릿</td></tr><tr><th>운영</th><td><span class="tbd">[현재 운영 여부 · 일정 확인 필요 — 기존 사이트 기준]</span></td></tr></tbody></table></div>
+  <h4 class="dt">커리큘럼</h4><div class="acc"><div class="acc-item is-open"><button class="acc-q"><span>수업 내용</span><span class="mk">+</span></button><div class="acc-a">베이직 사전셋팅 → 얼굴 체인지 → 애프터·비포앤애프터·고화질 작업 → 보정 어플 → 동영상 → 프롬프트 작성</div></div></div>
+</template><template id="cls2">
+  <div class="cls-head"><span class="who-tag">오프라인 1:1</span><h2>AI 마케팅 프라이빗 클래스 (1:1)</h2><p class="one">내 사진·내 상황에 맞춰, 완성도를 끝까지</p></div>
+  <h4 class="dt">옵션 선택</h4>
+  <div class="opts" data-cls="2"><label class="opt-row"><input type="radio" name="o2" value="1000000" checked><span>1:1 프라이빗 · 5시간 1회 완성</span><b>1,000,000원</b></label></div><p class="micro">VAT 별도</p>
+  <h4 class="dt">이런 원장님께 추천해요</h4><ul class="who-list"><li>내 샵 사진으로 연출샷·화보샷까지 만들고 싶은 원장님</li><li>1년 동안 피드백을 받으며 꾸준히 운영하고 싶은 원장님</li></ul>
+  <h4 class="dt">수업 정보</h4>
+  <div class="tbl-scroll" style="margin-bottom:24px"><table class="tbl"><tbody><tr><th>형태</th><td>오프라인 · 1:1 단독</td></tr><tr><th>장소</th><td>서울 강남구 강남대로106길 18, 2층 (신논현)</td></tr><tr><th>구성</th><td>프리미엄 사전셋팅 · 연출샷·화보샷 제작 · 프리미엄 동영상 · 내 상황에 맞춘 맞춤 프롬프트 제공</td></tr><tr><th>피드백</th><td>카카오톡 1년</td></tr><tr><th>준비물</th><td>노트북 또는 태블릿</td></tr><tr><th>운영</th><td><span class="tbd">[현재 운영 여부 · 일정 확인 필요 — 기존 사이트 기준]</span></td></tr></tbody></table></div>
+  <h4 class="dt">커리큘럼</h4><div class="acc"><div class="acc-item is-open"><button class="acc-q"><span>수업 내용</span><span class="mk">+</span></button><div class="acc-a">프리미엄 사전셋팅 → 얼굴 체인지 → 연출샷·화보샷 → 프리미엄 동영상 → 맞춤 프롬프트</div></div></div>
+</template>
+
+<!-- ================= 후기 모달 ================= -->
+<div class="md rv-md" id="rvMd"><div class="md-back" data-close></div><div class="md-box">
+  <button class="md-close" data-close><i data-lucide="x"></i></button>
+  <div class="rv-split"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><div class="rv-txt" id="rvTxt"></div></div>
+</div></div>
+<template id="rv0"><h3>프롬프트 사는 데 쓴 돈이 아까워요</h3><p>원장님 저 고민했던 시간이 아까울 정도로(?) 이제라도 이 수업 들은 제 자신에게 무한 칭찬해주고 싶어요ㅋㅋㅋ
+사실 그동안 프롬프트 판매하는 거 이것저것 사보면서 돈은 돈대로 썼는데, 만족스러운 결과물은 10장 중에 1장 나올까 말까 였거든요ㅠㅠ 특히 눈썹은 원래 시술이 무조건 뭉개지고요.
+그래서 원장님이 “절대 안 깨진다!”고 홍보하실 때도 앞에서 날린 비용들이 있다 보니 ‘정말 그런 게 있겠나ㅠ 또 뻔한 프롬프트면 어떡하지...’ 싶었어요.
+근데!!!! 진짜 몇 년 만에 이렇게 유익한 원데이든 뭐든 교육은 처음이에요 너무 재밌어서 시간 가는 줄도 몰랐어요ㅋㅋㅋ</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template><template id="rv1"><h3>시술 결과는 절대 바뀌지 않게</h3><p>처음에 반신반의하면서 수강신청을 하게되었는데 AI 보정이야 GPT나 제미나이로도 어느 정도 되는 거 아닌가 싶었는데 뭔가 아쉬운점이 많았거든요... 사진보정때문에 인스타그램 놓은지도 오래됐고...
+속눈썹은 미세한 디테일이 중요해서 건들지 않고 외에것만 보정하고싶었는데 딱이였어요! 그리고 왜 다른 AI를 쓰면 그게 문제가 되는지부터 하나하나 짚어주시는데 그동안 제가 왜 AI 보정할 때마다 뭔가 맘에 안들었는지 이해가 됐어요
+제일 좋았던 건 그냥 예쁘게 보정하는 법이 아니라 시술 결과 자체는 절대 바뀌지 않으면서 디테일을 살리는 방법을 알려주신다는 점이었어요
+원장님 말씀처럼 조금이라도 결과가 달라지면 고객 입장에서는 기만처럼 느껴질 수 있으니까요</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template><template id="rv2"><h3>이제 제 사진 창고 개방합니다</h3><p>주변에서는 굳이 멀리까지 가서 왜 배우냐고,, 돌아다니는 프롬프트 조합하면 얼추 나온다고 했는데 오늘 수업을 듣고 이건 무조건 배웠어야 했다!! 달라요 달라!
+그동안 매일 지피티, 제미나이랑 말싸움하고 사진 10장을 돌려도 한 장 건질까 말까 해서 결국 포기하고 쌓아둔 사진만 가득했는데 이제 제 사진 창고 개방합니다!!!
+처음에는 프롬프트를 영어로 어떻게 짜야 하나 막막했는데 원장님께서 알려주신 대로 하니까 진짜 뚝딱뚝딱 되는게 신세계예요!</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template><template id="rv3"><h3>컴맹·기계치도 따라갔어요</h3><p>저 컴맹에 진짜 기계치라 노트북 필요하다고 하셨을 때부터 덜컥 겁났는데ㅠㅠ 너무 기초적인 것부터 쉽게 알려주셔서 나중에는 그냥 신나서 따라하고 배우고 있더라구요ㅋㅋ
+진짜 저는 시술만 예쁘게 하고 싶은 사람인데 이제는 콘텐츠랑 AI를 못 만지면 따라가기 힘든 시대가 된 것 같아요.
+그런데 제가 정성 들여 한 시술 결과물은 원본 그대로 보존하면서 고객님의 초상권도 보호하고, 트렌드까지 따라갈 수 있는 방법을 그것도 이렇게 쉽고 빠르게 알려주셔서 진짜 너무너무 감사해요</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template><template id="rv4"><h3>편집하는 데 며칠씩 걸리던 고민이 한 번에</h3><p>사실 저는 이 수업이 시술 사진 편집에만 도움이 될 줄 알았는데, 배우고 나니 정말 다양한 분야에 활용할 수 있다는 걸 알게 되면서 눈이 번쩍 뜨였어요
+시술을 하다 보면 사진은 정말 마음에 드는데 고객님의 초상권 때문에 올리지 못하는 경우도 많고, 올리고 싶어도 편집하는 데 며칠씩 걸리면서 어떻게 해야 피드가 더 깔끔하고 눈에 띄게 전달이 될까.. 왜 이렇게 편집이 어렵지? 라는 고민을 정말 많이 했거든요
+그런데 어제는 그런 고민들이 한 번에 해결되는 느낌이었어요</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template><template id="rv5"><h3>올릴 게 없다던 사진이 다시 보여요</h3><p>사실 저는 신청하고도 살짝 걱정했거든요. AI라고 하면 뭔가 어려운 사람들만 하는 거고, 영어로 길게 써야 하고, 잘못 건드리면 더 이상해지는 거 아닌가 싶었어요 ㅠㅠ
+근데 오늘 해보니까 제가 생각했던 것보다 훨씬 재밌고, 무엇보다 “아 이렇게 하면 되는구나” 하는 순간이 많았어요.
+특히 제 사진으로 직접 해본 게 너무 좋았어요. 그동안 사진은 엄청 쌓아두기만 하고, 올릴 만한 게 없다고 맨날 고민했는데 이제는 사진 한 장을 봐도 “이건 이렇게 써볼까?” 하는 생각이 들어요</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template><template id="rv6"><h3>수업이 끝나도 계속 도와주세요</h3><p>보통은 수업이 끝나면 끝인 경우가 많은데, 니잉 원장님은 이후에도 필요한 자료가 있으면 아낌없이 공유해 주시고, 궁금한 점이 생기면 계속 도와주십니다.
+AI를 본인 분야에서 제대로 활용하고 싶다면 정말 자신 있게 추천드립니다. 단순히 AI 사용법을 배우는 것뿐이 아니라, 내 업종에 맞는 결과물을 직접 만들어 갈 수 있는 수업입니다.</p><div class="note"><b>원장 코멘트</b>[클라이언트 확인 필요: 함수민 대표 코멘트]</div></template>
+
 <script>
 
 lucide.createIcons();
@@ -863,6 +1016,44 @@ document.querySelectorAll('[data-car]').forEach(function(c){
   c.querySelectorAll('[data-dir]').forEach(function(b){b.onclick=function(){t.scrollBy({left:(+b.dataset.dir)*(t.clientWidth*0.9),behavior:'smooth'})}});
 });
 
+
+/* 후기 무한 루프 */
+(function(){
+  var root=document.getElementById('stLoop'),tr=root.querySelector('.loop-track'),orig=[].slice.call(tr.children),n=orig.length,i=0,busy=false,t;
+  orig.forEach(function(c){tr.appendChild(c.cloneNode(true))});
+  function step(){return tr.children[1].getBoundingClientRect().left-tr.children[0].getBoundingClientRect().left}
+  function set(a){tr.style.transition=a?'transform .6s ease':'none';tr.style.transform='translateX('+(-i*step())+'px)'}
+  function move(d){if(busy)return;busy=true;if(d<0&&i===0){i=n;set(false);tr.offsetHeight}i+=d;set(true)}
+  tr.addEventListener('transitionend',function(){if(i>=n){i-=n;set(false)}busy=false});
+  function play(){clearInterval(t);t=setInterval(function(){move(1)},3500)}function stop(){clearInterval(t)}
+  root.querySelectorAll('[data-loop]').forEach(function(b){b.onclick=function(){move(+b.dataset.loop);play()}});
+  root.addEventListener('mouseenter',stop);root.addEventListener('mouseleave',play);window.addEventListener('resize',function(){set(false)});play();
+})();
+/* 모달 공통 */
+function openMd(id){document.getElementById(id).classList.add('is-open');document.body.style.overflow='hidden'}
+document.querySelectorAll('.md [data-close]').forEach(function(b){b.onclick=function(){b.closest('.md').classList.remove('is-open');document.body.style.overflow=''}});
+/* 후기 모달 */
+document.addEventListener('click',function(e){var c=e.target.closest('.rv-card');if(!c)return;
+  document.getElementById('rvTxt').innerHTML=document.getElementById('rv'+c.dataset.rv).innerHTML;openMd('rvMd')});
+/* 결제 모달 */
+var opts=document.querySelectorAll('.pay-opt'),VAT=['VAT 포함','VAT 별도','VAT 별도'];
+function calc(d){var box=d.querySelector('.opts');if(!box)return;var r=box.querySelector('input:checked'),t=r?+r.value:0;
+  var em=box.querySelector('.stepper em');if(em){var q=+em.textContent;var ex=box.querySelector('.opt-extra');
+    var on=r&&r.parentElement.textContent.indexOf('실습')>-1;ex.style.opacity=on?1:.35;ex.style.pointerEvents=on?'auto':'none';if(!on){em.textContent=0;q=0}t+=q*(+em.dataset.unit)}
+  document.getElementById('payTotal').textContent=t.toLocaleString('ko-KR')+'원'}
+function pick(i){opts.forEach(function(o){o.classList.toggle('is-on',+o.dataset.i===i)});
+  document.getElementById('payBtn').classList.remove('is-disabled');
+  var d=document.getElementById('payDetail');d.innerHTML=document.getElementById('cls'+i).innerHTML;lucide.createIcons();
+  document.getElementById('payVat').textContent=VAT[i];
+  d.querySelectorAll('.acc-q').forEach(function(q){q.onclick=function(){q.parentElement.classList.toggle('is-open')}});
+  d.querySelectorAll('.opts input').forEach(function(x){x.onchange=function(){calc(d)}});
+  d.querySelectorAll('.stepper button').forEach(function(b){b.onclick=function(){var em=b.parentElement.querySelector('em');em.textContent=Math.max(0,+em.textContent+(+b.dataset.d));calc(d)}});
+  calc(d)}
+opts.forEach(function(o){o.onclick=function(){pick(+o.dataset.i)}});
+document.querySelectorAll('[data-open-pay]').forEach(function(b){b.onclick=function(){var i=+b.dataset.openPay;openMd('payMd');if(i>=0)pick(i)}});
+/* 고정 배너: 히어로 지나면 노출 */
+var fx=document.getElementById('fixcta'),hero=document.querySelector('.sub-hero');
+window.addEventListener('scroll',function(){fx.classList.toggle('is-show',window.scrollY>hero.offsetHeight-80)});
 
 </script>
 </body>

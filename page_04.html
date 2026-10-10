@@ -161,9 +161,9 @@ blockquote cite{display:block;margin-top:10px;font-size:13px;color:var(--text-li
 
 /* FOOTER */
 .footer{background:var(--bg-dark);padding:72px 0 0;color:rgba(255,255,255,.5)}
-.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;gap:32px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1)}
+.footer-grid{display:grid;grid-template-columns:auto repeat(4,1fr);gap:32px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1)}
 .footer-brand-name{font-size:24px;font-weight:800;color:#FFF;margin-bottom:16px;letter-spacing:-.03em}
-.footer-info{font-size:13px;line-height:2}
+.footer-info{font-size:13px;line-height:2;white-space:nowrap}
 .footer-col-title{font-size:14px;font-weight:700;color:rgba(255,255,255,.85);margin-bottom:16px}
 .footer-col a{display:block;font-size:13px;color:rgba(255,255,255,.45);margin-bottom:10px}
 .footer-bottom{padding:24px 0;display:flex;justify-content:space-between;font-size:13px;color:rgba(255,255,255,.35);flex-wrap:wrap;gap:12px}
@@ -180,6 +180,7 @@ blockquote cite{display:block;margin-top:10px;font-size:13px;color:var(--text-li
 @media (max-width:1024px){
   .grid-4{grid-template-columns:repeat(2,1fr)}
   .footer-grid{grid-template-columns:1fr 1fr 1fr}
+  .footer-grid>div:first-child{grid-column:1/-1}
 }
 @media (max-width:768px){
   .section{padding:64px 0}
@@ -194,6 +195,7 @@ blockquote cite{display:block;margin-top:10px;font-size:13px;color:var(--text-li
   .stepbar{grid-template-columns:1fr}
   .stepbar>div{border-right:none;border-bottom:1px solid var(--border-light)}
   .footer-grid{grid-template-columns:1fr 1fr}
+  .footer-info{white-space:normal}
   .sub-form{flex-direction:column}
   }
 

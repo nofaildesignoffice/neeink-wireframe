@@ -652,6 +652,7 @@ body{word-break:keep-all}
 .ct-mini input[type=checkbox]{width:auto;padding:0}
 .cls-card p.brand{min-height:0;margin-bottom:4px}
 .agree label{display:flex;gap:8px;align-items:flex-start}
+.split .grid-2 .rv-card .img-placeholder{aspect-ratio:3/4}
 .chk-row{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px}
 .chk-row label{display:flex;gap:6px;align-items:center;font-size:14px;color:var(--text-dark)}
 </style>
@@ -684,213 +685,135 @@ body{word-break:keep-all}
   <div class="hero-ph"><i data-lucide="image"></i><span>[히어로 배경 · 1920×1080 · 래쉬애딕트 그로우 세미나 현장]</span></div>
   <div class="inner">
     <p class="label">LashAddict Master Crew</p>
-    <h1>아침부터 밤 9시까지 시술해도,<br>손에 남는 건 얼마 안 되시죠</h1>
+    <h1>혼자 아침부터 밤 9시까지 시술하고,<br>정작 손에 남는 건 얼마 안 되시죠?</h1>
     <p class="lead">시술 매출에 제품 판매 매출을 더하는 길이 있습니다.<br>이미 200여 명의 원장님이 마스터크루에서 함께하고 있어요.</p>
-    <div class="hstats">
-      <div><p class="k">마스터크루 원장님</p><p class="v">200+</p></div>
-      <div><p class="k">래쉬애딕트</p><p class="v">최고 교육지사상</p></div>
-      <div><p class="k">니잉 누적 시술</p><p class="v">6,000+</p></div>
+    <div style="display:flex;gap:12px;justify-content:center;margin-top:32px;flex-wrap:wrap">
+      <button class="btn btn-primary" data-open-pay="-1" style="background:#FFF;color:var(--text-black);border-color:#FFF">마스터크루 도입 상담하기</button>
+      <a href="#product" class="btn btn-secondary" style="color:#FFF;border-color:rgba(255,255,255,.5)">제품 먼저 보기</a>
     </div>
   </div>
 </section>
 
-<!-- ================= 섹션 2 : How It Works ================= -->
-<section class="section">
-  <div class="container">
-    <div class="text-center">
-      <p class="section-label">How It Works</p>
-      <h2 class="section-title">마스터크루는 이렇게 함께합니다</h2>
-      <p class="section-desc">제품만 들여오고 끝나지 않도록, 도입 이후에도 네 가지가 계속 이어집니다.</p>
-    </div>
-    <div class="hiw">
-      <div><h3>단톡방 즉시 Q&amp;A</h3><p>궁금한 순간 바로 묻고, 대부분 1분 안에 답이 옵니다</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
-      <div><h3>세미나 · 세일즈 특강</h3><p>제품 지식부터 상담 화법까지 배웁니다</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
-      <div><h3>상담 가이드</h3><p>외우지 않고 그대로 따라 하면 됩니다</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
-      <div><h3>케이스 스터디</h3><p>다른 원장님의 성공 사례와 시행착오를 나눕니다</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 섹션 3 : Stories ================= -->
-<section class="section bg-light">
-  <div class="container">
-    <div class="text-center">
-      <p class="section-label">Crew Stories</p>
-      <h2 class="section-title">매주 단톡방에 쌓이는 이야기입니다</h2>
-      <p class="section-desc">임상 사진은 고객 보호를 위해 가린 상태로 공유됩니다.</p>
-    </div>
-    <div class="loop" id="stLoop">
-      <div class="loop-vp"><div class="loop-track"><article class="rv-card" data-rv="0"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>첫 임상 공유해둘게요</h4><p class="ex">바빠서 시술한 사진은 못 찍었지만 고객님 에딕트 쓰시고 너무 만족하시는 중이에요.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="1"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>드디어 첫 번째 임상사진</h4><p class="ex">안녕하세요 ^_^ 드디어 첫번째 임상사진 올려봅니다.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="2"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>래쉬애딕트 그로우 세미나 현장</h4><p class="ex">제품 지식부터 상담 화법까지, 눈높이에 맞춘 특강을 받습니다.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="3"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>[크루 원장님 후기 4]</h4><p class="ex">[클라이언트 확인 필요: 판매 시작 후기]</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="4"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>[크루 원장님 후기 5]</h4><p class="ex">[클라이언트 확인 필요: 커뮤니티 도움 후기]</p><span class="more">자세히 보기</span></article></div></div>
-      <div class="tcar-nav"><button data-loop="-1"><i data-lucide="chevron-left"></i></button><button data-loop="1"><i data-lucide="chevron-right"></i></button></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 섹션 4 : Problem ================= -->
-<section class="section">
-  <div class="container">
-    <div class="text-center">
-      <p class="section-label">Problem</p>
-      <h2 class="section-title">이 중에 하나라도 해당되시나요</h2>
-      <p class="section-desc">하나라도 해당되신다면, 시술 실력이 아니라 매출 구조의 문제입니다.</p>
-    </div>
-    <div class="qline">
-      <div><b>“그 시간은 다시 팔 수가 없어요.”</b><p>예약이 취소되거나 노쇼가 나면, 비어 버린 시간이 그대로 매출 손실이 돼요.</p></div>
-      <div><b>“밤 9시까지 시술해도 남는 게 적어요.”</b><p>하루에 받을 수 있는 고객 수에는 한계가 있으니까요.</p></div>
-      <div><b>“고객은 홈케어를 다른 데서 사요.”</b><p>시술은 우리 샵에서 받는데, 관리 제품은 다른 곳에서 사 가요.</p></div>
-      <div><b>“권하면 강매처럼 보일까 봐요.”</b><p>관계가 불편해질까 봐 아예 말을 못 꺼내요.</p></div>
-      <div><b>“뭘, 누구에게, 어떻게 설명할지 몰라요.”</b><p>제품 지식도 상담 화법도 배울 곳이 없었어요.</p></div>
-      <div><b>“궁금해도 물어볼 동료가 없어요.”</b><p>혼자 운영하니 판단도, 시행착오도 혼자 해요.</p></div>
-    </div>
-    <p class="src text-center">근거 — 니잉 마스터크루 페이지 원문 · Zenoti 2025 노쇼·취소 데이터 · American Salon 살롱 고객 리테일 조사 · Modern Salon · Australian Treasury 소상공인 조사(2020)</p>
-  </div>
-</section>
-
-<!-- ================= 섹션 5 : Empathy ================= -->
-<section class="section bg-light">
-  <div class="container">
-    <div class="split">
-      <div class="emp">
-        <p class="emp-big">Not<span>Alone</span></p>
-        <h2 class="section-title">저도 처음엔 혼자 공부했습니다</h2>
-        <blockquote style="margin-top:8px">영양제를 팔아보고 싶어도 제대로 배울 곳이 없었고, 궁금한 게 생겨도 물어볼 곳이 없었어요.<cite>— 니잉 대표 함수민</cite></blockquote>
-        <ul>
-          <li>그래서 니잉 마스터크루를 만들었습니다.</li>
-          <li>저 혼자 헤맸던 시간을, 원장님들은 겪지 않게 하려고요.</li>
-        </ul>
-        <a href="#product" class="link-inline">제품 살펴보기 →</a>
-      </div>
-      <div class="img-placeholder" style="aspect-ratio:4/5"><i data-lucide="user"></i></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 섹션 6~7 : Cause / Solution ================= -->
-<!-- ================= 섹션 6 : Cause 01~03 ================= -->
-<section class="section">
-  <div class="container">
-    <div class="text-center">
-      <p class="section-label">Cause</p>
-      <h2 class="section-title">제품 매출이 안 생기는 데는 이유가 있습니다</h2>
-      <p class="section-desc">좋은 제품이 없어서가 아니라, 설명하는 방법이 없어서입니다.</p>
-    </div>
-  </div>
-  <div class="ls">
-    <div class="ls-row"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">원인 01</p><h3>강매처럼 보일까 봐, 추천 자체를 피합니다</h3><p>살롱 업계에서는 제품을 권하지 못하는 가장 큰 이유로 “관계가 불편해질까 봐, 강요하는 것처럼 들릴까 봐”를 꼽습니다. 고객 쪽에서도 37.5%가 “구매를 강요받을 것 같다”를 망설임의 이유로 답했습니다.</p><p class="src" style="text-align:inherit">Modern Salon · PAC Beauty Insights Journal(2026, 일본 소비자 조사)</p></div></div>
-    <div class="ls-row rev"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">원인 02</p><h3>제품 지식과 설명 방식이 없습니다</h3><p>고객이 샵 제품을 산 이유는 “직접 써 보게 해줘서”(66%), “특징을 설명해줘서”(63%)였습니다. 무엇을 누구에게 어떻게 설명할지 모르면, 권할 타이밍 자체가 오지 않습니다.</p><p class="src" style="text-align:inherit">Beauty Post 미용실 점판 소비자 조사(일본, 1,012명)</p></div></div>
-    <div class="ls-row"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">원인 03</p><h3>고객이 납득할 근거가 부족합니다</h3><p>샵에서 제품을 사지 않는 이유 1위는 “비쌀 것 같아서”(74.3%)였고, 고객은 어디서 사든 품질·효과와 “내게 맞는지”를 먼저 봅니다. 사용 대상과 사용법을 구체적으로 설명하지 못하면 가격만 남습니다.</p><p class="src" style="text-align:inherit">PAC Beauty Insights Journal(2026) — 해외 조사로, 국내 수치와 같다고 볼 수는 없습니다</p></div></div>
-  </div>
-  <div class="container"><p class="answer">그래서 마스터크루는 <b>파는 법</b>이 아니라<br><b>고객 상태를 보고, 써 보게 하고, 설명하는 법</b>을 함께 익힙니다.</p></div>
-</section>
-
-<!-- ================= 섹션 7 : Solution 01~03 ================= -->
-<section class="section bg-light">
-  <div class="container">
-    <div class="text-center">
-      <p class="section-label">Solution</p>
-      <h2 class="section-title">원인마다, 크루가 함께하는 방법이 있습니다</h2>
-      <p class="section-desc">샵 구매 고객의 73.6%가 “전문가의 조언”을 이유로 꼽았습니다. 원장님의 설명이 곧 신뢰가 됩니다.</p>
-    </div>
-  </div>
-  <div class="ls">
-    <div class="ls-row rev"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">솔루션 01</p><h3>강요하지 않는 상담 흐름을 드립니다</h3><p>시술 중 상태 확인 → 직접 사용해 보기 → 특징과 사용법 설명 → 선택은 고객에게. 외우지 않고 그대로 따라 하면 되는 상담 가이드입니다.</p></div></div>
-    <div class="ls-row"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">솔루션 02</p><h3>제품 지식부터 화법까지 배웁니다</h3><p>영양제 세미나와 세일즈 특강으로 어떤 고객에게 어떤 제품이 맞는지, 무엇을 말하고 무엇은 말하면 안 되는지까지 익힙니다.</p></div></div>
-    <div class="ls-row rev"><div class="img-placeholder"><i data-lucide="image"></i></div><div class="txt"><p class="n">솔루션 03</p><h3>다른 원장님의 사례로 근거를 만듭니다</h3><p>단톡방과 케이스 스터디에서 실제 상담 사례와 시행착오를 나눕니다. 혼자 판단하지 않아도 되는 동종업계 질문 창구입니다.</p></div></div>
-  </div>
-</section>
-
-<!-- ================= 섹션 8 : Core — 크루가 드리는 것 ================= -->
+<!-- ================= 섹션 2 : Trust · Master Crew ================= -->
 <section class="section">
   <div class="container">
     <div class="split" style="align-items:start">
       <div>
-        <p class="section-label">Core</p>
-        <h2 class="section-title">도입이 끝이 아니라, 시작입니다</h2>
-        <p class="section-desc" style="margin-bottom:16px">등록 이후에도 단톡방과 특강, 케이스 스터디로 계속 이어지는 파트너십입니다.</p>
-        <ul class="core-steps"><li><span class="s">01</span><span><b>단톡방 즉시 Q&amp;A</b>궁금한 순간 바로 질문하면, 대부분 1분 안에 답이 옵니다</span></li><li><span class="s">02</span><span><b>영양제 세미나 · 세일즈 특강</b>제품 지식부터 상담 화법까지, 눈높이에 맞춘 특강</span></li><li><span class="s">03</span><span><b>직접 제작한 상담 가이드</b>외우지 않고 그대로 따라 하면 되는 상담 가이드</span></li><li><span class="s">04</span><span><b>케이스 스터디</b>다른 원장님들의 성공 사례와 시행착오를 함께 공유</span></li></ul>
+        <p class="section-label">Trust · Master Crew</p>
+        <h2 class="section-title">200여 명 원장님이<br>이미 증명하고 있습니다</h2>
+        <p class="section-desc">최고 교육지사상을 수상했고, 매주 단톡방에는 원장님들이 직접 올리는 임상·판매 인증이 쌓입니다.</p>
+        <div class="stats" style="grid-template-columns:repeat(2,1fr)">
+          <div><p class="v">200+</p><p class="k">마스터크루 원장님</p></div>
+          <div><p class="v">수상</p><p class="k">최고 교육지사상</p></div>
+        </div>
+        <p class="src">[클라이언트 확인 필요: 수상 연도 · 수여 기관]</p>
       </div>
-      <div class="img-placeholder" style="aspect-ratio:3/4;position:sticky;top:100px"><i data-lucide="image"></i></div>
+      <div class="grid-2"><article class="rv-card" data-rv="0"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>첫 임상 공유해둘게요</h4><p class="ex">바빠서 시술한 사진은 못 찍었지만 고객님 에딕트 쓰시고 너무 만족하시는 중이에요.</p><span class="more">자세히 보기</span></article><article class="rv-card" data-rv="1"><div class="img-placeholder"><i data-lucide="message-square-text"></i></div><h4>드디어 첫 번째 임상사진</h4><p class="ex">안녕하세요 ^_^ 드디어 첫번째 임상사진 올려봅니다.</p><span class="more">자세히 보기</span></article></div>
+    </div>
+    <p class="micro text-center">임상 사진은 고객 보호를 위해 가린 상태로 공유됩니다</p>
+  </div>
+</section>
+
+<!-- ================= 섹션 3 : Results ================= -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="split" style="align-items:start">
+      <div>
+        <p class="section-label">Results</p>
+        <h2 class="section-title">혼자서도 자신 있게<br>설명하고, 판매합니다</h2>
+        <p class="section-desc">크루 단톡방에 매주 올라오는 실제 이야기입니다.</p>
+        <blockquote>“바빠서 시술한 사진은 못 찍었지만, 고객님 에딕트 쓰시고 <b>너무 만족</b>하시는 중이에요”<cite>— 위 단톡방 인증에 실제로 올라온 메시지입니다. 이런 후기가 매주 쌓여요.</cite></blockquote>
+      </div>
+      <ul class="checks">
+        <li><i data-lucide="check-circle-2"></i><div><h4>영양제를 권하는 게 막막하지 않습니다</h4><p>어떤 고객에게 어떤 제품이 맞는지, 상담 흐름을 배워서 그대로 씁니다.</p></div></li>
+        <li><i data-lucide="check-circle-2"></i><div><h4>전문가처럼 말할 수 있게 됩니다</h4><p>외우는 게 아니라 이해하는 방식으로 배우니, 상담할 때 말이 달라집니다.</p></div></li>
+        <li><i data-lucide="check-circle-2"></i><div><h4>시술 매출 옆에 판매 매출이 생깁니다</h4><p>같은 시간, 같은 고객에게 한 줄 더 얹는 매출입니다.</p></div></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- ================= 섹션 9 : Difference ================= -->
+<!-- ================= 섹션 4 : Why — 대표 이야기 + 망설임 ================= -->
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div class="emp">
+        <p class="section-label">Why · 니잉 대표 함수민의 이야기</p>
+        <h2 class="section-title">저도 처음엔<br>혼자 공부했습니다</h2>
+        <blockquote style="margin-top:8px">“저도 처음엔 혼자 공부했습니다. 영양제를 팔아보고 싶어도 제대로 배울 곳이 없었고, 궁금한 게 생겨도 물어볼 곳이 없었어요.”<cite>— 니잉 대표 함수민</cite></blockquote>
+        <p class="section-desc" style="margin-top:20px;margin-bottom:0">그래서 니잉 마스터크루를 만들었습니다. 저 혼자 헤맸던 시간을, 원장님들은 겪지 않게 하려고요.</p>
+      </div>
+      <div class="img-placeholder" style="aspect-ratio:4/5"><i data-lucide="user"></i></div>
+    </div>
+    <div class="text-center" style="margin-top:72px">
+      <h3 style="font-size:22px;font-weight:700;color:var(--text-black);margin-bottom:8px">등록을 망설이게 하는 마음도 압니다</h3>
+      <p class="section-desc">크루 안에서 실제로 나오는 걱정들입니다.</p>
+    </div>
+    <div class="qline">
+      <div><b>“막상 등록하고 나면 관리 안 해주는 거 아니야?”</b></div>
+      <div><b>“혼자서도 잘 할 수 있을까?”</b></div>
+      <div><b>“제품, 진짜 다 판매할 수 있을까?”</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 섹션 5 : How we fix it — 마스터크루가 드리는 것 ================= -->
 <section class="section bg-light">
   <div class="container">
     <div class="text-center">
-      <p class="section-label">Difference</p>
-      <h2 class="section-title">같은 제품이라도, 혼자일 때와 다릅니다</h2>
+      <p class="section-label">How we fix it</p>
+      <h2 class="section-title">마스터크루가 드리는 것</h2>
     </div>
-    <table class="cmp">
-      <thead><tr><th></th><th>혼자 제품 판매</th><th class="on">니잉 마스터크루</th></tr></thead>
-      <tbody>
-        <tr><th>제품 지식</th><td>제품 설명서와 검색에 의존</td><td class="on">영양제 세미나 · 세일즈 특강</td></tr>
-        <tr><th>상담</th><td>권할 타이밍을 매번 고민</td><td class="on">그대로 따라 하는 상담 가이드</td></tr>
-        <tr><th>막힐 때</th><td>물어볼 동료가 없음</td><td class="on">200여 명 원장님 단톡방</td></tr>
-        <tr><th>사례</th><td>내 경험만</td><td class="on">케이스 스터디 · 시행착오 공유</td></tr>
-        <tr><th>공급</th><td>정품 유통 경로 확인 필요</td><td class="on">교육지사를 통한 사업자 공급가</td></tr>
-      </tbody>
-    </table>
-    <p class="answer" style="font-size:17px;margin-top:40px">시술 매출 옆에, 같은 고객에게서 생기는 두 번째 매출 경로를 설계합니다.</p>
-    <p class="src text-center">매출은 고객 수 · 판매량 · 가격 · 재구매에 따라 달라지며, 특정 금액을 보장하지 않습니다.</p>
+    <div class="hiw">
+      <div><h3>단톡방 즉시 Q&amp;A</h3><p>궁금한 순간 바로 질문하면, 대부분 1분 안에 답이 옵니다.</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
+      <div><h3>영양제 세미나 · 세일즈 특강</h3><p>제품 지식부터 상담 화법까지, 눈높이에 맞춘 특강을 받습니다.</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
+      <div><h3>직접 제작한 상담 가이드</h3><p>외우지 않고 그대로 따라 하면 되는 상담 가이드를 드립니다.</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
+      <div><h3>케이스 스터디</h3><p>다른 원장님들의 성공 사례와 시행착오를 함께 공유받습니다.</p><div class="img-placeholder"><i data-lucide="image"></i></div></div>
+    </div>
+    <p class="answer">도입이 <b>끝이 아니라 시작</b>입니다.<br>등록 이후에도 단톡방과 특강, 케이스 스터디로 계속 이어지는 파트너십입니다.</p>
   </div>
 </section>
 
-<!-- ================= 섹션 10 : Process — 도입 4단계 ================= -->
-<section class="section">
+<!-- ================= 섹션 6 : Product ================= -->
+<section class="section" id="product">
   <div class="container">
-    <div class="text-center">
-      <p class="section-label">Process</p>
-      <h2 class="section-title">래쉬애딕트 도입은 이렇게 진행됩니다</h2>
-      <p class="section-desc">상담부터 판매 시작까지, 니잉이 함께 안내합니다.</p>
-    </div>
-    <div class="proc">
-      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">01</p><h4>도입 상담</h4><p>샵 고객층과 판매 계획을 함께 봅니다</p></div>
-      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">02</p><h4>사업자등록증 확인</h4><p>회원가입 후 사업자등록증을 제출합니다</p></div>
-      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">03</p><h4>사업자 회원 승인</h4><p>승인되면 공급가가 보입니다</p></div>
-      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">04</p><h4>공급가로 발주</h4><p>평일 10:30 ~ 15:00 발주</p></div>
-      <div><div class="img-placeholder"><i data-lucide="image"></i></div><p class="n">05</p><h4>크루 합류 · 판매</h4><p>상담 가이드와 특강으로 판매를 시작합니다</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= 섹션 11 : PRODUCT ================= -->
-<section class="section bg-light" id="product">
-  <div class="container">
-    <p class="section-label">Product</p>
-    <h2 class="section-title">함께 판매할 래쉬애딕트마스터 3종</h2>
-    <p class="section-desc">매일 시술하는 니잉이 도입부터 판매 교육까지 함께 안내하는 제품입니다. 공급가와 도입 조건은 상담으로 알려드려요.</p>
+    <p class="section-label">Product · soaddicted</p>
+    <h2 class="section-title">래쉬애딕트마스터 3종</h2>
+    <p class="section-desc">매일 시술하는 니잉이 도입부터 판매 교육까지 함께 안내하는 제품입니다. 가격과 도입 조건은 상담으로 알려드려요.</p>
     <div class="cls-grid"><article class="cls-card"><div class="img-placeholder"><i data-lucide="image"></i></div><span class="who-tag">Lash</span><p class="brand">래쉬애딕트마스터</p><h3>LashAddict</h3><p>속눈썹 세럼. 시술 후 고객 관리 루틴으로 이어서 권하기 좋습니다.</p><div class="hash"><span>사업자 공급가</span><span>상담 시 안내</span></div><button class="btn btn-secondary btn-sm btn-block" data-open-pay="0">자세히 보기</button></article><article class="cls-card"><div class="img-placeholder"><i data-lucide="image"></i></div><span class="who-tag">Brow</span><p class="brand">래쉬애딕트마스터</p><h3>BrowAddict</h3><p>눈썹 세럼. 속눈썹 시술 고객에게 함께 제안하기 좋은 제품입니다.</p><div class="hash"><span>사업자 공급가</span><span>상담 시 안내</span></div><button class="btn btn-secondary btn-sm btn-block" data-open-pay="1">자세히 보기</button></article><article class="cls-card"><div class="img-placeholder"><i data-lucide="image"></i></div><span class="who-tag">Hair</span><p class="brand">래쉬애딕트마스터</p><h3>HairAddict</h3><p>모발 밀도 세럼. 새로운 판매 라인을 넓히고 싶은 원장님께 권합니다.</p><div class="hash"><span>사업자 공급가</span><span>상담 시 안내</span></div><button class="btn btn-secondary btn-sm btn-block" data-open-pay="2">자세히 보기</button></article></div>
+    <p class="micro text-center">가격은 별도 공개하지 않습니다. 카카오톡 상담으로 안내해드립니다.</p>
   </div>
 </section>
 
-<!-- ================= 섹션 12 : Notice ================= -->
-<section class="section">
+<!-- ================= 섹션 7 : Format — 도입 상세 ================= -->
+<section class="section bg-light">
   <div class="container" style="max-width:960px">
-    <div class="text-center"><p class="section-label">Notice</p><h2 class="section-title">도입 안내 및 판매 원칙</h2></div>
-    <div class="acc">
-      <div class="acc-item"><button class="acc-q">도입 안내 <span class="mk">+</span></button><div class="acc-a">사업자등록증 확인 후 사업자 회원 승인 · 발주 가능 평일 10:30 ~ 15:00 · 상담 가능 평일 10:30 ~ 19:00 · 공급가·최소 발주 조건은 상담 시 안내 <span class="tbd">[클라이언트 확인 필요]</span></div></div>
-      <div class="acc-item"><button class="acc-q">마스터크루는 이런 곳입니다 <span class="mk">+</span></button><div class="acc-a">마스터크루는 하위 판매원을 모집하는 조직이 아니라, 각 원장님이 자신의 고객에게 맞는 홈케어 제품을 정확히 설명하고 판매할 수 있도록 제품 교육·상담 자료·동료 사례를 나누는 교육형 커뮤니티입니다. 다른 원장님을 모집하는 데 따른 수당이나 직급은 없습니다. <span class="tbd">[클라이언트 확인 필요: 실제 운영 구조가 이와 같은지 — 다른 원장 모집에 대한 수당·마진·직급이 있으면 방문판매법상 다단계 검토 필요]</span></div></div>
+    <div class="text-center"><p class="section-label">Format</p><h2 class="section-title">도입 상세</h2></div>
+    <div class="tbl-scroll"><table class="tbl"><tbody>
+      <tr><th>발주 가능 시간</th><td>평일 오전 10:30 ~ 오후 3:00</td></tr>
+      <tr><th>상담 가능 시간</th><td>평일 오전 10:30 ~ 오후 7:00</td></tr>
+      <tr><th>문의</th><td>카카오톡 채널</td></tr>
+    </tbody></table></div>
+    <div class="acc" style="margin-top:24px">
       <div class="acc-item"><button class="acc-q">판매할 때 지켜주세요 <span class="mk">+</span></button><div class="acc-a"><ul class="legal">
-        <li>“속눈썹이 자란다 · 발모 · 탈모 예방 · 재생” 같은 표현은 쓰지 않습니다 — 화장품을 의약품처럼 오인시키는 광고는 화장품법상 금지입니다</li>
-        <li>제품별 기능성화장품 심사 여부와 공식 표시 문구는 공급사 자료 그대로 씁니다 <span class="tbd">[클라이언트 확인 필요]</span></li>
-        <li>제품은 밀봉된 완제품 단위로 판매합니다 — 공병에 덜어 파는 소분·혼합 판매는 하지 않습니다</li>
-        <li>SNS·DM·스마트스토어로 판매한다면 통신판매업 신고 대상인지 관할 지자체에서 확인합니다</li>
+        <li>“속눈썹이 자란다 · 발모 · 탈모 예방 · 재생” 같은 표현은 쓰지 않습니다 (화장품법상 의약품 오인 광고 금지)</li>
+        <li>제품은 밀봉된 완제품 단위로 판매합니다 — 덜어 파는 소분·혼합 판매는 하지 않습니다</li>
+        <li>SNS·DM·스마트스토어로 판매한다면 통신판매업 신고 대상인지 확인합니다</li>
         <li>“월 ○○만원 보장”처럼 매출·수익을 보장하는 표현은 쓰지 않습니다</li>
       </ul></div></div>
-      <div class="acc-item"><button class="acc-q">판매자 정보 <span class="mk">+</span></button><div class="acc-a">상호 니잉우디 속눈썹펌&amp;눈썹왁싱 신사압구정점 · 대표 함수민 · 사업자등록번호 662-13-01355 · 통신판매업신고번호 <span class="tbd">[클라이언트 확인 필요]</span> · 주소 서울특별시 강남구 논현로175길 68, 206호(신사동) · 교육 스튜디오 서울 강남구 강남대로106길 18, 2층 (역삼동 812-1)</div></div>
+      <div class="acc-item"><button class="acc-q">판매자 정보 <span class="mk">+</span></button><div class="acc-a">상호 니잉우디 속눈썹펌&amp;눈썹왁싱 신사압구정점 · 대표 함수민 · 사업자등록번호 662-13-01355 · 통신판매업신고번호 <span class="tbd">[클라이언트 확인 필요]</span> · 주소 서울특별시 강남구 논현로175길 68, 206호(신사동)</div></div>
     </div>
   </div>
 </section>
 
-<!-- ================= 최하단 : 급속교정 클래스 안내 ================= -->
+<!-- ================= 섹션 8 : Close — 상담 CTA ================= -->
 <section class="letter">
   <div class="hero-ph"><i data-lucide="image"></i></div>
   <div class="container" style="position:relative;z-index:2">
-    <p class="label">Class</p>
-    <h2>제품을 권하기 전에, 시술부터 단단하게</h2>
-    <p>롯드 기초부터 이론, 100% 실습까지. 고객이 다시 오는 결과를 만듭니다.</p>
-    <a href="page_02.html" class="btn">급속교정 클래스 더 알아보기 →</a>
+    <p class="label">Master Crew</p>
+    <h2>마스터크루, 지금 바로 상담하세요</h2>
+    <p>제품 도입부터 크루 합류까지, 카카오톡 하나로 안내해드립니다.</p>
+    <button class="btn" data-open-pay="-1">마스터크루 도입 상담하기</button>
   </div>
 </section>
 
@@ -1013,10 +936,9 @@ body{word-break:keep-all}
 </div></div>
 <template id="rv0"><h3>첫 임상 공유해둘게요</h3><p>첫 임상 공유해둘게용..!!
 바빠서 시술 한 사진은 못찍었지만ㅜㅜ 고객님 에딕트 쓰시고 너무 만족하시는중이에용
-편안한 밤되세요!</p><div class="note"><b>출처</b>마스터크루 단톡방 인증 캡처</div></template><template id="rv1"><h3>드디어 첫 번째 임상사진</h3><p>안녕하세요 ^_^
+편안한 밤되세요!</p><div class="note"><b>출처</b>마스터크루 단톡방 고객 만족 후기 메시지</div></template><template id="rv1"><h3>드디어 첫 번째 임상사진</h3><p>안녕하세요 ^_^
 드디어 첫번째 임상사진 올려봅니다
-[임상 사진은 고객 보호를 위해 가린 상태로 공유됩니다]</p><div class="note"><b>출처</b>마스터크루 단톡방 인증 캡처</div></template><template id="rv2"><h3>래쉬애딕트 그로우 세미나 현장</h3><p>래쉬애딕트 그로우 세미나 현장 사진입니다.
-[클라이언트 확인 필요: 세미나 일자 · 참석 원장님 후기]</p><div class="note"><b>출처</b>세미나 현장 사진</div></template><template id="rv3"><h3>[크루 원장님 후기 4]</h3><p>[클라이언트 확인 필요: 크루 원장님 후기 원문]</p><div class="note"><b>출처</b>[출처]</div></template><template id="rv4"><h3>[크루 원장님 후기 5]</h3><p>[클라이언트 확인 필요: 크루 원장님 후기 원문]</p><div class="note"><b>출처</b>[출처]</div></template>
+[임상 사진은 고객 보호를 위해 가린 상태로 공유됩니다]</p><div class="note"><b>출처</b>마스터크루 단톡방 임상사진 첫 인증 게시물</div></template>
 
 <script>
 
@@ -1042,7 +964,7 @@ document.querySelectorAll('[data-car]').forEach(function(c){
 
 /* 후기 무한 루프 */
 (function(){
-  var root=document.getElementById('stLoop'),tr=root.querySelector('.loop-track'),orig=[].slice.call(tr.children),n=orig.length,i=0,busy=false,t;
+  var root=document.getElementById('stLoop');if(!root)return;var tr=root.querySelector('.loop-track'),orig=[].slice.call(tr.children),n=orig.length,i=0,busy=false,t;
   orig.forEach(function(c){tr.appendChild(c.cloneNode(true))});
   function step(){return tr.children[1].getBoundingClientRect().left-tr.children[0].getBoundingClientRect().left}
   function set(a){tr.style.transition=a?'transform .6s ease':'none';tr.style.transform='translateX('+(-i*step())+'px)'}
